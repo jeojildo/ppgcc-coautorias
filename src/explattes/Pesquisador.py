@@ -165,8 +165,11 @@ class Pesquisador:
         return xml.find('DADOS-GERAIS').attrib['ORCID-ID'] if 'ORCID-ID' in xml.find('DADOS-GERAIS') else ''
     
     def g_resumo(self, xml) -> str:
-        return xml.find('DADOS-GERAIS').find('RESUMO-CV').attrib['TEXTO-RESUMO-CV-RH']
-    
+        try:
+            return xml.find('DADOS-GERAIS').find('RESUMO-CV').attrib['TEXTO-RESUMO-CV-RH']
+        except AttributeError:
+            return ''
+
     def g_date(self, xml) -> datetime:
         d = xml.attrib['DATA-ATUALIZACAO']
         t = xml.attrib['HORA-ATUALIZACAO']
