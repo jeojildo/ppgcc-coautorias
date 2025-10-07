@@ -84,9 +84,12 @@ class InstitutionRegistry:
 
 
 class Preprocesser:
-    def __init__(self, data_dir: str, metadata_file: str) -> None:
+    def __init__(self, data_dir: str, metadata_file: str, step_directory: str) -> None:
         self.data_dir = data_dir
         self.metadata_file = metadata_file
+        self.step_directory = step_directory
+
+        os.makedirs(Path(self.data_dir, self.step_directory), exist_ok=True)
 
     def extract_institution_registry(self, selection_dir_name: str) -> InstitutionRegistry:
         registry = InstitutionRegistry(self.data_dir, selection_dir_name)
@@ -131,6 +134,7 @@ class Preprocesser:
             df_institutions.append(df_institution)
 
         df_all = pd.concat(df_institutions, ignore_index=True)
+        df_all["production_id"] = df_all.index
 
         df_all["year"] = df_all["year"].map(lambda x: int(x) if str(x).isnumeric() else None)
         df_all = df_all.astype({"year": "Int64"})
