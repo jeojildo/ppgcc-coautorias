@@ -41,8 +41,8 @@ class Visualizer(Preprocesser):
         df_yearly_publications = df_yearly_publications.pivot(index="year", columns="type", values="count")
         
         return df_yearly_publications
-    
-    def plot_yearly_publications(self, df_yearly: pd.DataFrame, figsize: tuple = (8, 5), filename: str = "yearly_publications") -> Tuple[plt.Figure, plt.Axes]:
+
+    def plot_yearly_publications(self, df_yearly: pd.DataFrame, figsize: tuple = (8, 5), filename: str = "yearly_publications", offset_ratio: float = 0.02) -> Tuple[plt.Figure, plt.Axes]:
         fig_yearly_publications, ax_yearly_publications = plt.subplots(figsize=figsize)
         df_yearly.plot(kind="line", ax=ax_yearly_publications, color=["lightcoral", "skyblue"], marker='o', linewidth=2, markersize=8)
 
@@ -50,9 +50,16 @@ class Visualizer(Preprocesser):
         ax_yearly_publications.set_ylabel("Total de publicações", fontsize=12)
         ax_yearly_publications.legend(title="Tipo de publicação", labels=["Conferência", "Periódico"], fontsize=12, title_fontsize=12)
 
+        ymin, ymax = ax_yearly_publications.get_ylim()
+        offset = offset_ratio * (ymax - ymin)
+
         for line in ax_yearly_publications.get_lines():
+            label = line.get_label()
             for x, y in zip(line.get_xdata(), line.get_ydata()):
-                ax_yearly_publications.text(x, y+50, f"{y}", fontsize=12, ha='center', va='bottom')
+                if label == "CONFERENCIA":
+                    ax_yearly_publications.text(x, y+offset, f"{y}", fontsize=12, ha='center', va='bottom')
+                elif label == "PERIODICO":
+                    ax_yearly_publications.text(x, y-offset, f"{y}", fontsize=12, ha='center', va='top')
 
         ax_yearly_publications.yaxis.grid(linestyle='--', which='major', color='grey', alpha=.25)
         ax_yearly_publications.xaxis.grid(linestyle='--', which='major', color='grey', alpha=.25)
@@ -88,7 +95,7 @@ class Visualizer(Preprocesser):
         
         return df_yearly_coauthorships
 
-    def plot_yearly_coauthorships(self, df: pd.DataFrame, figsize: tuple = (8, 5), filename: str = "yearly_coauthorships") -> Tuple[plt.Figure, plt.Axes]:
+    def plot_yearly_coauthorships(self, df: pd.DataFrame, figsize: tuple = (8, 5), filename: str = "yearly_coauthorships", offset_ratio: float = 0.02) -> Tuple[plt.Figure, plt.Axes]:
         fig_yearly_coauthorships, ax_yearly_coauthorships = plt.subplots(figsize=figsize)
 
         df.plot(
@@ -101,17 +108,21 @@ class Visualizer(Preprocesser):
         ax_yearly_coauthorships.set_ylabel("Total de coautores", fontsize=12)
         ax_yearly_coauthorships.legend(title="Tipo de publicação", labels=["Conferência", "Periódico"], fontsize=12, title_fontsize=12)
 
+        ymin, ymax = ax_yearly_coauthorships.get_ylim()
+        offset = offset_ratio * (ymax - ymin)
+
         for line in ax_yearly_coauthorships.get_lines():
             label = line.get_label()
             for x, y in zip(line.get_xdata(), line.get_ydata()):
                 if label == "CONFERENCIA":
-                    ax_yearly_coauthorships.text(x, y+500, f"{y}", fontsize=12, ha='center', va='bottom')
+                    ax_yearly_coauthorships.text(x, y+offset, f"{y}", fontsize=12, ha='center', va='bottom')
                 elif label == "PERIODICO":
-                    ax_yearly_coauthorships.text(x, y-1200, f"{y}", fontsize=12, ha='center', va='bottom')
+                    ax_yearly_coauthorships.text(x, y-offset, f"{y}", fontsize=12, ha='center', va='top')
 
         ax_yearly_coauthorships.yaxis.grid(linestyle='--', which='major', color='grey', alpha=.25)
         ax_yearly_coauthorships.xaxis.grid(linestyle='--', which='major', color='grey', alpha=.25)
 
+        ax_yearly_coauthorships.set_xticks(df.index)
         ax_yearly_coauthorships.set_xticklabels(ax_yearly_coauthorships.get_xticklabels(), rotation=0, fontsize=12)
         ax_yearly_coauthorships.set_yticklabels(ax_yearly_coauthorships.get_yticks().astype(int), fontsize=12)
 
