@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from typing import Tuple, Callable, Dict
 import string
@@ -216,6 +217,69 @@ class Visualizer(Preprocesser):
         plt.savefig(Path(self.figure_directory, f"{filename}.pdf"), format='pdf', bbox_inches='tight')
 
         return fig_publications_by_researcher, ax_publications_by_researcher
+    
+    def frame_coauthorship_adjacency_matrix(self, df: pd.DataFrame, start_year: int = None, end_year: int = None, remove_isolated: bool = False) -> pd.DataFrame:
+
+        if start_year is not None and end_year is not None:
+            if start_year == end_year:
+                df_filtered = df[df["year"] == start_year].copy()
+        else:
+            if start_year is None:
+                start_year = df["year"].min()
+            if end_year is None:
+                end_year = df["year"].max()
+        
+        df_filtered = df[(df["year"] >= start_year) & (df["year"] <= end_year)].copy()
+
+        nunique = df_filtered["nid"].nunique()
+
+        nids = np.sort(df_filtered["nid"].unique())
+
+        unique_names = sorted(list(df_filtered["name"].unique()))
+
+        data_adjacency = np.zeros(shape=(nunique, nunique), dtype=np.uint32)
+
+        for _, row in df_filtered.iterrows():
+            if row["authors"] in unique_names and row["authors"] != row["name"]:
+                i = row["nid"]
+                j = row["aid"]
+
+                try:
+                    data_adjacency[i][j] += 1
+                    data_adjacency[j][i] += 1
+                except IndexError:
+                    continue
+
+        df_adjacency = pd.DataFrame(data_adjacency, columns=nids, index=nids)
+
+        if remove_isolated:
+            df_adjacency = df_adjacency[df_adjacency.sum() > 0]
+            df_adjacency = df_adjacency[df_adjacency.index]
+
+        return df_adjacency
+
+    def plot_coauthorship(self, df_adjacency: pd.DataFrame, figsize: tuple = (10, 10), size_weight: int = 10, directory: str = "", filename: str = None):
+        G = nx.from_pandas_adjacency(df_adjacency)
+
+        plt.figure(figsize=figsize)
+
+        pos = nx.spring_layout(G, seed=42)
+
+        degrees = dict(G.degree())
+
+        nx.draw_networkx_nodes(G, pos, node_size=[v * size_weight for v in degrees.values()], node_color="skyblue", edgecolors="black", alpha=0.7)
+        nx.draw_networkx_edges(G, pos, width=1.0, alpha=0.5)
+
+        plt.axis("off")
+
+        os.makedirs(Path(self.figure_directory, directory), exist_ok=True)
+
+        if filename:
+            plt.savefig(Path(self.figure_directory, directory, f"{filename}.png"), dpi=300, bbox_inches='tight')
+            plt.savefig(Path(self.figure_directory, directory, f"{filename}.svg"), format='svg', bbox_inches='tight')
+            plt.savefig(Path(self.figure_directory, directory, f"{filename}.pdf"), format='pdf', bbox_inches='tight')
+
+        return plt.gcf(), plt.gca()
     
     def frame_coauthorship_network(self, df: pd.DataFrame, researcher_aliases: Dict[str, str]) -> pd.DataFrame:
         df_coauthorship_network = df[df["name"].isin(set(researcher_aliases.keys()))]
