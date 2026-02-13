@@ -218,7 +218,10 @@ class Visualizer(Preprocesser):
 
         return fig_publications_by_researcher, ax_publications_by_researcher
     
-    def frame_coauthorship_adjacency_matrix(self, df: pd.DataFrame, start_year: int = None, end_year: int = None, remove_isolated: bool = False) -> pd.DataFrame:
+    def frame_coauthorship_adjacency_matrix(
+            self, df: pd.DataFrame, start_year: int = None, end_year: int = None,
+            type: str = None, institution: str = None, remove_isolated: bool = False
+            ) -> pd.DataFrame:
 
         if start_year is not None and end_year is not None:
             if start_year == end_year:
@@ -228,16 +231,22 @@ class Visualizer(Preprocesser):
                 start_year = df["year"].min()
             if end_year is None:
                 end_year = df["year"].max()
-        
-        df_filtered = df[(df["year"] >= start_year) & (df["year"] <= end_year)].copy()
 
-        nunique = df_filtered["nid"].nunique()
+        nunique = df["nid"].nunique()
 
-        nids = np.sort(df_filtered["nid"].unique())
+        nids = np.sort(df["nid"].unique())
 
-        unique_names = sorted(list(df_filtered["name"].unique()))
+        unique_names = sorted(list(df["name"].unique()))
 
         data_adjacency = np.zeros(shape=(nunique, nunique), dtype=np.uint32)
+
+        df_filtered = df[(df["year"] >= start_year) & (df["year"] <= end_year)].copy()
+
+        if type is not None:
+            df_filtered = df_filtered[df_filtered["type"] == type]
+
+        if institution is not None:
+            df_filtered = df_filtered[df_filtered["institution"] == institution]
 
         for _, row in df_filtered.iterrows():
             if row["authors"] in unique_names and row["authors"] != row["name"]:
