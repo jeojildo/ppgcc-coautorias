@@ -76,25 +76,33 @@ class Visualizer(Preprocesser):
         plt.savefig(Path(self.figure_directory, f"{filename}.pdf"), format='pdf', bbox_inches='tight')
 
         return fig_yearly_publications, ax_yearly_publications
-    
-    def frame_yearly_coauthorships(self, df: pd.DataFrame, start_year: int = None, end_year: int = None, institution: str = None) -> pd.DataFrame:
-        if start_year is None:
-            start_year = df["year"].min()
-        if end_year is None:
-            end_year = df["year"].max()
 
-        df_yearly_coauthorships = df.copy()
-        df_yearly_coauthorships = df_yearly_coauthorships[(df_yearly_coauthorships["year"] >= start_year) & (df_yearly_coauthorships["year"] <= end_year)]
-        df_yearly_coauthorships = df_yearly_coauthorships[df_yearly_coauthorships["institution"] == institution] if institution else df_yearly_coauthorships
-        df_yearly_coauthorships = df_yearly_coauthorships[["name", "year", "authors", "type"]]
-        df_yearly_coauthorships["coauthors"] = df_yearly_coauthorships.apply(lambda row: [author for author in row["authors"] if author != row["name"]], axis=1)
-        df_yearly_coauthorships["n_coauthors"] = df_yearly_coauthorships["coauthors"].apply(len)
-        df_yearly_coauthorships = df_yearly_coauthorships[df_yearly_coauthorships["type"].isin(["CONFERENCIA", "PERIODICO"])]
-        df_yearly_coauthorships = df_yearly_coauthorships[["year", "type", "n_coauthors"]]
-        df_yearly_coauthorships = df_yearly_coauthorships.groupby(["year", "type"])["n_coauthors"].sum().reset_index()
-        df_yearly_coauthorships = df_yearly_coauthorships.pivot(index="year", columns="type", values="n_coauthors")
-        
-        return df_yearly_coauthorships
+    def frame_df_yearly(self, dfs_adjacencies: dict[str, pd.DataFrame], start_year: int = None, end_year: int = None) -> pd.DataFrame:
+        years = set([int(key.split("_")[1]) for key in dfs_adjacencies.keys() if "_" in key and key.split("_")[1].isdigit()])
+
+        if start_year is None:
+            start_year = min(years) if years else 0
+        if end_year is None:
+            end_year = max(years) if years else 0
+
+        data_yearly = {
+            "year": [],
+            "CONFERENCIA": [],
+            "PERIODICO": []
+        }
+
+        for key, df_adj in dfs_adjacencies.items():
+            if "_" in key and key.split("_")[1].isdigit():
+                year = key.split("_")[1]
+                if int(year) > start_year and int(year) < end_year:
+                    if year not in data_yearly["year"]:
+                        data_yearly["year"].append(year)
+                    if "CONFERENCIA" in key:
+                        data_yearly["CONFERENCIA"].append(df_adj.sum().sum())
+                    elif "PERIODICO" in key:
+                        data_yearly["PERIODICO"].append(df_adj.sum().sum())
+
+        return pd.DataFrame(data_yearly)
 
     def plot_yearly_coauthorships(self, df: pd.DataFrame, figsize: tuple = (8, 5), filename: str = "yearly_coauthorships", offset_ratio: float = 0.02) -> Tuple[plt.Figure, plt.Axes]:
         fig_yearly_coauthorships, ax_yearly_coauthorships = plt.subplots(figsize=figsize)
@@ -270,7 +278,7 @@ class Visualizer(Preprocesser):
     def plot_coauthorship(self, df_adjacency: pd.DataFrame, figsize: tuple = (10, 10), size_weight: int = 10, directory: str = "", filename: str = None):
         G = nx.from_pandas_adjacency(df_adjacency)
 
-        plt.figure(figsize=figsize)
+        fig, axs = plt.subplots(figsize=figsize)
 
         pos = nx.spring_layout(G, seed=42)
 
@@ -288,8 +296,10 @@ class Visualizer(Preprocesser):
             plt.savefig(Path(self.figure_directory, directory, f"{filename}.svg"), format='svg', bbox_inches='tight')
             plt.savefig(Path(self.figure_directory, directory, f"{filename}.pdf"), format='pdf', bbox_inches='tight')
 
-        return plt.gcf(), plt.gca()
-    
+        plt.close()
+
+        return fig, axs
+
     def frame_coauthorship_network(self, df: pd.DataFrame, researcher_aliases: Dict[str, str]) -> pd.DataFrame:
         df_coauthorship_network = df[df["name"].isin(set(researcher_aliases.keys()))]
         df_coauthorship_network = df_coauthorship_network[["name", "authors"]]
