@@ -300,6 +300,137 @@ class Visualizer(Preprocesser):
 
         return fig, axs
 
+    def frame_institution_coauths(df_adjacency: pd.DataFrame, df_productions: pd.DataFrame, df_ppgcc: pd.DataFrame, institution_region_map: dict) -> pd.DataFrame:
+        # sum coauthorships per researcher (columns)
+        df_researchers_coauth_sums = df_adjacency.sum(axis=0).sort_values(ascending=False).reset_index()
+        df_researchers_coauth_sums.columns = ["nid", "count"]
+
+        # Map researcher nid -> institution via df_productions (expected to exist in notebook environment)
+        # keep behavior consistent with existing notebook: drop duplicates in mapping
+        df_institution_coauths = df_researchers_coauth_sums.merge(df_productions[["nid", "institution"]].drop_duplicates(), on="nid", how="left")
+
+        # aggregate counts by institution
+        df_institution_coauths = df_institution_coauths.drop(columns=["nid"])
+        df_institution_coauths = (
+            df_institution_coauths
+            .groupby("institution")["count"]
+            .sum()
+            .reset_index()
+            .sort_values(by="count", ascending=False)
+        )
+
+        # percentages
+        total = df_institution_coauths["count"].sum()
+        if total > 0:
+            df_institution_coauths["percentage"] = df_institution_coauths["count"] / total * 100
+        else:
+            df_institution_coauths["percentage"] = 0.0
+        df_institution_coauths["cumulative_percentage"] = df_institution_coauths["percentage"].cumsum()
+
+        # merge region info from df_ppgcc (UNI. SIGLA -> REGIÃO)
+        if "UNI. SIGLA" in df_ppgcc.columns and "REGIÃO" in df_ppgcc.columns:
+            df_institution_coauths = df_institution_coauths.merge(
+                df_ppgcc[["UNI. SIGLA", "REGIÃO"]],
+                left_on="institution",
+                right_on="UNI. SIGLA",
+                how="left"
+            )
+            df_institution_coauths = df_institution_coauths.drop(columns=["UNI. SIGLA"])
+        else:
+            df_institution_coauths["REGIÃO"] = None
+
+        # fill missing regions with 'OUTROS' and apply known corrections used in the notebook
+        df_institution_coauths["REGIÃO"] = df_institution_coauths["REGIÃO"].fillna("OUTROS")
+        # apply manual region corrections using provided dict `institution_region_map` (parameter)
+        if institution_region_map is not None:
+            if not isinstance(institution_region_map, dict):
+                raise TypeError("institution_region_map must be a dict mapping institution (str) -> region (str)")
+            for inst, region in institution_region_map.items():
+                df_institution_coauths.loc[df_institution_coauths["institution"] == inst, "REGIÃO"] = region
+
+        # create stable iid (string index) based on sorted unique institutions
+        unique_institutions = sorted(df_institution_coauths["institution"].unique().tolist())
+        df_institution_coauths["iid"] = df_institution_coauths["institution"].apply(lambda x: str(unique_institutions.index(x)))
+
+        # keep original ordering by count descending
+        df_institution_coauths = df_institution_coauths.sort_values(by="count", ascending=False).reset_index(drop=True)
+
+        return df_institution_coauths
+    
+    def frame_weighted_degrees(self, df_adjacency: pd.DataFrame) -> pd.DataFrame:
+        """
+        Convert an adjacency matrix (coauthorship counts) into a weighted edge dataframe.
+        Returns a DataFrame with columns: u, v, count, distance (distance = 1.0 / count).
+        Self-contained so the resulting dataframe can be passed to frame_betweenness.
+        """
+        if df_adjacency is None or df_adjacency.size == 0:
+            return pd.DataFrame(columns=["u", "v", "count", "distance"])
+
+        # Ensure a copy and stack to get edge list
+        adj = df_adjacency.copy()
+        edges = adj.stack().reset_index()
+        edges.columns = ["u", "v", "count"]
+
+        # keep only positive coauthorship counts
+        edges = edges[edges["count"] > 0].reset_index(drop=True)
+        if edges.empty:
+            return pd.DataFrame(columns=["u", "v", "count", "distance"])
+
+        # create unordered pair key to remove duplicate (u,v) and (v,u) entries
+        edges["pair"] = edges.apply(lambda r: tuple(sorted((r["u"], r["v"]))), axis=1)
+        edges = edges.drop_duplicates(subset=["pair"]).drop(columns=["pair"]).reset_index(drop=True)
+
+        # compute distance as inverse of count (guard against zero)
+        edges["distance"] = edges["count"].apply(lambda c: 1.0 / c if c and c > 0 else float("inf"))
+
+        # rename columns to be explicit
+        edges = edges.rename(columns={"count": "weight_count", "distance": "weight_distance"})
+        # final columns: u, v, weight_count, weight_distance
+        return edges[["u", "v", "weight_count", "weight_distance"]]
+
+    def frame_betweenness(self, df_weighted_edges: pd.DataFrame, df_production: pd.DataFrame) -> pd.DataFrame:
+        """
+        Build a graph from the weighted edge dataframe produced by frame_weighted_degrees
+        and compute betweenness centrality using the edge distance (weight_distance).
+        Merges researcher names from df_production when available.
+        """
+        # empty guard
+        if df_weighted_edges is None or df_weighted_edges.shape[0] == 0:
+            return pd.DataFrame(columns=["node", "betweenness", "name"])
+
+        # build graph and add edges with distance as 'weight' attribute used by networkx shortest path
+        G = nx.Graph()
+        for _, row in df_weighted_edges.iterrows():
+            u = row["u"]
+            v = row["v"]
+            dist = row.get("weight_distance", None)
+            # fallback: if distance missing but count present, compute inverse
+            if dist is None:
+                cnt = row.get("weight_count", None)
+                dist = 1.0 / cnt if cnt and cnt > 0 else float("inf")
+            G.add_edge(u, v, weight=float(dist))
+
+        # compute betweenness centrality using 'weight' (interpreted as distance)
+        betweenness_data = nx.betweenness_centrality(G, normalized=True, weight="weight")
+
+        df_betweenness = pd.DataFrame({
+            "node": list(betweenness_data.keys()),
+            "betweenness": list(betweenness_data.values())
+        })
+
+        # merge researcher names if available in df_production (expects columns 'nid' and 'name')
+        if df_production is not None and {"nid", "name"}.issubset(df_production.columns):
+            df_betweenness = (
+                df_betweenness
+                .merge(df_production[["nid", "name"]].drop_duplicates(), left_on="node", right_on="nid", how="left")
+                .drop(columns=["nid"])
+            )
+        else:
+            df_betweenness["name"] = None
+
+        df_betweenness = df_betweenness.sort_values(by="betweenness", ascending=False).reset_index(drop=True)
+        return df_betweenness
+
     def frame_coauthorship_network(self, df: pd.DataFrame, researcher_aliases: Dict[str, str]) -> pd.DataFrame:
         df_coauthorship_network = df[df["name"].isin(set(researcher_aliases.keys()))]
         df_coauthorship_network = df_coauthorship_network[["name", "authors"]]
