@@ -23,10 +23,18 @@ from networkx.algorithms.community import (
 )
 from networkx.algorithms.community.quality import partition_quality
 
+try:
+    import igraph as ig
+    import leidenalg as la
+except ImportError:
+    ig = None
+    la = None
+
 
 DEFAULT_METHODS = (
     "greedy_modularity",
     "louvain",
+    "leiden",
     "label_propagation",
     "girvan_newman",
 )
@@ -92,6 +100,59 @@ def _girvan_newman_partition(
     return _normalize_partition(best_partition)
 
 
+def _leiden_partition(
+    graph: nx.Graph,
+    weight: str | None,
+    resolution: float,
+    seed: int,
+) -> list[set[Any]]:
+    if graph.number_of_edges() == 0:
+        return _normalize_partition([{node} for node in graph.nodes()])
+
+    if ig is None or la is None:
+        raise ImportError(
+            "Leiden requires optional dependencies. Install with: "
+            "pip install igraph leidenalg"
+        )
+
+    node_list = list(graph.nodes())
+    node_to_index = {node: index for index, node in enumerate(node_list)}
+
+    ig_graph = ig.Graph(n=len(node_list), directed=False)
+    edges_index: list[tuple[int, int]] = []
+    weights: list[float] = []
+
+    for source, target, data in graph.edges(data=True):
+        edges_index.append((node_to_index[source], node_to_index[target]))
+        edge_weight = 1.0 if weight is None else float(data.get(weight, 1.0))
+        weights.append(edge_weight)
+
+    if len(edges_index) > 0:
+        ig_graph.add_edges(edges_index)
+
+    partition_kwargs: Dict[str, Any] = {
+        "weights": weights if weight is not None else None,
+        "resolution_parameter": resolution,
+    }
+
+    try:
+        partition = la.find_partition(
+            ig_graph,
+            la.RBConfigurationVertexPartition,
+            seed=seed,
+            **partition_kwargs,
+        )
+    except TypeError:
+        # Compatibility for leidenalg versions without explicit seed support.
+        partition = la.find_partition(
+            ig_graph,
+            la.RBConfigurationVertexPartition,
+            **partition_kwargs,
+        )
+
+    return _normalize_partition([{node_list[index] for index in community} for community in partition])
+
+
 def detect_communities(
     graph: nx.Graph,
     method: str = "greedy_modularity",
@@ -108,15 +169,15 @@ def detect_communities(
     graph:
         Input graph.
     method:
-        One of ``greedy_modularity``, ``louvain``, ``label_propagation``,
-        ``girvan_newman``. Some aliases are accepted (e.g. ``greedy``,
+        One of ``greedy_modularity``, ``louvain``, ``leiden``,
+        ``label_propagation``, ``girvan_newman``. Some aliases are accepted (e.g. ``greedy``,
         ``girvan``).
     weight:
         Edge attribute name used as weight. Use ``None`` for unweighted mode.
     resolution:
-        Resolution parameter for ``greedy_modularity`` and ``louvain``.
+        Resolution parameter for ``greedy_modularity``, ``louvain`` and ``leiden``.
     seed:
-        Random seed for stochastic methods (``louvain``, ``label_propagation``).
+        Random seed for stochastic methods (``louvain``, ``leiden``, ``label_propagation``).
     target_communities:
         Only used by ``girvan_newman``. Target number of communities.
     max_levels:
@@ -134,6 +195,7 @@ def detect_communities(
     aliases = {
         "greedy": "greedy_modularity",
         "cnm": "greedy_modularity",
+        "leidenalg": "leiden",
         "asyn_lpa": "label_propagation",
         "labelpropagation": "label_propagation",
         "girvan": "girvan_newman",
@@ -156,6 +218,14 @@ def detect_communities(
             seed=seed,
         )
         return _normalize_partition(communities)
+
+    if method == "leiden":
+        return _leiden_partition(
+            graph=graph,
+            weight=weight,
+            resolution=resolution,
+            seed=seed,
+        )
 
     if method == "label_propagation":
         communities = asyn_lpa_communities(
@@ -279,6 +349,7 @@ def compare_community_algorithms(
 
             {
                 "louvain": {"resolution": 1.0, "seed": 42},
+                "leiden": {"resolution": 1.0, "seed": 42},
                 "girvan_newman": {"target_communities": 4, "max_levels": 25},
             }
 
