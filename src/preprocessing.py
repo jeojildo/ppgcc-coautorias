@@ -123,7 +123,6 @@ class Preprocesser:
                 data_productions["issn"].append(producao.issn)
 
         df_productions = pd.DataFrame(data_productions)
-        df_productions = df_productions.reset_index(names="production_id")
         return df_productions
 
     def frame_productions_all_institutions(self, institution_registry: InstitutionRegistry) -> pd.DataFrame:
@@ -134,7 +133,6 @@ class Preprocesser:
             df_institutions.append(df_institution)
 
         df_all = pd.concat(df_institutions, ignore_index=True)
-        df_all["production_id"] = df_all.index
 
         df_all["year"] = df_all["year"].map(lambda x: int(x) if str(x).isnumeric() else None)
         df_all = df_all.astype({"year": "Int64"})

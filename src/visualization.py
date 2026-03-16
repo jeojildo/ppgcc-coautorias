@@ -1,3 +1,4 @@
+from importlib.metadata import distribution
 import os
 from pathlib import Path
 from typing import Tuple, Callable, Dict
@@ -26,6 +27,41 @@ class Visualizer(Preprocesser):
     def __init__(self, data_dir: str, metadata_file: str, step_directory: str) -> None:
         super().__init__(data_dir, metadata_file, step_directory)
         self.figure_directory = Path(self.data_dir, self.step_directory)
+
+    def flatten_adjacency_matrix(self, df_adjacency: pd.DataFrame, zeros: bool = False) -> list:
+
+        adjacency_array = df_adjacency.to_numpy()
+        superior_triangle = adjacency_array[np.triu_indices(df_adjacency.shape[0], k=1)]
+
+        if not zeros:
+            superior_triangle = superior_triangle[superior_triangle > 0]
+
+        return superior_triangle
+
+    def remove_outliers(self, distribution: np.array, weight: float = 1.5) -> np.array:
+        q1 = np.percentile(distribution, 25)
+        q3 = np.percentile(distribution, 75)
+        iqr = q3 - q1
+        lower_bound = q1 - weight * iqr
+        upper_bound = q3 + weight * iqr
+        return distribution[(distribution >= lower_bound) & (distribution <= upper_bound)]
+    
+    def plot_violin(self, distribution: np.array, ylabel: str = "Frequency", filename: str = None, color: str = "skyblue", figsize: tuple = (10, 6)) -> Tuple[plt.Figure, plt.Axes]:
+        fig, ax = plt.subplots(figsize=figsize)
+        sns.violinplot(data=distribution, inner="quartile", color=color, ax=ax)
+        ax.set_xlabel("")
+        ax.set_xticks([])
+        ax.set_ylabel(ylabel)
+        ax.set_ylim(max(min(distribution) - 1, 0), max(distribution) + 1)
+
+        plt.tight_layout()
+
+        if filename:
+            plt.savefig(Path(self.figure_directory, f"{filename}.png"), dpi=300, bbox_inches='tight')
+            plt.savefig(Path(self.figure_directory, f"{filename}.pdf"), dpi=300, bbox_inches='tight')
+            plt.savefig(Path(self.figure_directory, f"{filename}.svg"), dpi=300, bbox_inches='tight')
+
+        return fig, ax
 
     def frame_yearly_publications(self, df: pd.DataFrame, start_year: int = None, end_year: int = None, institution: str = None) -> pd.DataFrame:
         if start_year is None:
@@ -443,8 +479,13 @@ class Visualizer(Preprocesser):
         df_coauthorship_network = df_coauthorship_network[df_coauthorship_network["n_coauthorships"] > 1]
 
         return df_coauthorship_network
-    
-    def plot_coauthorship_network(self, df: pd.DataFrame, figsize: tuple = (10, 10), filename: str = "coauthorship_network") -> plt.Figure:
+
+    def plot_coauthorship_network(self, df: pd.DataFrame, figsize: tuple = (10, 10), filename: str = "coauthorship_network", community_method: str = "greedy_modularity", community_kwargs: dict = None) -> plt.Figure:
+        from src.community_detection import detect_communities
+        
+        if community_kwargs is None:
+            community_kwargs = {}
+        
         G = nx.from_pandas_edgelist(
             df,
             source="source",
@@ -455,7 +496,7 @@ class Visualizer(Preprocesser):
         weights = [d["n_coauthorships"] for _, _, d in G.edges(data=True)]
         edge_widths = [np.log1p(w) for w in weights]
 
-        communities = list(greedy_modularity_communities(G))
+        communities = detect_communities(G, method=community_method, weight="n_coauthorships", **community_kwargs)
         communities = sorted(communities, key=lambda c: (-len(c), sorted(c)[0]))
 
         node_to_comm = {}
