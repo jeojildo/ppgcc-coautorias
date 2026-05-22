@@ -1,0 +1,1086 @@
+from importlib.metadata import distribution
+import os
+from pathlib import Path
+from typing import Tuple, Callable, Dict
+import string
+from itertools import combinations
+from collections import Counter
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+import plotly.graph_objects as go
+
+import networkx as nx
+from networkx.algorithms.community import greedy_modularity_communities
+from networkx.drawing.layout import rescale_layout
+
+import holoviews as hv
+from bokeh.io.export import export_png, export_svgs
+
+from scipy import stats
+
+from coauths.preprocessing import Preprocesser
+from coauths.utils import fmt_k, get_colors, combine_rgb, hex2rgb
+
+class Visualizer(Preprocesser):
+    def __init__(self, data_dir: str, metadata_file: str, step_directory: str) -> None:
+        super().__init__(data_dir, metadata_file, step_directory)
+        self.figure_directory = Path(self.data_dir, self.step_directory)
+
+    def _save_figure(self, fig, filename: str) -> None:
+        fig.savefig(Path(self.figure_directory, f"{filename}.png"), dpi=300, bbox_inches="tight")
+        fig.savefig(Path(self.figure_directory, f"{filename}.pdf"), dpi=300, bbox_inches="tight")
+        fig.savefig(Path(self.figure_directory, f"{filename}.svg"), dpi=300, bbox_inches="tight")
+
+    def flatten_adjacency_matrix(self, df_adjacency: pd.DataFrame, zeros: bool = False) -> list:
+
+        adjacency_array = df_adjacency.to_numpy()
+        superior_triangle = adjacency_array[np.triu_indices(df_adjacency.shape[0], k=1)]
+
+        if not zeros:
+            superior_triangle = superior_triangle[superior_triangle > 0]
+
+        return superior_triangle
+
+    def remove_outliers(self, distribution: np.array, weight: float = 1.5) -> np.array:
+        q1 = np.percentile(distribution, 25)
+        q3 = np.percentile(distribution, 75)
+        iqr = q3 - q1
+        lower_bound = q1 - weight * iqr
+        upper_bound = q3 + weight * iqr
+        return distribution[(distribution >= lower_bound) & (distribution <= upper_bound)]
+
+    def plot_violin(self, distribution: np.array, ylabel: str = "Frequency", filename: str = None, color: str = "skyblue", figsize: tuple = (10, 6)) -> Tuple[plt.Figure, plt.Axes]:
+        fig, ax = plt.subplots(figsize=figsize)
+        sns.violinplot(data=distribution, inner="quartile", color=color, ax=ax)
+        ax.set_xlabel("")
+        ax.set_xticks([])
+        ax.set_ylabel(ylabel)
+        ax.set_ylim(max(min(distribution) - 1, 0), max(distribution) + 1)
+
+        plt.tight_layout()
+
+        if filename:
+            plt.savefig(Path(self.figure_directory, f"{filename}.png"), dpi=300, bbox_inches='tight')
+            plt.savefig(Path(self.figure_directory, f"{filename}.pdf"), dpi=300, bbox_inches='tight')
+            plt.savefig(Path(self.figure_directory, f"{filename}.svg"), dpi=300, bbox_inches='tight')
+
+        return fig, ax
+
+    def frame_yearly_publications(self, df: pd.DataFrame, start_year: int = None, end_year: int = None, institution: str = None) -> pd.DataFrame:
+        if start_year is None:
+            start_year = df["year"].min()
+        if end_year is None:
+            end_year = df["year"].max()
+
+        df_yearly_publications = df.copy()
+        df_yearly_publications = df_yearly_publications[(df_yearly_publications["year"] >= start_year) & (df_yearly_publications["year"] <= end_year)]
+        df_yearly_publications = df_yearly_publications[df_yearly_publications["institution"] == institution] if institution else df_yearly_publications
+        df_yearly_publications = df_yearly_publications[["year", "type"]]
+        df_yearly_publications = df_yearly_publications[df_yearly_publications["type"].isin(["CONFERENCIA", "PERIODICO"])]
+        df_yearly_publications = df_yearly_publications.groupby(["year", "type"]).size().reset_index(name="count")
+        df_yearly_publications = df_yearly_publications.pivot(index="year", columns="type", values="count")
+
+        return df_yearly_publications
+
+    def plot_yearly_publications(self, df_yearly: pd.DataFrame, figsize: tuple = (8, 5), filename: str = "yearly_publications", offset_ratio: float = 0.02) -> Tuple[plt.Figure, plt.Axes]:
+        fig_yearly_publications, ax_yearly_publications = plt.subplots(figsize=figsize)
+        df_yearly.plot(kind="line", ax=ax_yearly_publications, color=["lightcoral", "skyblue"], marker='o', linewidth=2, markersize=8)
+
+        ax_yearly_publications.set_xlabel("Ano", fontsize=12)
+        ax_yearly_publications.set_ylabel("Total de publicações", fontsize=12)
+        ax_yearly_publications.legend(title="Tipo de publicação", labels=["Conferência", "Periódico"], fontsize=12, title_fontsize=12)
+
+        ymin, ymax = ax_yearly_publications.get_ylim()
+        offset = offset_ratio * (ymax - ymin)
+
+        for line in ax_yearly_publications.get_lines():
+            label = line.get_label()
+            for x, y in zip(line.get_xdata(), line.get_ydata()):
+                if label == "CONFERENCIA":
+                    ax_yearly_publications.text(x, y+offset, f"{y}", fontsize=12, ha='center', va='bottom')
+                elif label == "PERIODICO":
+                    ax_yearly_publications.text(x, y-offset, f"{y}", fontsize=12, ha='center', va='top')
+
+        ax_yearly_publications.yaxis.grid(linestyle='--', which='major', color='grey', alpha=.25)
+        ax_yearly_publications.xaxis.grid(linestyle='--', which='major', color='grey', alpha=.25)
+
+        ax_yearly_publications.set_xticks(df_yearly.index)
+        ax_yearly_publications.set_xticklabels(df_yearly.index, rotation=0, fontsize=12)
+        ax_yearly_publications.set_yticklabels(ax_yearly_publications.get_yticks().astype(int), fontsize=12)
+
+        plt.tight_layout()
+
+        plt.savefig(Path(self.figure_directory, f"{filename}.png"), dpi=300, bbox_inches='tight')
+        plt.savefig(Path(self.figure_directory, f"{filename}.svg"), format='svg', bbox_inches='tight')
+        plt.savefig(Path(self.figure_directory, f"{filename}.pdf"), format='pdf', bbox_inches='tight')
+
+        return fig_yearly_publications, ax_yearly_publications
+
+    def frame_coauthorships_institution(self, df: pd.DataFrame, institution: str) -> pd.DataFrame:
+        df_coauthorships_institution = df.copy()
+        df_coauthorships_institution = df_coauthorships_institution[df_coauthorships_institution["institution"] == institution]
+        df_coauthorships_institution = df_coauthorships_institution[["name", "authors"]]
+        df_coauthorships_institution["coauthors"] = df_coauthorships_institution.apply(lambda row: [author for author in row["authors"] if author != row["name"]], axis=1)
+        df_coauthorships_institution = df_coauthorships_institution[["name", "coauthors"]]
+        df_coauthorships_institution = df_coauthorships_institution.explode("coauthors")
+        df_coauthorships_institution = df_coauthorships_institution.drop_duplicates(subset=["name", "coauthors"])
+        df_coauthorships_institution = df_coauthorships_institution.groupby(by="name").size().reset_index(name="n_coauthorships")
+        df_coauthorships_institution = df_coauthorships_institution.sort_values(by="n_coauthorships", ascending=False)
+
+        return df_coauthorships_institution
+
+    def plot_coauthorships_institution(self, df: pd.DataFrame, figsize: tuple = (8, 5), filename: str = "coauthorships_institution") -> Tuple[plt.Figure, plt.Axes]:
+        fig_coauthorships_institution, ax_coauthorships_institution = plt.subplots(figsize=figsize)
+
+        sns.barplot(data=df, x="n_coauthorships", y="name", ax=ax_coauthorships_institution, palette="viridis")
+
+        for index, value in enumerate(df["n_coauthorships"]):
+            ax_coauthorships_institution.text(value + 1, index, str(value), color='black', va='center')
+
+        ax_coauthorships_institution.set_xlabel("Número de coautorias")
+        ax_coauthorships_institution.set_ylabel("Professor")
+
+        plt.tight_layout()
+
+        plt.savefig(Path(self.figure_directory, f"{filename}.png"), dpi=300, bbox_inches='tight')
+        plt.savefig(Path(self.figure_directory, f"{filename}.svg"), format='svg', bbox_inches='tight')
+        plt.savefig(Path(self.figure_directory, f"{filename}.pdf"), format='pdf', bbox_inches='tight')
+
+        return fig_coauthorships_institution, ax_coauthorships_institution
+
+    def publications_by_researcher(self, df: pd.DataFrame, institution: str) -> pd.DataFrame:
+        df_publications_by_researcher = df[["name", "type"]]
+        df_publications_by_researcher = df_publications_by_researcher[df["institution"] == institution]
+        df_publications_by_researcher = df_publications_by_researcher[df_publications_by_researcher["type"].isin(["CONFERENCIA", "PERIODICO"])]
+        df_publications_by_researcher = df_publications_by_researcher.groupby(["name", "type"]).size().reset_index(name="count")
+        df_publications_by_researcher = df_publications_by_researcher.pivot(index="name", columns="type", values="count").fillna(0)
+        df_publications_by_researcher["total"] = df_publications_by_researcher.sum(axis=1)
+        df_publications_by_researcher = df_publications_by_researcher.sort_values(by=["total", "PERIODICO", "CONFERENCIA"], ascending=False).reset_index()
+
+        return df_publications_by_researcher
+
+    def plot_publications_by_researcher(self, df: pd.DataFrame, figsize: tuple = (10, 6), filename: str = "publications_by_researcher") -> Tuple[plt.Figure, plt.Axes]:
+        df = df.sort_values("total", ascending=True)
+
+        y = range(len(df))
+        conf = df["CONFERENCIA"].to_numpy()
+        peri = df["PERIODICO"].to_numpy()
+        labels = df["name"].tolist()
+        totals = (conf + peri)
+
+        fig_publications_by_researcher, ax_publications_by_researcher = plt.subplots(figsize=figsize)
+
+        bars_conferences = ax_publications_by_researcher.barh(y, conf, color="lightcoral", label="Conferência")
+        bars_periodicals = ax_publications_by_researcher.barh(y, peri, left=conf, color="skyblue", label="Periódico")
+
+        ax_publications_by_researcher.set_yticks(y)
+        ax_publications_by_researcher.set_yticklabels(labels)
+
+        ax_publications_by_researcher.set_xlabel("Número de publicações")
+        ax_publications_by_researcher.set_ylabel("Professor")
+        ax_publications_by_researcher.legend(title="Tipo de publicação")
+
+
+        ax_publications_by_researcher.xaxis.grid(linestyle='--', which='major', color='grey', alpha=.25)
+        ax_publications_by_researcher.yaxis.grid(False)
+
+
+        for i, (c, p, t) in enumerate(zip(conf, peri, totals)):
+            if c > 0:
+                ax_publications_by_researcher.text(c / 2, i, f"{int(c)}", fontsize=7, ha='center', va='center')
+            if p > 0:
+                ax_publications_by_researcher.text(c + p / 2, i, f"{int(p)}", fontsize=7, ha='center', va='center')
+            ax_publications_by_researcher.text(t + max(totals) * 0.01 + 1, i, f"{int(t)}", fontsize=7, ha='left', va='center')
+
+        plt.tight_layout()
+
+        plt.savefig(Path(self.figure_directory, f"{filename}.png"), dpi=300, bbox_inches='tight')
+        plt.savefig(Path(self.figure_directory, f"{filename}.svg"), format='svg', bbox_inches='tight')
+        plt.savefig(Path(self.figure_directory, f"{filename}.pdf"), format='pdf', bbox_inches='tight')
+
+        return fig_publications_by_researcher, ax_publications_by_researcher
+
+    def frame_coauthorship_adjacency_matrix(
+            self, df: pd.DataFrame, start_year: int = None, end_year: int = None,
+            type: str = None, institution: str = None, remove_isolated: bool = False
+            ) -> pd.DataFrame:
+
+        if start_year is not None and end_year is not None:
+            if start_year == end_year:
+                df_filtered = df[df["year"] == start_year].copy()
+        else:
+            if start_year is None:
+                start_year = df["year"].min()
+            if end_year is None:
+                end_year = df["year"].max()
+
+        nunique = df["nid"].nunique()
+
+        nids = np.sort(df["nid"].unique())
+
+        unique_names = sorted(list(df["name"].unique()))
+
+        data_adjacency = np.zeros(shape=(nunique, nunique), dtype=np.uint32)
+
+        df_filtered = df[(df["year"] >= start_year) & (df["year"] <= end_year)].copy()
+
+        if type is not None:
+            df_filtered = df_filtered[df_filtered["type"] == type]
+
+        if institution is not None:
+            df_filtered = df_filtered[df_filtered["institution"] == institution]
+
+        for _, row in df_filtered.iterrows():
+            if row["authors"] in unique_names and row["authors"] != row["name"]:
+                i = row["nid"]
+                j = row["aid"]
+
+                try:
+                    data_adjacency[i][j] += 1
+                    data_adjacency[j][i] += 1
+                except IndexError:
+                    continue
+
+        df_adjacency = pd.DataFrame(data_adjacency, columns=nids, index=nids)
+
+        if remove_isolated:
+            df_adjacency = df_adjacency[df_adjacency.sum() > 0]
+            df_adjacency = df_adjacency[df_adjacency.index]
+
+        return df_adjacency
+
+    def plot_coauthorship(self, df_adjacency: pd.DataFrame, figsize: tuple = (10, 10), size_weight: int = 10, directory: str = "", filename: str = None):
+        G = nx.from_pandas_adjacency(df_adjacency)
+
+        fig, axs = plt.subplots(figsize=figsize)
+
+        pos = nx.spring_layout(G, seed=42)
+
+        degrees = dict(G.degree())
+
+        nx.draw_networkx_nodes(G, pos, node_size=[v * size_weight for v in degrees.values()], node_color="skyblue", edgecolors="black", alpha=0.7)
+        nx.draw_networkx_edges(G, pos, width=1.0, alpha=0.5)
+
+        plt.axis("off")
+
+        os.makedirs(Path(self.figure_directory, directory), exist_ok=True)
+
+        if filename:
+            plt.savefig(Path(self.figure_directory, directory, f"{filename}.png"), dpi=300, bbox_inches='tight')
+            plt.savefig(Path(self.figure_directory, directory, f"{filename}.svg"), format='svg', bbox_inches='tight')
+            plt.savefig(Path(self.figure_directory, directory, f"{filename}.pdf"), format='pdf', bbox_inches='tight')
+
+        plt.close()
+
+        return fig, axs
+
+    @staticmethod
+    def frame_institution_coauths(df_adjacency: pd.DataFrame, df_productions: pd.DataFrame, df_ppgcc: pd.DataFrame, institution_region_map: dict) -> pd.DataFrame:
+        df_researchers_coauth_sums = df_adjacency.sum(axis=0).sort_values(ascending=False).reset_index()
+        df_researchers_coauth_sums.columns = ["nid", "count"]
+
+        df_institution_coauths = df_researchers_coauth_sums.merge(df_productions[["nid", "institution"]].drop_duplicates(), on="nid", how="left")
+
+        df_institution_coauths = df_institution_coauths.drop(columns=["nid"])
+        df_institution_coauths = (
+            df_institution_coauths
+            .groupby("institution")["count"]
+            .sum()
+            .reset_index()
+            .sort_values(by="count", ascending=False)
+        )
+
+        total = df_institution_coauths["count"].sum()
+        if total > 0:
+            df_institution_coauths["percentage"] = df_institution_coauths["count"] / total * 100
+        else:
+            df_institution_coauths["percentage"] = 0.0
+        df_institution_coauths["cumulative_percentage"] = df_institution_coauths["percentage"].cumsum()
+
+        if "UNI. SIGLA" in df_ppgcc.columns and "REGIÃO" in df_ppgcc.columns:
+            df_institution_coauths = df_institution_coauths.merge(
+                df_ppgcc[["UNI. SIGLA", "REGIÃO"]],
+                left_on="institution",
+                right_on="UNI. SIGLA",
+                how="left"
+            )
+            df_institution_coauths = df_institution_coauths.drop(columns=["UNI. SIGLA"])
+        else:
+            df_institution_coauths["REGIÃO"] = None
+
+        df_institution_coauths["REGIÃO"] = df_institution_coauths["REGIÃO"].fillna("OUTROS")
+        if institution_region_map is not None:
+            if not isinstance(institution_region_map, dict):
+                raise TypeError("institution_region_map must be a dict mapping institution (str) -> region (str)")
+            for inst, region in institution_region_map.items():
+                df_institution_coauths.loc[df_institution_coauths["institution"] == inst, "REGIÃO"] = region
+
+        unique_institutions = sorted(df_institution_coauths["institution"].unique().tolist())
+        df_institution_coauths["iid"] = df_institution_coauths["institution"].apply(lambda x: str(unique_institutions.index(x)))
+
+        df_institution_coauths = df_institution_coauths.sort_values(by="count", ascending=False).reset_index(drop=True)
+
+        return df_institution_coauths
+
+    def frame_weighted_degrees(self, df_adjacency: pd.DataFrame) -> pd.DataFrame:
+        if df_adjacency is None or df_adjacency.size == 0:
+            return pd.DataFrame(columns=["u", "v", "count", "distance"])
+
+        adj = df_adjacency.copy()
+        edges = adj.stack().reset_index()
+        edges.columns = ["u", "v", "count"]
+
+        edges = edges[edges["count"] > 0].reset_index(drop=True)
+        if edges.empty:
+            return pd.DataFrame(columns=["u", "v", "count", "distance"])
+
+        edges["pair"] = edges.apply(lambda r: tuple(sorted((r["u"], r["v"]))), axis=1)
+        edges = edges.drop_duplicates(subset=["pair"]).drop(columns=["pair"]).reset_index(drop=True)
+
+        edges["distance"] = edges["count"].apply(lambda c: 1.0 / c if c and c > 0 else float("inf"))
+
+        edges = edges.rename(columns={"count": "weight_count", "distance": "weight_distance"})
+        return edges[["u", "v", "weight_count", "weight_distance"]]
+
+    def frame_betweenness(self, df_weighted_edges: pd.DataFrame, df_production: pd.DataFrame) -> pd.DataFrame:
+        if df_weighted_edges is None or df_weighted_edges.shape[0] == 0:
+            return pd.DataFrame(columns=["node", "betweenness", "name"])
+
+        G = nx.Graph()
+        for _, row in df_weighted_edges.iterrows():
+            u = row["u"]
+            v = row["v"]
+            dist = row.get("weight_distance", None)
+            if dist is None:
+                cnt = row.get("weight_count", None)
+                dist = 1.0 / cnt if cnt and cnt > 0 else float("inf")
+            G.add_edge(u, v, weight=float(dist))
+
+        betweenness_data = nx.betweenness_centrality(G, normalized=True, weight="weight")
+
+        df_betweenness = pd.DataFrame({
+            "node": list(betweenness_data.keys()),
+            "betweenness": list(betweenness_data.values())
+        })
+
+        if df_production is not None and {"nid", "name"}.issubset(df_production.columns):
+            df_betweenness = (
+                df_betweenness
+                .merge(df_production[["nid", "name"]].drop_duplicates(), left_on="node", right_on="nid", how="left")
+                .drop(columns=["nid"])
+            )
+        else:
+            df_betweenness["name"] = None
+
+        df_betweenness = df_betweenness.sort_values(by="betweenness", ascending=False).reset_index(drop=True)
+        return df_betweenness
+
+    def frame_coauthorship_network(self, df: pd.DataFrame, researcher_aliases: Dict[str, str]) -> pd.DataFrame:
+        df_coauthorship_network = df[df["name"].isin(set(researcher_aliases.keys()))]
+        df_coauthorship_network = df_coauthorship_network[["name", "authors"]]
+        df_coauthorship_network = df_coauthorship_network.explode("authors")
+        df_coauthorship_network = df_coauthorship_network[df_coauthorship_network["name"] != df_coauthorship_network["authors"]]
+        df_coauthorship_network = df_coauthorship_network[df_coauthorship_network["authors"].isin(set(researcher_aliases.keys()))]
+        df_coauthorship_network = df_coauthorship_network.map(lambda x: researcher_aliases[x] if x in researcher_aliases else x)
+        df_coauthorship_network = df_coauthorship_network.groupby(by=["name", "authors"]).size().reset_index(name="n_coauthorships")
+        df_coauthorship_network.columns = ["source", "target", "n_coauthorships"]
+        df_coauthorship_network = df_coauthorship_network[df_coauthorship_network["n_coauthorships"] > 1]
+
+        return df_coauthorship_network
+
+    def plot_coauthorship_network(self, df: pd.DataFrame, figsize: tuple = (10, 10), filename: str = "coauthorship_network", community_method: str = "greedy_modularity", community_kwargs: dict = None) -> plt.Figure:
+        from coauths.community_detection import detect_communities
+
+        if community_kwargs is None:
+            community_kwargs = {}
+
+        G = nx.from_pandas_edgelist(
+            df,
+            source="source",
+            target="target",
+            edge_attr="n_coauthorships"
+        )
+
+        weights = [d["n_coauthorships"] for _, _, d in G.edges(data=True)]
+        edge_widths = [np.log1p(w) for w in weights]
+
+        communities = detect_communities(G, method=community_method, weight="n_coauthorships", **community_kwargs)
+        communities = sorted(communities, key=lambda c: (-len(c), sorted(c)[0]))
+
+        node_to_comm = {}
+        for idx, comm in enumerate(communities):
+            for n in comm:
+                node_to_comm[n] = idx
+
+        n_comms = len(communities)
+        palette = sns.color_palette("pastel", n_comms)
+        node_colors = [palette[node_to_comm[n]] for n in G.nodes]
+
+        CG = nx.Graph()
+        CG.add_nodes_from(range(n_comms))
+        for u, v, d in G.edges(data=True):
+            cu = node_to_comm[u]
+            cv = node_to_comm[v]
+            if cu != cv:
+                w = d.get("n_coauthorships", 1)
+                if CG.has_edge(cu, cv):
+                    CG[cu][cv]["weight"] += w
+                else:
+                    CG.add_edge(cu, cv, weight=w)
+
+        pos_comm = nx.kamada_kawai_layout(CG, weight="weight") if CG.number_of_edges() > 0 else {
+            i: (np.cos(2*np.pi*i/n_comms), np.sin(2*np.pi*i/n_comms)) for i in range(n_comms)
+        }
+
+        pos = {}
+        max_size = max(len(c) for c in communities) if communities else 1
+        for ci, comm in enumerate(communities):
+            subG = G.subgraph(comm).copy()
+            sub_pos = nx.spring_layout(subG, k=1)
+            sub_pos = {n: np.array(p) for n, p in sub_pos.items()}
+            arr = np.array(list(sub_pos.values()))
+            arr = rescale_layout(arr, scale=1.0)
+            scale = 0.25 + 0.15*(len(subG)/max_size)
+            center = np.array(pos_comm[ci])
+            for (n, _), p in zip(sub_pos.items(), arr):
+                pos[n] = center + p*scale
+
+        fig_coauthorship_network = plt.figure(figsize=figsize)
+
+        nx.draw_networkx_nodes(
+            G, pos,
+            node_size=200,
+            node_color=node_colors
+        )
+
+        nx.draw_networkx_edges(
+            G, pos,
+            width=edge_widths,
+            edge_color="gray",
+            alpha=0.6
+        )
+
+        nx.draw_networkx_labels(
+            G, pos,
+            font_size=9,
+        )
+
+        edge_labels = nx.get_edge_attributes(G, "n_coauthorships")
+        nx.draw_networkx_edge_labels(
+            G, pos,
+            edge_labels=edge_labels,
+            font_size=8,
+            bbox=dict(boxstyle="round,pad=0.2", fc="white", ec="white", alpha=0.3)
+        )
+
+        plt.axis("off")
+        plt.tight_layout()
+        plt.savefig(Path(self.figure_directory, f"{filename}.png"), dpi=300, bbox_inches='tight')
+        plt.savefig(Path(self.figure_directory, f"{filename}.svg"), format='svg', bbox_inches='tight')
+        plt.savefig(Path(self.figure_directory, f"{filename}.pdf"), format='pdf', bbox_inches='tight')
+
+        return fig_coauthorship_network
+
+    def frame_institution_network(self, df: pd.DataFrame, start_year: int, end_year: int, min_coauthorships: int) -> pd.DataFrame:
+        df_authors_institution = df.copy()
+        df_authors_institution = df_authors_institution[["name", "production_id", "institution", "authors", "year"]]
+        df_authors_institution = df_authors_institution[(df_authors_institution["year"] >= start_year) & (df_authors_institution["year"] <= end_year)]
+        df_authors_institution = df_authors_institution.drop(columns=["year"])
+        df_authors_institution = df_authors_institution.groupby(["production_id", "name", "institution"]).agg(list).reset_index()
+
+        author_to_institution = {row["name"]: row["institution"] for i, row in df_authors_institution[["name", "institution"]].drop_duplicates().iterrows()}
+
+        df_authors_institution["authors_institution"] = df_authors_institution["authors"].apply(
+            lambda authors: [author_to_institution[author] for author in authors if author in author_to_institution]
+        )
+
+        df_authors_institution = df_authors_institution[df_authors_institution["authors_institution"].apply(len) > 1]
+        df_authors_institution["has_all_authors_institution"] = df_authors_institution.apply(lambda row: len(row["authors_institution"]) == len(row["authors"]), axis=1)
+
+        df_authors_institution = df_authors_institution[df_authors_institution["has_all_authors_institution"]]
+        df_authors_institution = df_authors_institution[["production_id", "authors_institution"]]
+
+        def powerset(iterable, degree):
+            return list(combinations(iterable, degree))
+
+        institution_relations = {}
+
+        for index, row in df_authors_institution.iterrows():
+            institutions = row["authors_institution"]
+            if len(institutions) < 2:
+                continue
+            pairs = powerset(institutions, 2)
+            for pair in pairs:
+                pair = tuple(sorted(pair))
+                if pair in institution_relations:
+                    institution_relations[pair] += 1
+                else:
+                    institution_relations[pair] = 1
+
+        data_institution_relations = {
+            "source": [],
+            "target": [],
+            "n_coauthorships": []
+        }
+
+        for (inst1, inst2), n_coauth in institution_relations.items():
+            data_institution_relations["source"].append(inst1)
+            data_institution_relations["target"].append(inst2)
+            data_institution_relations["n_coauthorships"].append(n_coauth)
+
+        df_institution_relations = pd.DataFrame(data_institution_relations)
+        df_institution_relations = df_institution_relations.sort_values(by="n_coauthorships", ascending=False).reset_index(drop=True)
+
+        df_institution_relations = df_institution_relations[df_institution_relations["source"] != df_institution_relations["target"]]
+        df_institution_relations = df_institution_relations[df_institution_relations["n_coauthorships"] >= min_coauthorships]
+
+        return df_institution_relations
+
+    def plot_institution_network(self, df: pd.DataFrame, figsize: tuple = (10, 10), filename: str = "institution_network") -> plt.Figure:
+        G = nx.from_pandas_edgelist(
+            df,
+            source="source",
+            target="target",
+            edge_attr="n_coauthorships"
+        )
+
+        communities = list(greedy_modularity_communities(G))
+        communities = sorted(communities, key=lambda c: (-len(c), sorted(c)[0]))
+
+        node_to_comm = {}
+        for idx, comm in enumerate(communities):
+            for n in comm:
+                node_to_comm[n] = idx
+
+        n_comms = len(communities)
+        palette = sns.color_palette("pastel", n_comms)
+
+        C = nx.Graph()
+        C.add_nodes_from(range(n_comms))
+        for u, v, d in G.edges(data=True):
+            cu, cv = node_to_comm[u], node_to_comm[v]
+            if cu != cv:
+                w = d.get("n_coauthorships", 1)
+                if C.has_edge(cu, cv):
+                    C[cu][cv]["weight"] += w
+                else:
+                    C.add_edge(cu, cv, weight=w)
+
+        pos_comm = nx.circular_layout(C, scale=5.0)
+
+        pos = {}
+        for c_idx, comm in enumerate(communities):
+            sub = G.subgraph(comm)
+
+            base = 1.0 / np.sqrt(max(len(sub), 1))
+            k_sub = max(1.2, base * 2.0)
+
+            pos_sub = nx.spring_layout(
+                sub,
+                k=k_sub,
+                iterations=200,
+                weight="n_coauthorships"
+            )
+
+            sub_xy = np.array(list(pos_sub.values()))
+            if len(sub_xy) > 0:
+                sub_xy = sub_xy - sub_xy.mean(axis=0, keepdims=True)
+                scale = 1.0 + 0.35 * np.log1p(len(sub))
+                sub_xy = sub_xy * scale
+
+            cx, cy = pos_comm.get(c_idx, (0.0, 0.0))
+            for i, n in enumerate(sub.nodes()):
+                if len(sub_xy) > 0:
+                    pos[n] = (sub_xy[i, 0] + cx, sub_xy[i, 1] + cy)
+                else:
+                    pos[n] = (cx, cy)
+
+
+        weights = [d["n_coauthorships"] for _, _, d in G.edges(data=True)]
+        edge_widths = [np.log1p(w) for w in weights]
+
+        fig_institution_network = plt.figure(figsize=figsize)
+
+        nx.draw_networkx_edges(
+            G, pos,
+            width=edge_widths,
+            edge_color="gray",
+            alpha=0.6,
+        )
+
+        node_colors = {n: palette[node_to_comm[n]] for n in G.nodes}
+        labels = {n: str(n) for n in G.nodes}
+        for n, (x, y) in pos.items():
+            plt.text(
+                x, y, labels[n],
+                ha="center", va="center",
+                fontsize=10,
+                bbox=dict(boxstyle="square,pad=0.28", fc=node_colors[n], ec="black", lw=0.6)
+            )
+
+        edge_labels = nx.get_edge_attributes(G, "n_coauthorships")
+        nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=9, rotate=False, bbox=dict(fc="white", ec="white", lw=0.5, alpha=0.3))
+
+        plt.axis("off")
+        plt.tight_layout()
+        plt.savefig(Path(self.figure_directory, f"{filename}.png"), dpi=300, bbox_inches='tight')
+        plt.savefig(Path(self.figure_directory, f"{filename}.svg"), format='svg', bbox_inches='tight')
+        plt.savefig(Path(self.figure_directory, f"{filename}.pdf"), format='pdf', bbox_inches='tight')
+
+        return fig_institution_network
+
+    def plot_sankey_researcher(self, df: pd.DataFrame) -> None:
+
+        labels = df["source"].tolist() + df["target"].tolist()
+        labels = sorted(list(set(labels)))
+
+        labels_directional = [f"S-{label}" for label in labels] + [f"T-{label}" for label in labels]
+        labels_clean = [label.split("-")[1] for label in labels_directional]
+
+        colors = get_colors(len(labels))
+        color_mapping = {l: c for l, c in zip(labels_directional, colors+colors)}
+
+        edge_colors = []
+
+        for i, row in df.iterrows():
+            color_1 = color_mapping[f"S-{row['source']}"]
+            color_2 = color_mapping[f"T-{row['target']}"]
+
+            color_1 = hex2rgb(color_1)
+            color_2 = hex2rgb(color_2)
+
+            edge_color = combine_rgb([color_1, color_2])
+            edge_colors.append(f"rgb{edge_color}")
+
+        for s_prof in sorted(df["source"].unique()):
+            df_unique = df[df["source"] == s_prof]
+
+            source_indices = [labels_directional.index(f"S-{src}") for src in df_unique["source"]]
+            source_colors = [color_mapping[f"S-{src}"] for src in df_unique["source"]]
+
+            target_indices = [labels_directional.index(f"T-{tgt}") for tgt in df_unique["target"]]
+            target_colors = [color_mapping[f"T-{tgt}"] for tgt in df_unique["target"]]
+
+            values = df_unique["n_coauthorships"].tolist()
+
+            fig_sankey = go.Figure(
+                data=[
+                    go.Sankey(
+                        node = dict(
+                            pad = 15,
+                            thickness = 20,
+                            line = dict(color="black", width=0.5),
+                            label = labels_clean,
+                            color = list(color_mapping.values())
+                        ),
+                        link = dict(
+                            source = source_indices,
+                            target = target_indices,
+                            value = values,
+                            color = edge_colors
+                        )
+                    )
+                ]
+            )
+
+            fig_sankey.update_layout(
+                width=1280,
+                height=720,
+                title_text=f"Coautorias do professor {s_prof}",
+                title_x=0.5
+            )
+
+            fig_sankey.write_image(Path(self.figure_directory, "sankey", f"sankey_{s_prof}.png"), scale=2)
+
+    def frame_institution_coauthorship(self, df: pd.DataFrame, start_year: int = 2014, end_year: int = 2023, n_coauthorships: int = 200) -> pd.DataFrame:
+        institution_reference = {row["name"]: row["institution"] for _, row in df.iterrows()}
+
+        df_institution_coauthorship = df[["production_id", "authors", "year"]]
+        df_institution_coauthorship = df_institution_coauthorship[(df_institution_coauthorship["year"] >= start_year) & (df_institution_coauthorship["year"] <= end_year)]
+        df_institution_coauthorship = df_institution_coauthorship.drop(columns=["year"])
+        df_institution_coauthorship["institutions"] = df_institution_coauthorship["authors"].apply(lambda author: institution_reference[author] if author in institution_reference else False)
+        df_institution_coauthorship = df_institution_coauthorship[df_institution_coauthorship["institutions"] != False]
+        df_institution_coauthorship = df_institution_coauthorship.groupby(["production_id"]).agg(list).reset_index()
+        df_institution_coauthorship = df_institution_coauthorship.drop(columns=["authors"])
+        df_institution_coauthorship["institutions"] = df_institution_coauthorship["institutions"].apply(set).apply(list)
+        df_institution_coauthorship = df_institution_coauthorship[df_institution_coauthorship["institutions"].apply(len) > 1]
+
+        df_institution_coauthorship["institutions_string"] = df_institution_coauthorship["institutions"].map(lambda x: " - ".join(x))
+        df_institution_coauth_count = df_institution_coauthorship.groupby("institutions_string").size().sort_values(ascending=False).reset_index(name="count")
+        df_institution_coauth_count = df_institution_coauth_count[df_institution_coauth_count["count"] >= n_coauthorships]
+
+        df_institution_coauthorship = df_institution_coauthorship[df_institution_coauthorship["institutions_string"].isin(df_institution_coauth_count["institutions_string"])]
+
+        return df_institution_coauthorship
+
+    def plot_chord_institution(self, df: pd.DataFrame, width: int = 600, height: int = 600, filename: str = "institution_coauthorship_network") -> None:
+        hv.extension("bokeh")
+
+        edge_counts = Counter()
+        all_nodes = set()
+
+        for institutions in df["institutions"]:
+            unique_insts = {str(x).strip() for x in institutions if pd.notna(x) and str(x).strip()}
+            all_nodes.update(unique_insts)
+            for u, v in combinations(sorted(unique_insts), 2):
+                edge_counts[(u, v)] += 1
+
+        G = nx.Graph()
+        G.add_nodes_from(sorted(all_nodes))
+        for (u, v), w in edge_counts.items():
+            G.add_edge(u, v, weight=w)
+
+        MIN_W = 1
+        to_drop = [(u, v) for u, v, d in G.edges(data=True) if d["weight"] < MIN_W]
+        G.remove_edges_from(to_drop)
+        G.remove_nodes_from(list(nx.isolates(G)))
+
+        if len(G) == 0 or G.number_of_edges() == 0:
+            chord = hv.Chord([]).opts(width=width, height=height)
+        else:
+            nodes_sorted = sorted(G.nodes())
+            idx = {n: i for i, n in enumerate(nodes_sorted)}
+
+            nodes_df = pd.DataFrame({
+                "index": [idx[n] for n in nodes_sorted],
+                "name": nodes_sorted,
+            })
+
+            links_df = pd.DataFrame([
+                {"source": idx[u], "target": idx[v], "value": d.get("weight", 1)}
+                for u, v, d in G.edges(data=True)
+            ])
+
+            nodes_ds = hv.Dataset(nodes_df, kdims="index")
+
+            chord = hv.Chord((links_df, nodes_ds)).opts(
+                width=width,
+                height=height,
+                labels="name",
+                cmap="Category20",
+                edge_color="source",
+                node_color="index",
+            )
+
+        renderer = hv.renderer("bokeh")
+        bokeh_plot = renderer.get_plot(chord).state
+
+        png_path = Path(self.figure_directory, f"{filename}.png")
+        export_png(bokeh_plot, filename=str(png_path))
+
+        bokeh_plot.output_backend = "svg"
+        svg_path = Path(self.figure_directory, f"{filename}.svg")
+        export_svgs(bokeh_plot, filename=str(svg_path))
+
+        try:
+            import cairosvg
+            pdf_path = Path(self.figure_directory, f"{filename}.pdf")
+            cairosvg.svg2pdf(url=str(svg_path), write_to=str(pdf_path))
+        except Exception:
+            pass
+
+        return chord
+
+
+    def plot_degree_distribution(
+        self, df_adjacency: pd.DataFrame,
+        filename_with: str = "violinplot_coauthorships_with_outliers",
+        filename_without: str = "violinplot_coauthorships_without_outliers",
+        figsize: tuple = (4, 4),
+    ) -> np.ndarray:
+        degree_distribution = self.flatten_adjacency_matrix(df_adjacency, zeros=False)
+        degree_distribution_no_outliers = self.remove_outliers(degree_distribution, weight=3)
+
+        self.plot_violin(
+            degree_distribution, ylabel="Coautorias",
+            filename=filename_with, color="skyblue", figsize=figsize,
+        )
+        plt.close("all")
+        self.plot_violin(
+            degree_distribution_no_outliers, ylabel="Coautorias",
+            filename=filename_without, color="lightgreen", figsize=figsize,
+        )
+        plt.close("all")
+
+        return degree_distribution
+
+    def compute_shortest_paths(self, df_adjacency: pd.DataFrame) -> pd.DataFrame:
+        G = nx.from_pandas_adjacency(df_adjacency)
+        paths_length = dict(nx.all_pairs_shortest_path_length(G))
+
+        data = {"source": [], "target": [], "length": []}
+        for source, target_lengths in paths_length.items():
+            for target, length in target_lengths.items():
+                if source < target:
+                    data["source"].append(source)
+                    data["target"].append(target)
+                    data["length"].append(length)
+
+        return pd.DataFrame(data)
+
+    def plot_shortest_path_histogram(
+        self, df_shortest_paths: pd.DataFrame,
+        filename: str = "shortest_path_length_distribution",
+    ) -> None:
+        counts = df_shortest_paths["length"].value_counts().sort_index()
+        fig, ax = plt.subplots(figsize=(8, 4))
+        bars = ax.bar(counts.index, counts.values, color="steelblue", edgecolor="white", width=1)
+        ax.set_xlabel("Comprimento do caminho mais curto")
+        ax.set_ylabel("Número de pares")
+        ax.set_xticks(counts.index)
+        ax.set_yscale("log")
+        ax.set_ylim(0.9, counts.values.max() * 2)
+        for rect in bars:
+            y = rect.get_height()
+            x = rect.get_x() + rect.get_width() / 2
+            ax.annotate(
+                fmt_k(y), (x, y), xytext=(0, -10), textcoords="offset points",
+                ha="center", va="bottom", fontsize=6, fontweight="bold",
+                color="white", zorder=10, clip_on=False,
+            )
+        plt.tight_layout()
+        self._save_figure(fig, filename)
+        plt.close("all")
+
+    def plot_shortest_path_violin(
+        self, df_shortest_paths: pd.DataFrame,
+        filename: str = "violinplot_shortest_path_lengths",
+    ) -> None:
+        fig, ax = plt.subplots(figsize=(4, 4))
+        sns.violinplot(y=df_shortest_paths["length"], ax=ax, color="lightcoral", inner="quartile", cut=0)
+        ax.set_ylabel("Larguras de caminhos mais curtos")
+        ax.set_xlabel("")
+        ax.set_xticks([])
+        plt.tight_layout()
+        self._save_figure(fig, filename)
+        plt.close("all")
+
+    def compute_density(self, df_adjacency: pd.DataFrame) -> float:
+        G = nx.from_pandas_adjacency(df_adjacency)
+        return nx.density(G)
+
+    def plot_degree_histogram(
+        self, df_adjacency: pd.DataFrame,
+        filename: str = "degree_histogram", figsize: tuple = (10, 6),
+    ) -> None:
+        G = nx.from_pandas_adjacency(df_adjacency)
+        degree_histogram = nx.degree_histogram(G)
+        fig, ax = plt.subplots(figsize=figsize)
+        sns.barplot(
+            x=list(range(len(degree_histogram))), y=degree_histogram, ax=ax,
+            color="mediumpurple", edgecolor="white", orient="h",
+        )
+        ax.set_xlabel("Número de nós")
+        ax.set_ylabel("Grau")
+        ax.set_title("Histograma de graus")
+        ax.set_xscale("log")
+        for p in ax.patches:
+            x = p.get_x() + p.get_width() / 2
+            y = p.get_y() + p.get_height() / 2
+            ax.annotate(
+                fmt_k(p.get_width()), (x, y), ha="center", va="center",
+                fontsize=8, color="white", fontweight="bold",
+            )
+        plt.tight_layout()
+        self._save_figure(fig, filename)
+        plt.close("all")
+
+    def plot_betweenness_centrality(
+        self, df_adjacency: pd.DataFrame, df_productions: pd.DataFrame,
+        filename: str = "betweenness_vs_weighted_degree",
+        top_n: int = 6, save_csv_top: int = 50,
+    ) -> tuple:
+        df_adjacency_weighted = self.frame_weighted_degrees(df_adjacency)
+        df_betweenness = self.frame_betweenness(df_adjacency_weighted, df_productions)
+
+        if save_csv_top:
+            df_betweenness.head(save_csv_top).to_csv(
+                Path(self.figure_directory, f"top_{save_csv_top}_betweenness.csv"), index=False,
+            )
+
+        wd_u = df_adjacency_weighted.groupby("u")["weight_count"].sum().reset_index()
+        wd_u.columns = ["node", "weighted_degree"]
+        wd_v = df_adjacency_weighted.groupby("v")["weight_count"].sum().reset_index()
+        wd_v.columns = ["node", "weighted_degree"]
+        df_weighted_degree = pd.concat([wd_u, wd_v]).groupby("node")["weighted_degree"].sum().reset_index()
+        df_corr = df_betweenness.merge(df_weighted_degree, on="node", how="inner")
+
+        pearson_r, pearson_p = stats.pearsonr(df_corr["weighted_degree"], df_corr["betweenness"])
+        spearman_r, spearman_p = stats.spearmanr(df_corr["weighted_degree"], df_corr["betweenness"])
+
+        fig, ax = plt.subplots(figsize=(8, 4))
+        ax.scatter(df_corr["weighted_degree"], df_corr["betweenness"], alpha=0.5, s=20, color="steelblue")
+        ax.set_xlabel("Grau ponderado")
+        ax.set_ylabel("Centralidade de intermediação")
+        top = df_betweenness.head(top_n)
+        for _, row in top.iterrows():
+            node = row["node"]
+            name = row["name"] if pd.notna(row["name"]) else f"Node {node}"
+            x_val = df_corr.loc[df_corr["node"] == node, "weighted_degree"].values
+            y_val = df_corr.loc[df_corr["node"] == node, "betweenness"].values
+            if len(x_val) > 0 and len(y_val) > 0:
+                ax.annotate(
+                    name, (x_val[0], y_val[0]), xytext=(5, -3), textcoords="offset points",
+                    ha="left", va="bottom", fontsize=8, color="black", zorder=10,
+                )
+        plt.tight_layout()
+        self._save_figure(fig, filename)
+        plt.close("all")
+
+        return df_betweenness, {
+            "pearson_r": pearson_r, "pearson_p": pearson_p,
+            "spearman_r": spearman_r, "spearman_p": spearman_p,
+        }
+
+    def compare_community_methods(
+        self, df_adjacency: pd.DataFrame,
+        methods: list = None, weight: str = "weight",
+        method_params: dict = None,
+    ) -> pd.DataFrame:
+        from coauths.community_detection import compare_community_algorithms
+
+        G = nx.from_pandas_adjacency(df_adjacency)
+
+        if methods is None:
+            methods = ["greedy_modularity", "louvain", "label_propagation"]
+            try:
+                import igraph
+                import leidenalg
+                methods.append("leiden")
+            except ImportError:
+                pass
+
+        return compare_community_algorithms(
+            G, methods=methods, method_params=method_params, default_weight=weight,
+        )
+
+    def detect_and_report_communities(
+        self, df_adjacency: pd.DataFrame, df_productions: pd.DataFrame,
+        method: str, weight: str = "weight",
+        resolution: float = 1.0, seed: int = 42,
+    ) -> tuple:
+        from coauths.community_detection import (
+            detect_communities,
+            communities_dataframe,
+            community_report,
+        )
+
+        G = nx.from_pandas_adjacency(df_adjacency)
+        partition = detect_communities(
+            G, method=method, weight=weight,
+            resolution=resolution, seed=seed,
+        )
+        df_communities = communities_dataframe(partition)
+
+        name_map = df_productions[["nid", "name"]].drop_duplicates().set_index("nid")["name"]
+        df_communities["researcher"] = df_communities["node"].map(name_map)
+
+        report = community_report(G, partition, weight=weight)
+
+        return df_communities, report
+
+    def run_full_community_analysis(
+        self, df_adjacency: pd.DataFrame, df_productions: pd.DataFrame,
+        method: str, weight: str = "weight",
+        resolution: float = 1.0, seed: int = 42,
+    ) -> dict:
+        from coauths.community_detection import (
+            detect_communities,
+            communities_dataframe,
+            community_report,
+            community_structural_profile,
+            compute_node_roles,
+            community_institutional_profile,
+            institution_network_metrics,
+            _mode_value,
+        )
+
+        G = nx.from_pandas_adjacency(df_adjacency)
+        partition = detect_communities(
+            G, method=method, weight=weight,
+            resolution=resolution, seed=seed,
+        )
+
+        df_communities = communities_dataframe(partition)
+        name_map = df_productions[["nid", "name"]].drop_duplicates().set_index("nid")["name"]
+        df_communities["researcher"] = df_communities["node"].map(name_map)
+
+        report = community_report(G, partition, weight=weight)
+
+        # Table 1: structural profile
+        df_structural = community_structural_profile(G, partition, weight=weight)
+
+        # Node roles
+        df_roles = compute_node_roles(G, partition, weight=weight)
+
+        node_to_inst = (
+            df_productions.groupby("nid")["institution"].agg(_mode_value).to_dict()
+        )
+        node_to_name = (
+            df_productions.groupby("nid")["name"].agg(_mode_value).to_dict()
+        )
+        df_roles["institution"] = df_roles["node"].map(node_to_inst)
+        df_roles["name"] = df_roles["node"].map(node_to_name)
+
+        # Table 2: institutional profile
+        df_inst_profile = community_institutional_profile(df_roles)
+
+        # Table 3: institution network metrics
+        df_inst_metrics = institution_network_metrics(
+            G, node_to_inst, weight=weight,
+        )
+
+        return {
+            "partition": partition,
+            "df_communities": df_communities,
+            "report": report,
+            "df_structural": df_structural,
+            "df_roles": df_roles,
+            "df_inst_profile": df_inst_profile,
+            "df_inst_metrics": df_inst_metrics,
+        }
+
+    def plot_roles_scatter(
+        self, df_roles: pd.DataFrame,
+        filename: str = "fig_roles_scatter",
+    ) -> None:
+        plot_df = df_roles.dropna(
+            subset=["participation_P", "strength_w", "role", "community"],
+        ).copy()
+
+        fig, ax = plt.subplots(figsize=(8.5, 6.0))
+        sns.scatterplot(
+            data=plot_df,
+            x="participation_P",
+            y="z_intra",
+            hue="role",
+            size="strength_w",
+            sizes=(20, 300),
+            alpha=0.75,
+            linewidth=0.2,
+            edgecolor="white",
+            ax=ax,
+        )
+        ax.set_xlabel("Coeficiente de participação (P)")
+        ax.set_ylabel("z-score intra-comunidade (z_intra)")
+        ax.set_title("Papéis dos autores na rede: conectores vs hubs")
+        ax.legend(bbox_to_anchor=(1.02, 1), loc="upper left", borderaxespad=0)
+        ax.grid(True, which="major", linewidth=0.3, alpha=0.4)
+        plt.tight_layout()
+        self._save_figure(fig, filename)
+        plt.close("all")
+
+
+def generate_labels(n: int) -> list[str]:
+    if not 1 <= n <= 50:
+        raise ValueError("n must be between 1 and 50 (26 Latin + 24 Greek).")
+
+    latin = list(string.ascii_uppercase)
+    greek = [chr(c) for c in range(0x03B1, 0x03C9 + 1)]
+    all_labels = latin + greek
+
+    return all_labels[:n]
