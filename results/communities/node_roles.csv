@@ -1,0 +1,1726 @@
+node,community,strength_w,strength_intra_w,strength_external_w,participation_P,z_intra,role,institution,name
+0,8,68,1492,-1424,0.36072664359861584,0.0,peripheral,UFPE,Abel Guilhermino da Silva Filho
+1,1,31,3828,-3797,0.0,0.0,peripheral,UFRJ-COMP,Abilio Pereira de Lucena Filho
+2,16,42,1112,-1070,0.0,0.0,peripheral,UNIOESTE,Adair Santa Catarina
+3,3,17,2603,-2586,0.588235294117647,0.0,peripheral,UEM,Ademir Aparecido Constantino
+4,11,321,3526,-3205,0.25549053289467305,0.0,peripheral,UFPEL,Adenauer Correa Yamin
+5,0,13,5167,-5154,0.544378698224852,0.0,peripheral,USP-SC,Adenilso da Silva Simão
+6,8,52,1492,-1440,0.037721893491124314,0.0,peripheral,UFPE,Adenilton José da Silva
+7,1,7,3828,-3821,0.40816326530612246,0.0,peripheral,UFPE,Adiel Teixeira de Almeida Filho
+8,0,1,5167,-5166,0.0,0.0,peripheral,UEL,Adilson Luiz Bonifácio
+9,3,27,2603,-2576,0.4115226337448561,0.0,peripheral,UNIFEI,Adler Diniz de Souza
+10,10,14,1873,-1859,0.4999999999999999,0.0,peripheral,FUFSE,Admilson de Ribamar Lima Ribeiro
+11,0,9,5167,-5158,0.19753086419753085,0.0,peripheral,UFBA,Adolfo Almeida Duran
+12,0,10,5167,-5157,0.4800000000000001,0.0,peripheral,UNIRIO,Adriana Cesário de Faria Alvim
+13,10,64,1873,-1809,0.1171875,0.0,peripheral,UFRJ-COMP,Adriana Santarosa Vivacqua
+14,2,89,4900,-4811,0.35374321424062627,0.0,peripheral,UFMG,Adriano Alonso Veloso
+16,13,35,1397,-1362,0.20897959183673476,0.0,peripheral,UNIFOR,Adriano Bessa Albuquerque
+17,2,61,4900,-4839,0.15479709755442084,0.0,peripheral,UFMG,Adriano Cesar Machado Pereira
+18,15,33,447,-414,0.34527089072543615,0.0,peripheral,UDESC,Adriano Fiorese
+19,8,66,1492,-1426,0.6634527089072544,0.0,connector,UFPE,Adriano Lorena Inacio de Oliveira
+20,3,15,2603,-2588,0.12444444444444436,0.0,peripheral,UNESP-SJRP,Adriano Mauro Cansian
+21,11,106,3526,-3420,0.12584549661801347,0.0,peripheral,FURG,Adriano Velasque Werhli
+22,0,24,5167,-5143,0.2777777777777777,0.0,peripheral,PUC-RS,Afonso Henrique Corrêa de Sales
+23,5,31,1985,-1954,0.18106139438085334,0.0,peripheral,USP-SC,Afonso Paiva Neto
+24,5,155,1985,-1830,0.21452653485952122,0.0,peripheral,USP-SC,Agma Juci Machado Traina
+25,0,2,5167,-5165,0.0,0.0,peripheral,UFLA,Ahmed Ali Abdalla Esmin
+26,9,40,1763,-1723,0.04875000000000007,0.0,peripheral,IFCE,Ajalmar Rêgo da Rocha Neto
+28,5,71,1985,-1914,0.4741122793096607,0.0,peripheral,UFSCAR,Alan Demétrius Baria Valejo
+29,4,8,2197,-2189,0.59375,0.0,peripheral,UFOP,Alan Kardek Rêgo Segundo
+30,4,2,2197,-2195,0.0,0.0,peripheral,USP-SINF,Alan Mitchell Durham
+31,6,90,3006,-2916,0.08617283950617283,0.0,peripheral,UFAL,Alan Pedro da Silva
+32,4,13,2197,-2184,0.544378698224852,0.0,peripheral,UFOP,Alan Robert Resende de Freitas
+33,3,17,2603,-2586,0.4152249134948096,0.0,peripheral,UEL,Alan Salvany Felinto
+34,2,54,4900,-4846,0.6556927297668038,0.0,connector,UNB,Alba Cristina Magalhães Alves de Melo
+35,0,23,5167,-5144,0.6616257088846881,0.0,connector,PUC-RIO,Alberto Barbosa Raposo
+36,7,109,2362,-2253,0.1555424627556602,0.0,peripheral,UFRGS,Alberto Egon Schaeffer Filho
+37,17,72,152,-80,0.2002314814814815,0.0,peripheral,UFES,Alberto Ferreira De Souza
+38,2,105,4900,-4795,0.29913832199546475,0.0,peripheral,UFMG,Alberto Henrique Frade Laender
+39,9,58,1763,-1705,0.09809750297265163,0.0,peripheral,UFC,Alberto Sampaio Lima
+40,8,114,1492,-1378,0.2617728531855956,0.0,peripheral,PUC-PR,Alceu de Souza Britto Jr
+41,2,42,4900,-4858,0.09070294784580502,0.0,peripheral,UFV,Alcione de Paiva Oliveira
+42,7,31,2362,-2331,0.7242455775234131,0.0,connector,UFPA,Aldebaro Barreto da Rocha Klautau Júnior
+43,10,46,1873,-1827,0.30151228733459357,0.0,peripheral,UFRPE,Aldo von Wangenheim
+44,2,210,4900,-4690,0.16240362811791387,0.0,peripheral,UFPR,Aldri Luiz dos Santos
+45,19,106,203,-97,0.0731577073691706,0.0,peripheral,UNESP-SJRP,Aleardo Manacero Junior
+46,15,9,447,-438,0.0,0.0,peripheral,UNIVALI,Alejandro Rafael Garcia Ramirez
+47,6,43,3006,-2963,0.21416982152514874,0.0,peripheral,UFSM,Alencar Machado
+48,0,54,5167,-5113,0.5377229080932785,0.0,peripheral,USP-RP,Alessandra Alaniz Macedo
+49,0,245,5167,-4922,0.23343606830487296,0.0,peripheral,PUC-RIO,Alessandro Fabricio Garcia
+50,5,147,1985,-1838,0.3897450136517193,0.0,peripheral,UNB,Aletéia Patrícia Favacho de Araújo
+51,2,333,4900,-4567,0.31288946604261925,0.0,peripheral,UFJF,Alex Borges Vieira
+52,6,75,3006,-2931,0.4967111111111111,0.0,peripheral,UFPE,Alex Sandro Gomes
+53,3,66,2603,-2537,0.5899908172635444,0.0,peripheral,UFRPE,Alex Sandro Roschildt Pinto
+54,0,24,5167,-5143,0.1562500000000001,0.0,peripheral,UFSCAR,Alexandre Alvaro
+55,2,4,4900,-4896,0.0,0.0,peripheral,UFSJ,Alexandre Bittencourt Pigozzo
+56,6,35,3006,-2971,0.05551020408163265,0.0,peripheral,UFPE,Alexandre Cabral Mota
+57,3,8,2603,-2595,0.53125,0.0,peripheral,UNIFEI,Alexandre Carlos Brandao Ramos
+58,3,113,2603,-2490,0.25781188816665357,0.0,peripheral,USP-SC,Alexandre Cláudio Botazzo Delbem
+59,7,25,2362,-2337,0.5087999999999999,0.0,peripheral,UFMA,Alexandre César Muniz de Oliveira
+60,4,24,2197,-2173,0.0,0.0,peripheral,UFSCAR,Alexandre Luís Magalhães Levada
+61,8,43,1492,-1449,0.3569497025419146,0.0,peripheral,UPE,Alexandre Magno Andrade Maciel
+62,6,61,3006,-2945,0.22789572695511962,0.0,peripheral,UFPE,Alexandre Marcos Lins de Vasconcelos
+63,1,76,3828,-3752,0.10145429362880898,0.0,peripheral,UFF,Alexandre Plastino de Carvalho
+64,1,28,3828,-3800,0.25255102040816335,0.0,peripheral,UFMG,Alexandre Salles da Cunha
+65,1,4,3828,-3824,0.375,0.0,peripheral,UFV,Alexandre Santos Brandão
+66,5,7,1985,-1978,0.40816326530612246,0.0,peripheral,USP-RP,Alexandre Souto Martinez
+67,4,91,2197,-2106,0.18306967757517212,0.0,peripheral,UNICAMP,Alexandre Xavier Falcão
+68,4,15,2197,-2182,0.6311111111111111,0.0,connector,USP-SINF,Alexandre da Silva Freire
+69,1,12,3828,-3816,0.48611111111111116,0.0,peripheral,UFRJ-COMP,Alexandre de Assis Bento Lima
+70,4,43,2197,-2154,0.36235803136830724,0.0,peripheral,UNESP-SJRP,Alexandro José Baldassin
+71,4,20,2197,-2177,0.09500000000000008,0.0,peripheral,PUC-MG,Alexei Manso Correa Machado
+72,0,58,5167,-5109,0.6658739595719381,0.0,connector,USP-SINF,Alfredo Goldman vel Lejbman
+73,0,52,5167,-5115,0.17677514792899407,0.0,peripheral,UEM,Aline Maria Malachini Miotto Amaral
+74,10,15,1873,-1858,0.12444444444444436,0.0,peripheral,UFBA,Aline Maria Santos Andrade
+75,1,104,3828,-3724,0.1813979289940829,0.0,peripheral,UFF,Aline Marins Paes Carvalho
+76,4,2,2197,-2195,0.5,0.0,peripheral,UFRGS,Aline Villavicencio
+77,1,46,3828,-3782,0.4716446124763706,0.0,peripheral,UFPB-JP,Alisson Vasconcelos de Brito
+78,5,80,1985,-1905,0.07281249999999995,0.0,peripheral,USP-SC,Alneu de Andrade Lopes
+79,8,75,1492,-1417,0.22044444444444444,0.0,peripheral,PUC-PR,Altair Olivo Santin
+81,2,86,4900,-4814,0.5608436992969172,0.0,peripheral,UFAM,Altigran Soares da Silva
+82,8,6,1492,-1486,0.2777777777777777,0.0,peripheral,UFPE,Aluizio Fausto Ribeiro Araújo
+83,15,25,447,-422,0.15039999999999998,0.0,peripheral,UNIVALI,Aluizio Haendchen Filho
+84,9,33,1763,-1730,0.0,0.0,peripheral,IFCE,Amauri Holanda de Souza Júnior
+85,0,2,5167,-5165,0.0,0.0,peripheral,UFRJ-COMP,Amaury Alvarez Cruz
+86,9,5,1763,-1758,0.0,0.0,peripheral,UNIFOR,Americo Tadeu Falcone Sampaio
+87,21,4,4,0,0.0,0.0,peripheral,UFAC,Ana Beatriz Alvarez Mamani
+88,6,23,3006,-2983,0.5482041587901701,0.0,peripheral,UFPE,Ana Carolina Brandao Salgado
+89,3,78,2603,-2525,0.29717291255752787,0.0,peripheral,UNIFESP,Ana Carolina Lorena
+90,10,46,1873,-1827,0.6313799621928167,0.0,connector,UNIRIO,Ana Cristina Bicharra Garcia
+92,1,22,3828,-3806,0.0,0.0,peripheral,UFC,Ana Karolinna Maia de Oliveira
+93,16,39,1112,-1073,0.6048652202498356,0.0,peripheral,UFRGS,Ana Lucia Cetertich Bazzan
+94,9,9,1763,-1754,0.49382716049382713,0.0,peripheral,UECE,Ana Luiza Bessa de Paula Barros
+95,12,11,733,-722,0.0,0.0,peripheral,UNIFACCAMP,Ana Maria Monteiro
+96,11,186,3526,-3340,0.2049369869349058,0.0,peripheral,UFPEL,Ana Marilza Pernas Fleischmann
+97,10,36,1873,-1837,0.31327160493827155,0.0,peripheral,UNIFACS,Ana Patrícia Fontes Magalhães Mascarenhas
+98,2,179,4900,-4721,0.022159108642052394,0.0,peripheral,UFMG,Ana Paula Couto da Silva
+99,0,38,5167,-5129,0.46952908587257614,0.0,peripheral,UFRJ-COMP,Ana Regina Cavalcanti da Rocha
+100,0,13,5167,-5154,0.2721893491124261,0.0,peripheral,UFC,Ana Teresa de Castro Martins
+101,1,80,3828,-3748,0.1868749999999999,0.0,peripheral,UFPB-JP,Anand Subramanian
+102,12,60,733,-673,0.3505555555555554,0.0,peripheral,USP-SINF,Anarosa Alves Franco Brandão
+103,4,1,2197,-2196,0.0,0.0,peripheral,USP-SINF,Anatoli Iambartsev
+104,2,31,4900,-4869,0.17481789802289294,0.0,peripheral,UFOP,Anderson Almeida Ferreira
+105,5,42,1985,-1943,0.0,0.0,peripheral,UFSCAR,Anderson Chaves Carniel
+106,1,24,3828,-3804,0.1527777777777779,0.0,peripheral,UFCG,Anderson Fabiano Batista Ferreira da Costa
+107,4,19,2197,-2178,0.2770083102493076,0.0,peripheral,UEM,Anderson Faustino da Silva
+108,1,11,3828,-3817,0.16528925619834722,0.0,peripheral,IME,Anderson Fernandes Pereira dos Santos
+109,3,80,2603,-2523,0.0,0.0,peripheral,UFRGS,Anderson Maciel
+110,2,30,4900,-4870,0.6666666666666667,0.0,connector,UFRGS,Anderson Rocha Tavares
+111,12,1,733,-732,0.0,0.0,peripheral,UFU,Anderson Rodrigues dos Santos
+112,3,146,2603,-2457,0.15547006943141306,0.0,peripheral,UFG,Anderson da Silva Soares
+113,4,107,2197,-2090,0.10813171456022364,0.0,peripheral,UNICAMP,Anderson de Rezende Rocha
+114,0,55,5167,-5112,0.03570247933884296,0.0,peripheral,UFMG,Andre Cavalcante Hora
+115,8,15,1492,-1477,0.0,0.0,peripheral,PUC-PR,Andre Gustavo Hochuli
+116,2,17,4900,-4883,0.3044982698961938,0.0,peripheral,UFV,Andre Gustavo dos Santos
+117,11,77,3526,-3449,0.0998482037443077,0.0,peripheral,UFRGS,Andre Inacio Reis
+118,2,53,4900,-4847,0.3609825560697757,0.0,peripheral,UFAL,Andre Luiz Lins de Aquino
+119,1,16,3828,-3812,0.21875,0.0,peripheral,UFPR,Andre Luís Vignatti
+120,6,86,3006,-2920,0.3442401297998918,0.0,peripheral,UFPE,Andre Luís de Medeiros Santos
+121,13,28,1397,-1369,0.25765306122448983,0.0,peripheral,FUFPI,Andre Macedo Santana
+122,4,68,2197,-2129,0.5752595155709342,0.0,peripheral,UFOP,Andrea Gomes Campos Bianchi
+123,7,44,2362,-2318,0.375,0.0,peripheral,UFSM,Andrea Schwertner Charao
+124,9,23,1763,-1740,0.49527410207939515,0.0,peripheral,UFC,Andreia Libório Sampaio
+125,0,111,5167,-5056,0.13586559532505493,0.0,peripheral,PUC-PR,Andreia Malucelli
+126,2,37,4900,-4863,0.5376186997808619,0.0,peripheral,UFCG,Andrey Elisio Monteiro Brito
+127,8,9,1492,-1483,0.6666666666666667,0.0,connector,UFPR,Andrey Ricardo Pimentel
+128,8,29,1492,-1463,0.399524375743163,0.0,peripheral,FUFSE,André Britto de Carvalho
+129,3,172,2603,-2431,0.5607084910762574,0.0,peripheral,UNIFESP,André Carlos Ponce de Leon Ferreira de Carvalho
+130,13,85,1397,-1312,0.4575778546712802,0.0,peripheral,FUFPI,André Castelo Branco Soares
+131,2,13,4900,-4887,0.6745562130177514,0.0,connector,UNB,André Costa Drummond
+132,7,39,2362,-2323,0.4444444444444444,0.0,peripheral,UFPA,André Figueira Riker
+133,4,5,2197,-2192,0.56,0.0,peripheral,USP-SINF,André Fujita
+134,7,26,2362,-2336,0.42603550295857995,0.0,peripheral,UFRGS,André Grahl Pereira
+135,8,2,1492,-1490,0.0,0.0,peripheral,UTFPR,André Koscianski
+136,3,18,2603,-2585,0.5679012345679012,0.0,peripheral,UFSCAR,André Luis Debiaso Rossi
+137,7,2,2362,-2360,0.0,0.0,peripheral,UFSM,André Luiz Aita
+138,1,19,3828,-3809,0.38781163434903054,0.0,peripheral,UFABC,André Luiz Brandão
+139,16,62,1112,-1050,0.24817898022892826,0.0,peripheral,UNIOESTE,André Luiz Brun
+140,1,6,3828,-3822,0.0,0.0,peripheral,UFAC,André Luiz Nasserala Pires
+141,1,46,3828,-3782,0.3071833648393195,0.0,peripheral,UFPR,André Luiz Pires Guedes
+142,8,6,1492,-1486,0.6666666666666667,0.0,connector,UTFPR,André Luiz Satoshi Kawamoto
+143,2,22,4900,-4878,0.4421487603305785,0.0,peripheral,UFAM,André Luiz da Costa Carvalho
+144,15,22,447,-425,0.5785123966942148,0.0,peripheral,UNIVALI,André Luís Alice Raabe
+145,0,29,5167,-5138,0.2996432818073722,0.0,peripheral,UEL,André Luís Andrade Menolli
+146,14,11,946,-935,0.49586776859504145,0.0,peripheral,UTFPR,André Luís Schwerz
+147,12,15,733,-718,0.8177777777777777,0.0,connector,UNIFOR,André Luís Vasconcelos Coelho
+148,5,37,1985,-1948,0.19722425127830534,0.0,peripheral,UFAL,André Magno Costa de Araujo
+149,7,14,2362,-2348,0.13265306122448983,0.0,peripheral,UNIFESP,André Marcorin de Oliveira
+150,1,25,3828,-3803,0.3487999999999999,0.0,peripheral,UFF,André Maués Brabo Pereira
+151,0,98,5167,-5069,0.4281549354435651,0.0,peripheral,UFLA,André Pimenta Freire
+152,8,52,1492,-1440,0.0,0.0,peripheral,UTFPR,André Pinz Borges
+153,11,138,3526,-3388,0.0,0.0,peripheral,UFPEL,André Rauber Du Bois
+154,1,2,3828,-3826,0.0,0.0,peripheral,UFES,André Renato Sales Amaral
+155,7,71,2362,-2291,0.3578655028764135,0.0,peripheral,UFPR,André Ricardo Abed Grégio
+156,3,52,2603,-2551,0.2603550295857988,0.0,peripheral,UFU,André Ricardo Backes
+157,4,8,2197,-2189,0.0,0.0,peripheral,UNICAMP,André Santanchè
+158,6,16,3006,-2990,0.3046875,0.0,peripheral,UDESC,André Tavares da Silva
+159,8,2,1492,-1490,0.5,0.0,peripheral,UFLA,André Vital Saúde
+160,6,21,3006,-2985,0.09070294784580502,0.0,peripheral,UFPE,Andson Marreiros Balieiro
+161,4,36,2197,-2161,0.37808641975308643,0.0,peripheral,UEFS,Angelo Amâncio Duarte
+162,4,13,2197,-2184,0.544378698224852,0.0,peripheral,UEFS,Angelo Conrado Loula
+163,9,51,1763,-1712,0.18454440599769317,0.0,peripheral,UFC,Angelo Roncalli Alencar Brayner
+164,6,37,3006,-2969,0.151935719503287,0.0,peripheral,UERN,Angélica Félix de Castro
+165,2,62,4900,-4838,0.09365244536940676,0.0,peripheral,UFMG,Anisio Mendes Lacerda
+166,15,60,447,-387,0.18666666666666665,0.0,peripheral,UNIVALI,Anita Maria da Rocha Fernandes
+167,10,13,1873,-1860,0.0,0.0,peripheral,UFPE,Anjolina Grisi de Oliveira
+168,1,45,3828,-3783,0.2795061728395062,0.0,peripheral,UFF,Anselmo Antunes Montenegro
+169,13,559,1397,-838,0.11593664894825606,0.0,peripheral,UFMA,Anselmo Cardoso de Paiva
+170,5,9,1985,-1976,0.37037037037037035,0.0,peripheral,USP-RP,Antonio Adilton Oliveira Carneiro
+171,2,450,4900,-4450,0.17600000000000005,0.0,peripheral,UFMG,Antonio Alfredo Ferreira Loureiro
+172,4,14,2197,-2183,0.13265306122448983,0.0,peripheral,UFRPE,Antonio Augusto Medeiros Fröhlich
+173,1,37,3828,-3791,0.28341855368882396,0.0,peripheral,UFF,Antonio Augusto de Aragao Rocha
+174,5,13,1985,-1972,0.14201183431952646,0.0,peripheral,USP-RP,Antonio Carlos Roque da Silva Filho
+175,7,133,2362,-2229,0.12708462886539662,0.0,peripheral,UFRGS,Antonio Carlos Schneider Beck Filho
+176,12,4,733,-729,0.0,0.0,peripheral,UNESP-SJRP,Antonio Carlos Sementille
+177,7,67,2362,-2295,0.24682557362441537,0.0,peripheral,UFG,Antonio Carlos de Oliveira Júnior
+178,5,15,1985,-1970,0.3377777777777776,0.0,peripheral,USP-SC,Antonio Castelo Filho
+179,7,79,2362,-2283,0.5076109597820861,0.0,peripheral,UFPA,Antonio Jorge Gomes Abelém
+180,4,10,2197,-2187,0.4800000000000001,0.0,peripheral,UFBA,Antonio Lopes Apolinario Junior
+181,10,47,1873,-1826,0.19646899049343602,0.0,peripheral,PUC-RIO,Antonio Luz Furtado
+182,9,37,1763,-1726,0.23959094229364486,0.0,peripheral,IFCE,Antonio Mauro Barbosa de Oliveira
+183,9,18,1763,-1745,0.2777777777777777,0.0,peripheral,IFCE,Antonio Wendell de Oliveira Rodrigues
+184,3,24,2603,-2579,0.6631944444444444,0.0,connector,UNIFESP,Antônio Augusto Chaves
+185,4,26,2197,-2171,0.0,0.0,peripheral,UNESP-SJRP,Aparecido Nilceu Marana
+186,7,26,2362,-2336,0.3875739644970414,0.0,peripheral,UFMA,Areolino de Almeida Neto
+187,0,30,5167,-5137,0.3377777777777776,0.0,peripheral,USP-SINF,Ariane Machado Lima
+188,0,111,5167,-5056,0.0702865027189351,0.0,peripheral,UFMA,Ariel Soares Teles
+189,0,86,5167,-5081,0.06787452677122752,0.0,peripheral,UFAM,Arilo Claudio Dias Neto
+190,13,378,1397,-1019,0.11171299795638434,0.0,peripheral,UFMA,Aristófanes Corrêa Silva
+191,3,40,2603,-2563,0.0,0.0,peripheral,UFG,Arlindo Rodrigues Galvão Filho
+192,4,1,2197,-2196,0.0,0.0,peripheral,USP-SINF,Arnaldo Mandel
+193,4,68,2197,-2129,0.0,0.0,peripheral,UFMG,Arnaldo de Albuquerque Araújo
+194,9,24,1763,-1739,0.21875,0.0,peripheral,UFC,Arthur de Castro Callado
+195,2,7,4900,-4893,0.24489795918367352,0.0,peripheral,UFLA,Arthur de Miranda Neto
+196,10,32,1873,-1841,0.376953125,0.0,peripheral,UNIFACS,Artur Henrique Kronbauer
+197,9,44,1763,-1719,0.46384297520661155,0.0,peripheral,IFCE,Atslands Rego da Rocha
+198,6,61,3006,-2945,0.21230851921526472,0.0,peripheral,UFPE,Augusto Cezar Alves Sampaio
+199,23,3,3,0,0.0,0.0,peripheral,UTFPR,Augusto Foronda
+200,1,91,3828,-3737,0.4243448858833473,0.0,peripheral,UFF,Aura Conci
+201,0,101,5167,-5066,0.1505734731889029,0.0,peripheral,UFSCAR,Auri Marcelo Rizzo Vincenzi
+202,0,55,5167,-5112,0.4925619834710744,0.0,peripheral,UFPR,Aurora Trinidad Ramirez Pozo
+203,6,51,3006,-2955,0.14686658977316436,0.0,peripheral,UDESC,Avanilde Kemczinski
+204,0,29,5167,-5138,0.5897740784780023,0.0,peripheral,PUC-RS,Avelino Francisco Zorzo
+205,0,112,5167,-5055,0.035235969387755195,0.0,peripheral,UFMS,Awdren de Lima Fontão
+206,6,11,3006,-2995,0.5289256198347108,0.0,peripheral,UFAL,Aydano Pamponet Machado
+207,0,168,5167,-4999,0.25191326530612257,0.0,peripheral,UFAL,Baldoino Fonseca dos Santos Neto
+208,8,26,1492,-1466,0.5887573964497042,0.0,peripheral,FUFSE,Beatriz Trinchão Andrade de Carvalho
+209,6,25,3006,-2981,0.5791999999999999,0.0,peripheral,UFPE,Bernadette Farias Lóscio
+210,10,125,1873,-1748,0.06195200000000001,0.0,peripheral,UNIRIO,Bernardo Pereira Nunes
+211,12,117,733,-616,0.05025933231061441,0.0,peripheral,UFPA,Bianchi Serique Meiguins
+212,0,22,5167,-5145,0.3801652892561984,0.0,peripheral,UFPE,Breno Alexandro Ferreira de Miranda
+213,0,27,5167,-5140,0.41700960219478733,0.0,peripheral,UNICAMP,Breno Bernard Nicolau de França
+214,0,18,5167,-5149,0.47530864197530853,0.0,peripheral,UNIRIO,Bruna Diirr Gonçalves da Silva
+215,6,25,3006,-2981,0.4767999999999999,0.0,peripheral,UFAL,Bruno Almeida Pimentel
+216,3,40,2603,-2563,0.04875000000000007,0.0,peripheral,UFU,Bruno Augusto Nassif Travençolo
+217,0,58,5167,-5109,0.0,0.0,peripheral,UFMS,Bruno Barbieri de Pontes Cafeo
+218,3,52,2603,-2551,0.14571005917159752,0.0,peripheral,UEL,Bruno Bogaz Zarpelão
+219,14,90,946,-856,0.5918518518518519,0.0,peripheral,UFAL,Bruno Costa e Silva Nogueira
+220,10,51,1873,-1822,0.6089965397923875,0.0,peripheral,PUC-RIO,Bruno Feijo
+221,0,136,5167,-5031,0.2808174740484428,0.0,peripheral,UFAM,Bruno Freitas Gadelha
+222,3,84,2603,-2519,0.22052154195011342,0.0,peripheral,UNIFEI,Bruno Guazzelli Batista
+223,8,100,1492,-1392,0.48139999999999994,0.0,peripheral,UPE,Bruno José Torres Fernandes
+224,7,31,2362,-2331,0.31217481789802304,0.0,peripheral,FURG,Bruno Lopes Dalmazo
+225,5,48,1985,-1937,0.5416666666666667,0.0,peripheral,UFF,Bruno Lopes Vieira
+226,5,19,1985,-1966,0.0,0.0,peripheral,UNB,Bruno Luiggi Macchiavello Espinoza
+227,5,22,1985,-1963,0.31404958677685935,0.0,peripheral,UFMS,Bruno Magalhães Nogueira
+228,8,31,1492,-1461,0.06243496357960443,0.0,peripheral,FUFSE,Bruno Otavio Piedade Prado
+229,1,10,3828,-3818,0.17999999999999994,0.0,peripheral,UFPB-JP,Bruno Petrato Bruck
+230,1,26,3828,-3802,0.5769230769230769,0.0,peripheral,UFPR,Bruno Richard Schulze
+231,3,75,2603,-2528,0.05191111111111102,0.0,peripheral,UNIFEI,Bruno Tardiole Kuehne
+232,2,20,4900,-4880,0.53,0.0,peripheral,UNIFESP,Bruno Yuji Lino Kimura
+233,11,551,3526,-2975,0.0878521480495783,0.0,peripheral,UFPEL,Bruno Zatt
+234,6,48,3006,-2958,0.0,0.0,peripheral,UERN,Bruno de Sousa Monteiro
+235,8,54,1492,-1438,0.036351165980795574,0.0,peripheral,UPE,Byron Leite Dantas Bezerra
+236,5,161,1985,-1824,0.10786620886539866,0.0,peripheral,USP-SC,Caetano Traina Junior
+237,5,19,1985,-1966,0.0,0.0,peripheral,UNB,Camilo Chang Dórea
+238,4,26,2197,-2171,0.0,0.0,peripheral,UFSCAR,Candida Nunes da Silva
+239,10,21,1873,-1852,0.6303854875283448,0.0,connector,UFRPE,Carina Friedrich Dorneles
+240,0,15,5167,-5152,0.3911111111111112,0.0,peripheral,UFPE,Carina Frota Alves
+241,9,75,1763,-1688,0.07751111111111109,0.0,peripheral,IFCE,Carina Teixeira de Oliveira
+242,6,10,3006,-2996,0.42000000000000004,0.0,peripheral,UDESC,Carla Diacui Medeiros Berkenbrock
+243,9,130,1763,-1633,0.3545562130177514,0.0,peripheral,UFC,Carla Ilane Moreira Bezerra
+244,6,64,3006,-2942,0.20361328125,0.0,peripheral,UFABC,Carla Lopes Rodriguez
+245,3,39,2603,-2564,0.5483234714003944,0.0,peripheral,UFRGS,Carla Maria Dal Sasso Freitas
+246,10,28,1873,-1845,0.06887755102040805,0.0,peripheral,UFRPE,Carla Merkle Westphall
+247,4,50,2197,-2147,0.0,0.0,peripheral,UFABC,Carla Negri Lintzmayer
+248,6,62,3006,-2944,0.3590010405827263,0.0,peripheral,UFPE,Carla Taciana Lima Lourenco Silva Schuenemann
+249,0,61,5167,-5106,0.5444772910507928,0.0,peripheral,UPE,Carlo Marcelo Revoredo da Silva
+250,14,51,946,-895,0.7312572087658593,0.0,connector,UFABC,Carlos Alberto Kamienski
+251,15,13,447,-434,0.5562130177514792,0.0,peripheral,UFPR,Carlos Alberto Maziero
+252,0,10,5167,-5157,0.4600000000000001,0.0,peripheral,UEFS,Carlos Alberto Rodrigues
+253,7,28,2362,-2334,0.13265306122448983,0.0,peripheral,UNIRIO,Carlos Alberto Vieira Campos
+254,8,7,1492,-1485,0.5714285714285714,0.0,peripheral,UFPE,Carlos Alexandre Barros de Mello
+255,6,17,3006,-2989,0.8373702422145328,0.0,connector,UFPE,Carlos André Guimarães Ferraz
+256,4,18,2197,-2179,0.47530864197530853,0.0,peripheral,PUC-MG,Carlos Augusto Paiva da Silva Martins
+257,10,27,1873,-1846,0.07133058984910856,0.0,peripheral,UFRPE,Carlos Becker Westphall
+258,4,19,2197,-2178,0.09972299168975085,0.0,peripheral,USP-SINF,Carlos Eduardo Ferreira
+259,1,18,3828,-3810,0.1049382716049383,0.0,peripheral,UFRJ-COMP,Carlos Eduardo Pedreira
+260,7,45,2362,-2317,0.5224691358024691,0.0,peripheral,UFRGS,Carlos Eduardo Pereira
+261,10,12,1873,-1861,0.5138888888888888,0.0,peripheral,UNIRIO,Carlos Eduardo Ribeiro de Mello
+262,9,67,1763,-1696,0.36444642459345067,0.0,peripheral,UFCG,Carlos Eduardo Santos Pires
+263,12,112,733,-621,0.3109056122448981,0.0,peripheral,UFPA,Carlos Gustavo Resque dos Santos
+264,6,59,3006,-2947,0.0,0.0,peripheral,UERN,Carlos Heitor Pereira Liberalino
+265,3,8,2603,-2595,0.0,0.0,peripheral,UNIFEI,Carlos Henrique Valério de Moraes
+266,2,33,4900,-4867,0.1138659320477502,0.0,peripheral,UNIFEI,Carlos Henrique da Silveira
+267,12,12,733,-721,0.0,0.0,peripheral,USP-SINF,Carlos Hitoshi Morimoto
+268,0,115,5167,-5052,0.2682797731568999,0.0,peripheral,PUC-RIO,Carlos José Pereira de Lucena
+269,9,3,1763,-1760,0.0,0.0,peripheral,IFCE,Carlos Maurício Jaborandy de Mattos Dourado Júnior
+270,0,12,5167,-5155,0.375,0.0,peripheral,UFAM,Carlos Maurício Seródio Figueiredo
+271,8,39,1492,-1453,0.14464168310322145,0.0,peripheral,PUC-PR,Carlos Nascimento Silla Junior
+272,7,72,2362,-2290,0.1049382716049383,0.0,peripheral,UFSM,Carlos Raniery Paula dos Santos
+273,12,56,733,-677,0.10140306122448983,0.0,peripheral,UFPA,Carlos Renato Lisboa Francês
+274,3,5,2603,-2598,0.0,0.0,peripheral,UFU,Carlos Roberto Lopes
+275,3,83,2603,-2520,0.0,0.0,peripheral,UNESP-SJRP,Carlos Roberto Valêncio
+276,13,42,1397,-1355,0.09183673469387765,0.0,peripheral,UNIFOR,Carlos de Oliveira Caminha Neto
+277,0,50,5167,-5117,0.4935999999999999,0.0,peripheral,UFMA,Carlos de Salles Soares Neto
+278,8,130,1492,-1362,0.18615384615384611,0.0,peripheral,UPE,Carmelo Jose Albanez Bastos Filho
+279,2,47,4900,-4853,0.8021729289271163,0.0,connector,UFPR,Carmem Satie Hara
+280,1,8,3828,-3820,0.375,0.0,peripheral,UFRJ-COMP,Carolina Gil Marcelino
+281,2,62,4900,-4838,0.18158168574401679,0.0,peripheral,UFSJ,Carolina Ribeiro Xavier
+282,5,16,1985,-1969,0.0,0.0,peripheral,UNESP-SJRP,Cassio Machiaveli Oishi
+283,1,18,3828,-3810,0.4444444444444444,0.0,peripheral,UFAC,Catarina de Souza Costa
+284,0,13,5167,-5154,0.5562130177514792,0.0,peripheral,UNICAMP,Cecília Mary Fischer Rubira
+285,3,13,2603,-2590,0.42603550295857995,0.0,peripheral,UFU,Celia Aparecida Zorzo Barcelos
+286,1,109,3828,-3719,0.07154279942765751,0.0,peripheral,UFRJ-COMP,Celina Miraglia Herrera de Figueiredo
+287,10,53,1873,-1820,0.7732289070843716,0.0,connector,UFES,Celso Alberto Saibel Santos
+288,0,55,5167,-5112,0.6684297520661158,0.0,connector,UFG,Celso Gonçalves Camilo Junior
+289,17,10,152,-142,0.0,0.0,peripheral,UFES,Celso José Munaro
+290,1,38,3828,-3790,0.05124653739612173,0.0,peripheral,UFF,Celso da Cruz Carneiro Ribeiro
+291,15,40,447,-407,0.14124999999999988,0.0,peripheral,UNIVALI,Cesar Albenes Zeferino
+292,0,13,5167,-5154,0.7337278106508875,0.0,connector,PUC-RS,Cesar Augusto Fonticielha De Rose
+293,7,4,2362,-2358,0.0,0.0,peripheral,UFSM,Cesar Augusto Prior
+294,2,5,4900,-4895,0.0,0.0,peripheral,UFAM,Cesar Augusto Viana Melo
+295,5,82,1985,-1903,0.0,0.0,peripheral,UFSCAR,Cesar Henrique Comin
+296,7,15,2362,-2347,0.5155555555555555,0.0,peripheral,UFSM,Cesar Tadeu Pozzer
+297,15,155,447,-292,0.050530697190426466,0.0,peripheral,UDESC,Charles Christian Miers
+298,10,87,1873,-1786,0.06738010305192221,0.0,peripheral,UFRPE,Christiane Anneliese Gresse von Wangenheim
+299,4,4,2197,-2193,0.0,0.0,peripheral,UNICAMP,Christiane Neme Campos
+300,0,64,5167,-5103,0.203125,0.0,peripheral,UFBA,Christina von Flach Garcia Chavez
+301,1,2,3828,-3826,0.5,0.0,peripheral,UFAM,Cicero Ferreira Fernandes Costa Filho
+302,6,22,3006,-2984,0.08677685950413205,0.0,peripheral,UERN,Cicilia Raquel Maia Leite
+303,4,51,2197,-2146,0.11072664359861584,0.0,peripheral,UNICAMP,Cid Carvalho de Souza
+304,9,5,1763,-1758,0.0,0.0,peripheral,IFCE,Cidcley Teixeira de Souza
+305,3,26,2603,-2577,0.5177514792899409,0.0,peripheral,UEL,Cinthyan Renata Sachs Camerlengo de Barbosa
+306,0,50,5167,-5117,0.6624,0.0,connector,PUC-RIO,Clarisse Sieckenius de Souza
+307,16,148,1112,-964,0.0,0.0,peripheral,UNIOESTE,Claudia Brandelero Rizzi
+308,10,40,1873,-1833,0.3787499999999999,0.0,peripheral,UFRJ-COMP,Claudia Lage Rebello da Motta
+309,1,14,3828,-3814,0.33673469387755106,0.0,peripheral,UFC,Claudia Linhares Sales
+310,1,12,3828,-3816,0.0,0.0,peripheral,IME,Claudia Marcela Justel
+311,4,18,2197,-2179,0.3765432098765432,0.0,peripheral,UNICAMP,Claudia Maria Bauzer Medeiros
+312,0,74,5167,-5093,0.6205259313367422,0.0,connector,UFRJ-COMP,Claudia Maria Lima Werner
+313,0,20,5167,-5147,0.17999999999999994,0.0,peripheral,UEFS,Claudia Pinto Pereira
+314,4,8,2197,-2189,0.0,0.0,peripheral,UFRJ-COMP,Claudio Esperança
+315,3,37,2603,-2566,0.41344046749452157,0.0,peripheral,USP-SC,Claudio Fabiano Motta Toledo
+316,11,78,3526,-3448,0.5213675213675214,0.0,peripheral,UFRGS,Claudio Fernando Resin Geyer
+317,1,24,3828,-3804,0.1562500000000001,0.0,peripheral,UFRJ-COMP,Claudio Luis de Amorim
+318,9,19,1763,-1744,0.0,0.0,peripheral,IFCE,Claudio Marques de Sá Medeiros
+319,1,86,3828,-3742,0.34451054624121147,0.0,peripheral,UFRJ-COMP,Claudio Miceli de Farias
+320,4,6,2197,-2191,0.5,0.0,peripheral,UFABC,Claudio Nogueira de Meneses
+321,12,58,733,-675,0.0998810939357907,0.0,peripheral,UFPA,Claudomiro de Souza de Sales Junior
+322,6,58,3006,-2948,0.13020214030915578,0.0,peripheral,UFPB-JP,Clauirton de Albuquerque Siebra
+323,8,87,1492,-1405,0.30334258158277183,0.0,peripheral,UFPE,Cleber Zanchettin
+324,0,76,5167,-5091,0.3968144044321329,0.0,peripheral,UFPA,Cleidson Ronald Botelho de Souza
+325,6,52,3006,-2954,0.46375739644970415,0.0,peripheral,UPE,Cleyton Mário de Oliveira Rodrigues
+326,1,89,3828,-3739,0.8014139628834743,0.0,connector,UNIOESTE,Clodis Boscarioli
+327,12,54,733,-679,0.1049382716049383,0.0,peripheral,USP-SINF,Clodoaldo Aparecido de Moraes Lima
+328,2,21,4900,-4879,0.1768707482993197,0.0,peripheral,UFMG,Clodoveu Augusto Davis Junior
+329,5,6,1985,-1979,0.0,0.0,peripheral,UNB,Cláudia Nalon
+330,13,31,1397,-1366,0.5681581685744017,0.0,peripheral,UFCG,Cláudio Elízio Calazans Campelo
+331,0,17,5167,-5150,0.39446366782006925,0.0,peripheral,UFBA,Cláudio Nogueira Sant`Anna
+332,3,42,2603,-2561,0.29478458049886613,0.0,peripheral,UFRGS,Cláudio Rosito Jung
+333,13,67,1397,-1330,0.40276230786366674,0.0,peripheral,UFCG,Cláudio de Souza Baptista
+334,4,2,2197,-2195,0.0,0.0,peripheral,USP-RP,Cléver Ricardo Guareis de Farias
+335,9,9,1763,-1754,0.4444444444444444,0.0,peripheral,IFCE,Corneli Gomes Furtado Júnior
+336,0,39,5167,-5128,0.1840894148586456,0.0,peripheral,UFES,Credine Silva de Menezes
+337,9,111,1763,-1652,0.0,0.0,peripheral,UFC,Creto Augusto Vidal
+338,3,23,2603,-2580,0.08317580340264641,0.0,peripheral,UFG,Cristhiane Gonçalves
+339,11,45,3526,-3481,0.4019753086419754,0.0,peripheral,UFPEL,Cristian Cechinel
+340,7,81,2362,-2281,0.11857948483462899,0.0,peripheral,PUC-MG,Cristiane Neri Nobre
+341,16,424,1112,-688,0.15705099679601275,0.0,peripheral,UNISINOS,Cristiano André da Costa
+342,1,7,3828,-3821,0.40816326530612246,0.0,peripheral,UFMG,Cristiano Arbex Valle
+343,7,228,2362,-2134,0.41851338873499544,0.0,peripheral,UNISINOS,Cristiano Bonato Both
+344,6,8,3006,-2998,0.375,0.0,peripheral,UFPE,Cristiano Coêlho de Araújo
+345,2,75,4900,-4825,0.07786666666666664,0.0,peripheral,UFSJ,Cristiano Maciel da Silva
+346,5,69,1985,-1916,0.1369460197437512,0.0,peripheral,USP-SC,Cristina Dutra de Aguiar
+347,4,33,2197,-2164,0.058769513314967714,0.0,peripheral,USP-SINF,Cristina Gomes Fernandes
+348,11,234,3526,-3292,0.008510482869457103,0.0,peripheral,FURG,Cristina Meinhardt
+349,9,16,1763,-1747,0.4609375,0.0,peripheral,UFC,Criston Pereira de Souza
+350,0,17,5167,-5150,0.477508650519031,0.0,peripheral,UFG,Cássio Leonardo Rodrigues
+351,5,13,1985,-1972,0.37869822485207094,0.0,peripheral,UFBA,Cássio Vinicius Serafim Prazeres
+352,5,36,1985,-1949,0.7299382716049383,0.0,connector,UNB,Célia Ghedini Ralha
+353,1,129,3828,-3699,0.10432065380686262,0.0,peripheral,UFF,Célio Vinicius Neves de Albuquerque
+354,11,75,3526,-3451,0.22115555555555555,0.0,peripheral,PUC-RS,César Augusto Missio Marcon
+355,9,44,1763,-1719,0.0,0.0,peripheral,UFC,César Lincoln Cavalcante Mattos
+356,14,9,946,-937,0.6419753086419753,0.0,connector,UFRN,Cícero Garrozi
+357,6,45,3006,-2961,0.16493827160493824,0.0,peripheral,UFCG,Dalton Cézane Gomes Valadares
+358,8,36,1492,-1456,0.1527777777777779,0.0,peripheral,UFCG,Dalton Dario Serey Guerrero
+359,0,15,5167,-5152,0.5244444444444445,0.0,peripheral,UFRGS,Daltro José Nunes
+360,3,165,2603,-2438,0.3295500459136823,0.0,peripheral,PUC-RS,Dalvan Jair Griebler
+361,7,56,2362,-2306,0.0,0.0,peripheral,UFPR,Daniel Alfonso Gonçalves de Oliveira
+362,1,234,3828,-3594,0.33687632405581114,0.0,peripheral,UFF,Daniel Cardoso Moraes de Oliveira
+363,4,101,2197,-2096,0.019605920988138514,0.0,peripheral,UNESP-SJRP,Daniel Carlos Guimarães Pedronette
+364,8,11,1492,-1481,0.0,0.0,peripheral,UFPE,Daniel Carvalho da Cunha
+365,2,146,4900,-4754,0.33627322199286935,0.0,peripheral,UFMG,Daniel Fernandes Macedo
+366,3,11,2603,-2592,0.743801652892562,0.0,connector,UEFS,Daniel Gouveia Costa
+367,0,8,5167,-5159,0.0,0.0,peripheral,UFRJ-COMP,Daniel Gregorio Alfaro Vigo
+368,13,49,1397,-1348,0.0,0.0,peripheral,UFMA,Daniel Lima Gomes Júnior
+369,5,2,1985,-1983,0.0,0.0,peripheral,UFG,Daniel Lima Ventura
+370,5,29,1985,-1956,0.5112960760998813,0.0,peripheral,UFSCAR,Daniel Lucrédio
+371,2,201,4900,-4699,0.114452612559095,0.0,peripheral,UFSJ,Daniel Ludovico Guidoni
+372,2,28,4900,-4872,0.3086734693877552,0.0,peripheral,UFSJ,Daniel Luiz Alves Madeira
+373,2,69,4900,-4831,0.4667086746481832,0.0,peripheral,USP-SINF,Daniel Macêdo Batista
+374,11,211,3526,-3315,0.046539835133981744,0.0,peripheral,UFPEL,Daniel Munari Vilchez Palomino
+375,8,20,1492,-1472,0.18499999999999994,0.0,peripheral,FUFSE,Daniel Oliveira Dantas
+376,1,17,3828,-3811,0.5259515570934256,0.0,peripheral,UFRJ-COMP,Daniel Ratton Figueiredo
+377,1,82,3828,-3746,0.375669244497323,0.0,peripheral,UFRJ-COMP,Daniel Sadoc Menasche
+378,10,63,1873,-1810,0.34366339128243906,0.0,peripheral,UFRJ-COMP,Daniel Serrão Schneider
+379,7,38,2362,-2324,0.2340720221606648,0.0,peripheral,UFPR,Daniel Weingaertner
+380,11,13,3526,-3513,0.47337278106508873,0.0,peripheral,UFSM,Daniel Welfer
+381,4,34,2197,-2163,0.5934256055363322,0.0,peripheral,USP-SINF,Daniel de Angelis Cordeiro
+382,5,37,1985,-1948,0.2790357925493061,0.0,peripheral,UEL,Daniel dos Santos Kaster
+383,10,30,1873,-1843,0.24222222222222212,0.0,peripheral,UFBA,Daniela Barreiro Claro
+384,1,108,3828,-3720,0.10648148148148151,0.0,peripheral,UFF,Daniela Gorski Trevisan
+385,5,14,1985,-1971,0.5612244897959184,0.0,peripheral,UFBA,Danilo Barbosa Coimbra
+386,6,58,3006,-2948,0.13020214030915578,0.0,peripheral,UFCG,Danilo Freire de Souza Santos
+387,13,1,1397,-1396,0.0,0.0,peripheral,USP-SC,Danilo Hernane Spatti
+388,5,87,1985,-1898,0.24970273483947691,0.0,peripheral,UNESP-SJRP,Danilo Medeiros Eler
+389,8,46,1492,-1446,0.503780718336484,0.0,peripheral,UFRN,Danilo Ricardo Barbosa de Araújo
+390,3,19,2603,-2584,0.8088642659279779,0.0,connector,UFRGS,Dante Augusto Couto Barone
+391,1,26,3828,-3802,0.0,0.0,peripheral,UFAC,Daricelio Moreira Soares
+392,3,12,2603,-2591,0.48611111111111116,0.0,peripheral,UERN,Dario José Aloise
+393,9,19,1763,-1744,0.2770083102493076,0.0,peripheral,UFC,Davi Romero de Vasconcelos
+394,0,246,5167,-4921,0.22361028488333656,0.0,peripheral,UFMA,Davi Viana dos Santos
+395,4,32,2197,-2165,0.060546875,0.0,peripheral,UFABC,David Corrêa Martins Junior
+396,4,141,2197,-2056,0.3927367838639908,0.0,peripheral,UFPR,David Menotti Gomes
+397,0,27,5167,-5140,0.20301783264746232,0.0,peripheral,UFES,Davidson Cury
+398,1,175,3828,-3653,0.27676734693877547,0.0,peripheral,UFF,Debora Christina Muchaluat Saade
+399,6,2,3006,-3004,0.0,0.0,peripheral,UFABC,Debora Maria Rossi de Medeiros
+400,3,27,2603,-2576,0.07133058984910856,0.0,peripheral,UFG,Deborah Silva Alves Fernandes
+402,3,36,2603,-2567,0.5416666666666666,0.0,peripheral,UFG,Deller James Ferreira
+403,20,91,90,1,0.021736505252988758,0.0,peripheral,UFLA,Demostenes Zegarra Rodriguez
+404,0,6,5167,-5161,0.2777777777777777,0.0,peripheral,UFLA,Denilson Alves Pereira
+405,12,16,733,-717,0.0,0.0,peripheral,USP-SINF,Denis Deratani Mauá
+406,3,71,2603,-2532,0.2983535012894266,0.0,peripheral,USP-SC,Denis Fernando Wolf
+407,4,12,2197,-2185,0.6805555555555556,0.0,connector,UFABC,Denis Gustavo Fantinato
+408,4,19,2197,-2178,0.0,0.0,peripheral,UNESP-SJRP,Denis Henrique Pinheiro Salvadeo
+409,2,314,4900,-4586,0.2742301918941944,0.0,peripheral,UFPA,Denis Lima do Rosário
+410,1,9,3828,-3819,0.6666666666666667,0.0,connector,UPE,Denis Silva da Silveira
+411,6,59,3006,-2947,0.3039356506750934,0.0,peripheral,UFABC,Denise Hideko Goya
+412,11,173,3526,-3353,0.04550770156035944,0.0,peripheral,FURG,Diana Francisca Adamatti
+413,1,47,3828,-3781,0.19013128112268007,0.0,peripheral,UFMS,Diane Castonguay
+414,1,33,3828,-3795,0.0,0.0,peripheral,CEFET,Diego Barreto Haddad
+415,8,41,1492,-1451,0.09399167162403332,0.0,peripheral,UTFPR,Diego Bertolini Gonçalves
+416,6,237,3006,-2769,0.11355017892431751,0.0,peripheral,UFAL,Diego Dermeval Medeiros da Cunha Matos
+417,5,56,1985,-1929,0.2889030612244897,0.0,peripheral,UFSCAR,Diego Furtado Silva
+418,1,93,3828,-3735,0.10267082899757196,0.0,peripheral,UFF,Diego Gimenez Passos
+419,1,42,3828,-3786,0.046485260770975145,0.0,peripheral,UFRJ-COMP,Diego Leonel Cadette Dutra
+420,1,98,3828,-3730,0.020199916701374443,0.0,peripheral,CEFET,Diego Nunes Brandão
+421,5,43,1985,-1942,0.0,0.0,peripheral,USP-SC,Diego Raphael Amancio
+422,2,150,4900,-4750,0.21777777777777785,0.0,peripheral,UFSJ,Diego Roberto Colombo Dias
+423,4,76,2197,-2121,0.5872576177285318,0.0,peripheral,UNICAMP,Diego de Freitas Aranha
+424,1,11,3828,-3817,0.31404958677685935,0.0,peripheral,UFLA,Dilson Lucas Pereira
+425,6,13,3006,-2993,0.7928994082840236,0.0,connector,USP-SC,Dilvan de Abreu Moreira
+426,9,35,1763,-1728,0.10775510204081629,0.0,peripheral,UFCG,Dimas Cassimiro do Nascimento Filho
+427,0,3,5167,-5164,0.4444444444444444,0.0,peripheral,UFAC,Diodomiro Baldomero Luque Carcasi
+428,13,27,1397,-1370,0.6227709190672153,0.0,connector,UFPE,Divanilson Rodrigo de Sousa Campelo
+429,14,216,946,-730,0.12435699588477367,0.0,peripheral,UFPE,Djamel Fawzi Hadj Sadok
+430,2,91,4900,-4809,0.08525540393672248,0.0,peripheral,UFMG,Dorgival Olavo Guedes Neto
+431,10,58,1873,-1815,0.4346016646848989,0.0,peripheral,UFRPE,Douglas Dyllon Jeronimo de Macedo
+432,2,62,4900,-4838,0.06243496357960443,0.0,peripheral,UFMG,Douglas Guimarães Macharet
+433,15,29,447,-418,0.13079667063020217,0.0,peripheral,UNIVALI,Douglas Rossi de Melo
+434,1,23,3828,-3805,0.0,0.0,peripheral,CEFET,Douglas de Oliveira Cardoso
+435,3,37,2603,-2566,0.38860482103725347,0.0,peripheral,PUC-RS,Duncan Dubugras Alcoba Ruiz
+436,2,30,4900,-4870,0.3799999999999999,0.0,peripheral,UFSJ,Dárlinton Barbosa Feres Carvalho
+437,10,5,1873,-1868,0.0,0.0,peripheral,UFBA,Débora Abdalla Santos
+438,0,72,5167,-5095,0.054012345679012475,0.0,peripheral,UFMS,Débora Maria Barroso Paiva
+439,5,3,1985,-1982,0.6666666666666667,0.0,connector,UNB,Díbio Leandro Borges
+440,1,11,3828,-3817,0.44628099173553715,0.0,peripheral,UFCG,Eanes Torres Pereira
+441,10,52,1873,-1821,0.2995562130177515,0.0,peripheral,UFRJ-COMP,Eber Assis Schmitz
+442,10,27,1873,-1846,0.7023319615912209,0.0,connector,UFBA,Ecivaldo de Souza Matos
+443,2,83,4900,-4817,0.38583248657279723,0.0,peripheral,UFJF,Edelberto Franco Silva
+444,11,41,3526,-3485,0.0,0.0,peripheral,FURG,Eder Mateus Nunes Gonçalves
+445,2,7,4900,-4893,0.24489795918367352,0.0,peripheral,UFSJ,Edimilson Batista dos Santos
+446,7,140,2362,-2222,0.6026530612244898,0.0,peripheral,UFRGS,Edison Pignaton de Freitas
+447,7,2,2362,-2360,0.5,0.0,peripheral,UFAM,Edjair de Souza Mota
+449,2,61,4900,-4839,0.4762160709486697,0.0,peripheral,UFAM,Edleno Silva de Moura
+450,0,13,5167,-5154,0.2603550295857988,0.0,peripheral,USP-SINF,Edmir Parada Vasques Prado
+451,1,54,3828,-3774,0.13923182441700954,0.0,peripheral,UFRJ-COMP,Edmundo Albuquerque de Souza e Silva
+452,2,174,4900,-4726,0.15233188003699305,0.0,peripheral,UNICAMP,Edmundo Roberto Mauro Madeira
+453,4,3,2197,-2194,0.4444444444444444,0.0,peripheral,UFMS,Edna Ayako Hoshino
+454,0,49,5167,-5118,0.4431486880466472,0.0,peripheral,UNB,Edna Dias Canedo
+455,8,16,1492,-1476,0.4921875,0.0,peripheral,UFPE,Edna Natividade da Silva Barros
+456,0,125,5167,-5042,0.20799999999999996,0.0,peripheral,UEM,Edson Alves de Oliveira Junior
+457,4,62,2197,-2135,0.4557752341311134,0.0,peripheral,UNICAMP,Edson Borin
+458,8,24,1492,-1468,0.1527777777777779,0.0,peripheral,PUC-PR,Edson Emílio Scalabrin
+459,3,12,2603,-2591,0.8333333333333334,0.0,connector,UFMS,Edson Norberto Cáceres
+460,6,42,3006,-2964,0.09183673469387765,0.0,peripheral,UFABC,Edson Pinheiro Pimentel
+461,3,77,2603,-2526,0.07488615280823074,0.0,peripheral,UFRGS,Edson Prestes e Silva Júnior
+462,5,55,1985,-1930,0.3484297520661156,0.0,peripheral,UFMS,Edson Takashi Matsubara
+463,7,39,2362,-2323,0.5548980933596317,0.0,peripheral,UNIOESTE,Edson Tavares de Camargo
+464,7,68,2362,-2294,0.5536332179930796,0.0,peripheral,UNB,Eduardo Adilio Pelinson Alchieri
+465,5,2,1985,-1983,0.0,0.0,peripheral,USP-RP,Eduardo Alex Hernández Morales
+466,14,46,946,-900,0.04253308128544431,0.0,peripheral,UFPE,Eduardo Antonio Guimaraes Tavares
+467,10,47,1873,-1826,0.3567224988682661,0.0,peripheral,UFJF,Eduardo Barrere
+468,1,81,3828,-3747,0.2063709800335315,0.0,peripheral,CEFET,Eduardo Bezerra da Silva
+469,4,37,2197,-2160,0.23959094229364486,0.0,peripheral,UNICAMP,Eduardo Candido Xavier
+470,2,382,4900,-4518,0.2671664702173736,0.0,peripheral,UFPA,Eduardo Coelho Cerqueira
+471,7,51,2362,-2311,0.17993079584775085,0.0,peripheral,UFPR,Eduardo Cunha de Almeida
+472,0,83,5167,-5084,0.41950936275221373,0.0,peripheral,UFMG,Eduardo Figueiredo
+473,11,13,3526,-3513,0.6272189349112426,0.0,connector,USP-SC,Eduardo Fontoura Costa
+474,0,56,5167,-5111,0.26977040816326525,0.0,peripheral,UFAM,Eduardo Freire Nakamura
+475,0,74,5167,-5093,0.33345507669831986,0.0,peripheral,UFAM,Eduardo James Pereira Souto
+476,7,8,2362,-2354,0.21875,0.0,peripheral,UFPR,Eduardo Jaques Spinosa
+477,4,112,2197,-2085,0.3107461734693878,0.0,peripheral,UFOP,Eduardo José da Silva Luz
+478,8,63,1492,-1429,0.06198034769463345,0.0,peripheral,PUC-PR,Eduardo Kugler Viegas
+479,0,51,5167,-5116,0.6628219915417146,0.0,connector,UFAM,Eduardo Luzeiro Feitosa
+480,3,17,2603,-2586,0.40138408304498274,0.0,peripheral,USP-SC,Eduardo Marques
+481,11,129,3526,-3397,0.10468120906195544,0.0,peripheral,FURG,Eduardo Nunes Borges
+482,8,2,1492,-1490,0.0,0.0,peripheral,FUFSE,Eduardo Oliveira Freire
+483,0,84,5167,-5083,0.240079365079365,0.0,peripheral,UFBA,Eduardo Santana de Almeida
+484,7,8,2362,-2354,0.21875,0.0,peripheral,PUC-RIO,Eduardo Sany Laber
+485,7,11,2362,-2351,0.16528925619834722,0.0,peripheral,UFRGS,Eduardo Simões Lopes Gastal
+486,1,163,3828,-3665,0.11810756897135755,0.0,peripheral,CEFET,Eduardo Soares Ogasawara
+487,7,41,2362,-2321,0.5568114217727543,0.0,peripheral,UFPR,Eduardo Todt
+488,3,28,2603,-2575,0.06887755102040805,0.0,peripheral,UNIFEI,Edvard Martins de Oliveira
+489,10,55,1873,-1818,0.7365289256198347,0.0,connector,FUFSE,Edward David Moreno
+490,5,67,1985,-1918,0.35375361995990195,0.0,peripheral,PUC-RIO,Edward Hermann Haeusler
+491,6,132,3006,-2874,0.5509641873278237,0.0,peripheral,UFAM,Elaine Harada Teixeira de Oliveira
+492,5,19,1985,-1966,0.2659279778393353,0.0,peripheral,USP-SC,Elaine Parros Machado de Sousa
+493,3,64,2603,-2539,0.271484375,0.0,peripheral,UFU,Elaine Ribeiro de Faria Paiva
+494,4,41,2197,-2156,0.3224271267102914,0.0,peripheral,UNIFESP,Elbert Einstein Nehrer Macau
+495,0,55,5167,-5112,0.33256198347107424,0.0,peripheral,UFSJ,Elder José Reioli Cirilo
+496,2,4,4900,-4896,0.375,0.0,peripheral,UNIFACS,Eldman de Oliveira Nunes
+497,8,8,1492,-1484,0.0,0.0,peripheral,UFCG,Eliane Cristina de Araujo
+498,0,6,5167,-5161,0.6111111111111112,0.0,peripheral,UNICAMP,Eliane Martins
+499,7,144,2362,-2218,0.4755015432098765,0.0,peripheral,UFPR,Elias Procópio Duarte Júnior
+500,5,9,1985,-1976,0.5679012345679012,0.0,peripheral,USP-SC,Elias Salomão Helou Neto
+501,9,16,1763,-1747,0.0,0.0,peripheral,IFCE,Elias Teodoro da Silva Júnior
+502,0,182,5167,-4985,0.29573722980316375,0.0,peripheral,USP-SC,Elisa Yumi Nakagawa
+503,5,5,1985,-1980,0.56,0.0,peripheral,UNIFEI,Elisa de Cássia Silva Rodrigues
+504,0,83,5167,-5084,0.5992161416751343,0.0,peripheral,USP-SC,Ellen Francine Barbosa
+505,12,4,733,-729,0.625,0.0,connector,UFPA,Eloi Luiz Favero
+507,9,2,1763,-1761,0.0,0.0,peripheral,UFC,Elvis Miguel Galeas Stancanelli
+508,9,19,1763,-1744,0.2770083102493076,0.0,peripheral,UFC,Emanuel Bezerra Rodrigues
+509,9,153,1763,-1610,0.09970524157375371,0.0,peripheral,UFC,Emanuel Ferreira Coutinho
+510,11,19,3526,-3507,0.0,0.0,peripheral,FURG,Emanuel da Silva Diaz Estrada
+511,9,28,1763,-1735,0.5255102040816326,0.0,peripheral,UFC,Emanuele Marques Rodrigues Santos
+512,8,21,1492,-1471,0.09070294784580502,0.0,peripheral,UPE,Emerson Alexandre de Oliveira Lima
+513,8,19,1492,-1473,0.43213296398891965,0.0,peripheral,PUC-PR,Emerson Cabrera Paraiso
+514,12,9,733,-724,0.0,0.0,peripheral,UFSCAR,Emerson Carlos Pedrino
+516,4,36,2197,-2161,0.4891975308641976,0.0,peripheral,UFABC,Emilio de Camargo Francesquini
+518,6,90,3006,-2916,0.4264197530864199,0.0,peripheral,UFC,Enyo José Tavares Gonçalves
+519,5,4,1985,-1981,0.375,0.0,peripheral,UFMS,Eraldo Luís Rezende Fernandes
+520,2,12,4900,-4888,0.8333333333333334,0.0,connector,UFLA,Eric Fernandes de Mello Araújo
+521,14,47,946,-899,0.12132186509732912,0.0,peripheral,UFRN,Erica Teixeira Gomes de Sousa
+522,8,33,1492,-1459,0.4389348025711661,0.0,peripheral,UFAL,Erick de Andrade Barboza
+523,2,84,4900,-4816,0.2774943310657596,0.0,peripheral,UFMG,Erickson Rangel do Nascimento
+524,13,12,1397,-1385,0.1527777777777779,0.0,peripheral,FUFPI,Erico Meneses Leão
+525,1,100,3828,-3728,0.07679999999999998,0.0,peripheral,UFG,Erika Morais Martins Coelho
+526,8,10,1492,-1482,0.33999999999999986,0.0,peripheral,UTFPR,Erikson Freitas de Morais
+527,14,72,946,-874,0.3159722222222223,0.0,peripheral,UFRN,Ermeson Carneiro de Andrade
+528,13,16,1397,-1381,0.1171875,0.0,peripheral,UNIFOR,Erneson Alves de Oliveira
+529,3,12,2603,-2591,0.6805555555555556,0.0,connector,USP-SINF,Ernesto Julián Goldberg Birgin
+530,1,191,3828,-3637,0.36720484635837836,0.0,peripheral,UFF,Esteban Walter Gonzalez Clua
+531,4,18,2197,-2179,0.7345679012345679,0.0,connector,UNICAMP,Esther Luna Colombini
+532,1,11,3828,-3817,0.16528925619834722,0.0,peripheral,UFF,Eugene Francis Vinod Rebello
+533,0,38,5167,-5129,0.19252077562326864,0.0,peripheral,UFAM,Eulanda Miranda dos Santos
+534,5,3,1985,-1982,0.0,0.0,peripheral,UEL,Evandro Baccarin
+535,5,17,1985,-1968,0.44290657439446357,0.0,peripheral,USP-RP,Evandro Eduardo Seron Ruiz
+536,6,89,3006,-2917,0.40777679585910864,0.0,peripheral,UFCG,Evandro de Barros Costa
+537,11,16,3526,-3510,0.2265625,0.0,peripheral,UFSM,Everton Alceu Carara
+538,8,32,1492,-1460,0.224609375,0.0,peripheral,UFCG,Everton Leandro Galdino Alves
+539,4,12,2197,-2185,0.7361111111111112,0.0,connector,UNIFESP,Ezequiel Roberto Zorzal
+540,15,4,447,-443,0.0,0.0,peripheral,UFRPE,Fabiane Barreto Vavassori Benitti
+541,2,12,4900,-4888,0.5138888888888888,0.0,peripheral,UFAL,Fabiane da Silva Queiroz
+542,3,80,2603,-2523,0.04906250000000001,0.0,peripheral,UFU,Fabiano Azevedo Dorça
+543,15,8,447,-439,0.65625,0.0,connector,UDESC,Fabiano Baldo
+544,0,55,5167,-5112,0.10446280991735546,0.0,peripheral,UFSCAR,Fabiano Cutigi Ferrari
+545,11,18,3526,-3508,0.6790123456790124,0.0,connector,PUC-RS,Fabiano Passuelo Hessel
+546,7,49,2362,-2313,0.31986672219908363,0.0,peripheral,UFPR,Fabiano Silva
+547,4,60,2197,-2137,0.09611111111111115,0.0,peripheral,UNIFESP,Fabio Augusto Faria
+548,6,1,3006,-3005,0.0,0.0,peripheral,UFAL,Fabio Jose Coutinho da Silva
+549,0,82,5167,-5085,0.5838786436644855,0.0,peripheral,USP-SINF,Fabio Kon
+550,7,27,2362,-2335,0.26337448559670784,0.0,peripheral,UFSCAR,Fabio Luciano Verdi
+551,2,19,4900,-4881,0.6814404432132964,0.0,connector,UFMS,Fabio Moreira Costa
+552,6,96,3006,-2910,0.17708333333333337,0.0,peripheral,UFPE,Fabio Queda Bueno da Silva
+553,2,40,4900,-4860,0.0,0.0,peripheral,UFV,Fabio Ribeiro Cerqueira
+554,0,33,5167,-5134,0.11570247933884292,0.0,peripheral,UFAM,Fabiola Guerra Nakamura
+555,6,11,3006,-2995,0.6776859504132231,0.0,connector,UFPA,Fabiola Pantoja Oliveira Araújo
+556,4,22,2197,-2175,0.5619834710743802,0.0,peripheral,UNESP-SJRP,Fabricio Aparecido Breve
+557,6,25,3006,-2981,0.6239999999999999,0.0,connector,UFABC,Fabricio Olivetti de França
+558,2,90,4900,-4810,0.06444444444444453,0.0,peripheral,UFV,Fabrício Aguiar Silva
+559,2,150,4900,-4750,0.15066666666666662,0.0,peripheral,UFMG,Fabrício Benevenuto de Souza
+560,8,73,1492,-1419,0.13060611747044482,0.0,peripheral,PUC-PR,Fabrício Enembreck
+561,2,53,4900,-4847,0.0,0.0,peripheral,UFMG,Fabrício Murai Ferreira
+562,5,59,1985,-1926,0.06549841999425454,0.0,peripheral,USP-SC,Fabrício Simeoni de Sousa
+563,3,137,2603,-2466,0.18615802653311309,0.0,peripheral,UFG,Fabrízzio Alphonsus Alves de Melo Nunes Soares
+564,5,14,1985,-1971,0.7040816326530612,0.0,connector,UFBA,Fabíola Gonçalves Pereira Greve
+565,3,30,2603,-2573,0.1266666666666666,0.0,peripheral,UFU,Fabíola Souza Fernandes Pereira
+566,5,1,1985,-1984,0.0,0.0,peripheral,USP-SC,Farid Tari
+567,5,27,1985,-1958,0.13717421124828522,0.0,peripheral,UFU,Felipe Alves da Louza
+569,1,128,3828,-3700,0.2264404296875,0.0,peripheral,UFRJ-COMP,Felipe Maia Galvão França
+570,1,11,3828,-3817,0.5950413223140496,0.0,peripheral,UFSM,Felipe Martins Müller
+571,3,74,2603,-2529,0.24689554419284132,0.0,peripheral,PUC-RS,Felipe Rech Meneguzzi
+572,1,30,3828,-3798,0.0,0.0,peripheral,CEFET,Felipe da Rocha Henriques
+573,11,111,3526,-3415,0.053080107134161114,0.0,peripheral,UFPEL,Felipe de Souza Marques
+574,10,308,1873,-1565,0.038202057682577006,0.0,peripheral,UFJF,Fernanda Claudia Alves Campos
+575,6,60,3006,-2946,0.3144444444444444,0.0,peripheral,UPE,Fernanda Maria Ribeiro de Alencar
+576,2,115,4900,-4785,0.05111531190926277,0.0,peripheral,UFSJ,Fernanda Sumika Hojo de Souza
+577,14,48,946,-898,0.18663194444444442,0.0,peripheral,UFRN,Fernando Antonio Aires Lins
+578,9,122,1763,-1641,0.22440204246170392,0.0,peripheral,UFC,Fernando Antonio Mota Trinta
+579,8,20,1492,-1472,0.4750000000000001,0.0,peripheral,UPE,Fernando Buarque de Lima Neto
+580,11,52,3526,-3474,0.3224852071005917,0.0,peripheral,PUC-RS,Fernando Gehm Moraes
+581,0,39,5167,-5128,0.23405654174884938,0.0,peripheral,UFPE,Fernando José Castor de Lima Filho
+582,11,31,3526,-3495,0.4578563995837669,0.0,peripheral,PUC-RS,Fernando Luís Dotti
+583,8,46,1492,-1446,0.0,0.0,peripheral,UFPE,Fernando Maciano de Paula Neto
+584,4,70,2197,-2127,0.6473469387755102,0.0,connector,UFMG,Fernando Magno Quintão Pereira
+585,3,22,2603,-2581,0.16528925619834722,0.0,peripheral,UFG,Fernando Marques Federson
+586,2,29,4900,-4871,0.5279429250891796,0.0,peripheral,UFPB-JP,Fernando Menezes Matos
+587,3,68,2603,-2535,0.32352941176470584,0.0,peripheral,USP-SC,Fernando Santos Osório
+588,5,25,1985,-1960,0.2784000000000001,0.0,peripheral,USP-SC,Fernando Vieira Paulovich
+589,6,33,3006,-2973,0.3177226813590449,0.0,peripheral,UFPE,Fernando da Fonseca de Souza
+590,4,32,2197,-2165,0.060546875,0.0,peripheral,UNIFACCAMP,Ferrucio de Franco Rosa
+591,6,23,3006,-2983,0.16257088846880918,0.0,peripheral,UFPE,Filipe Carlos de Albuquerque Calegario
+592,6,66,3006,-2940,0.5179063360881543,0.0,peripheral,UFRN,Filipe Rolim Cordeiro
+593,12,12,733,-721,0.7361111111111112,0.0,connector,UFPA,Filipe de Oliveira Saraiva
+594,1,122,3828,-3706,0.07954850846546635,0.0,peripheral,UFF,Flavia Cristina Bernardini
+595,1,36,3828,-3792,0.054012345679012475,0.0,peripheral,UFF,Flavio Luiz Seixas
+596,17,29,152,-123,0.19024970273483943,0.0,peripheral,UFES,Flavio Miguel Varejao
+597,0,10,5167,-5157,0.76,0.0,connector,USP-SINF,Flavio Soares Correa da Silva
+598,2,56,4900,-4844,0.10267857142857151,0.0,peripheral,UFMG,Flavio Vinicius Diniz de Figueiredo
+599,1,197,3828,-3631,0.23963513617975207,0.0,peripheral,UFF,Flávia Coimbra Delicato
+600,6,34,3006,-2972,0.11245674740484424,0.0,peripheral,UFPE,Flávia de Almeida Barros
+601,0,70,5167,-5097,0.4542857142857144,0.0,peripheral,UFABC,Flávio Eduardo Aoki Horita
+602,7,11,2362,-2351,0.49586776859504145,0.0,peripheral,UFMS,Flávio Henrique Teles Vieira
+603,4,88,2197,-2109,0.16916322314049592,0.0,peripheral,UNICAMP,Flávio Keidi Miyazawa
+604,12,9,733,-724,0.49382716049382713,0.0,peripheral,USP-SINF,Flávio Luiz Coutinho
+605,2,17,4900,-4883,0.7058823529411764,0.0,connector,UFSJ,Flávio Luiz Schiavoni
+606,7,21,2362,-2341,0.17233560090702937,0.0,peripheral,UFRGS,Flávio Rech Wagner
+607,9,49,1763,-1714,0.07830070803831746,0.0,peripheral,UFC,Flávio Rubens de Carvalho Sousa
+608,5,28,1985,-1957,0.4107142857142857,0.0,peripheral,UNB,Flávio de Barros Vidal
+609,7,94,2362,-2268,0.10208239022181986,0.0,peripheral,UFU,Flávio de Oliveira Silva
+610,14,83,946,-863,0.48105675714907825,0.0,peripheral,FUFPI,Francisco Airton Pereira da Silva
+611,5,37,1985,-1948,0.15339663988312624,0.0,peripheral,USP-SC,Francisco Aparecido Rodrigues
+612,9,30,1763,-1733,0.6155555555555556,0.0,peripheral,UECE,Francisco Carlos de Mattos Brito Oliveira
+613,6,53,3006,-2953,0.03702385190459245,0.0,peripheral,UERN,Francisco Chagas de Lima Júnior
+614,4,30,2197,-2167,0.1266666666666666,0.0,peripheral,UFMS,Francisco Eloi Soares de Araujo
+615,1,32,3828,-3796,0.060546875,0.0,peripheral,UFMA,Francisco Glaubos Nunes Clímaco
+616,9,2,1763,-1761,0.0,0.0,peripheral,UFC,Francisco Heron de Carvalho Junior
+618,3,14,2603,-2589,0.13265306122448983,0.0,peripheral,USP-SC,Francisco José Monaco
+619,0,156,5167,-5011,0.05037804076265617,0.0,peripheral,UFMA,Francisco José da Silva e Silva
+620,6,75,3006,-2931,0.07786666666666664,0.0,peripheral,UFERSA,Francisco Milton Mendes Neto
+621,9,11,1763,-1752,0.16528925619834722,0.0,peripheral,IFCE,Francisco Nivando Bezerra
+622,2,51,4900,-4849,0.2145328719723184,0.0,peripheral,UFCG,Francisco Vilar Brasileiro
+623,8,6,1492,-1486,0.2777777777777777,0.0,peripheral,UFPE,Francisco de Assis Tenorio de Carvalho
+624,6,20,3006,-2986,0.41000000000000003,0.0,peripheral,UFABC,Francisco de Assis Zampirolli
+625,10,16,1873,-1857,0.5625,0.0,peripheral,UFRPE,Frank Augusto Siqueira
+626,12,7,733,-726,0.0,0.0,peripheral,UTFPR,Frank Helbert Borsato
+627,0,25,5167,-5142,0.5087999999999999,0.0,peripheral,UNESP-SJRP,Frank José Affonso
+628,8,13,1492,-1479,0.14201183431952646,0.0,peripheral,UEM,Franklin César Flores
+629,1,30,3828,-3798,0.0,0.0,peripheral,UFRJ-COMP,Franklin de Lima Marquezino
+630,8,16,1492,-1476,0.21875,0.0,peripheral,UFCG,Franklin de Souza Ramalho
+631,7,11,2362,-2351,0.2975206611570247,0.0,peripheral,USP-SC,Franklina Maria Bragion de Toledo
+632,0,21,5167,-5146,0.40816326530612246,0.0,peripheral,UFBA,Frederico Araujo Durão
+633,6,69,3006,-2937,0.11090107120352877,0.0,peripheral,UFPE,Frederico Luiz Gonçalves de Freitas
+634,4,44,2197,-2153,0.4121900826446281,0.0,peripheral,UNIFESP,Fábio Augusto Menocci Cappabianco
+635,0,15,5167,-5152,0.23111111111111104,0.0,peripheral,UNIFESP,Fábio Fagundes Silveira
+636,3,4,2603,-2599,0.0,0.0,peripheral,UERN,Fábio Francisco da Costa Fontes
+637,4,31,2197,-2166,0.12278876170655584,0.0,peripheral,UFRJ-COMP,Fábio Happ Botler
+638,4,14,2197,-2183,0.24489795918367352,0.0,peripheral,UFMS,Fábio Henrique Viduani Martinez
+639,2,25,4900,-4875,0.07679999999999998,0.0,peripheral,UFCG,Fábio Jorge Almeida Morais
+640,4,19,2197,-2178,0.6759002770083102,0.0,connector,UNICAMP,Fábio Luiz Usberti
+641,5,4,1985,-1981,0.0,0.0,peripheral,UFABC,Fábio Marques Simões de Souza
+642,1,133,3828,-3695,0.08717281926621068,0.0,peripheral,UFF,Fábio Protti
+643,2,18,4900,-4882,0.1049382716049383,0.0,peripheral,PUC-MG,Fátima de Lima Procópio Duarte Figueiredo
+644,0,83,5167,-5084,0.46189577587458264,0.0,peripheral,USP-SINF,Fátima de Lourdes dos Santos Nunes Marques
+645,14,57,946,-889,0.6598953524161281,0.0,connector,UFRN,Gabriel Alves de Albuquerque Júnior
+646,9,56,1763,-1707,0.4700255102040817,0.0,peripheral,UFC,Gabriel Antoine Louis Paillard
+647,3,4,2603,-2599,0.0,0.0,peripheral,USP-SINF,Gabriel Haeser
+648,7,68,2362,-2294,0.34385813148788924,0.0,peripheral,UFRGS,Gabriel Luca Nazar
+649,2,4,4900,-4896,0.0,0.0,peripheral,UFMG,Gabriel de Morais Coutinho
+650,16,96,1112,-1016,0.26236979166666674,0.0,peripheral,UNISINOS,Gabriel de Oliveira Ramos
+651,1,7,3828,-3821,0.40816326530612246,0.0,peripheral,IME,Gabriela Moutinho de Souza Dias
+652,6,42,3006,-2964,0.1768707482993197,0.0,peripheral,UFPE,Geber Lisboa Ramalho
+653,0,29,5167,-5138,0.6159334126040428,0.0,peripheral,UNB,Genaina Nunes Rodrigues
+654,8,99,1492,-1393,0.21732476277930823,0.0,peripheral,UFPE,George Darmiton da Cunha Cavalcanti
+655,2,55,4900,-4845,0.26247933884297525,0.0,peripheral,UFMG,George Luiz Medeiros Teodoro
+656,8,5,1492,-1487,0.6399999999999999,0.0,connector,UFBA,George Marconi de Araújo Lima
+657,10,59,1873,-1814,0.4337833955759839,0.0,peripheral,UFRJ-COMP,Geraldo Bonorino Xexéo
+658,13,389,1397,-1008,0.1572286728213531,0.0,peripheral,UFMA,Geraldo Braz Júnior
+659,3,82,2603,-2521,0.024092801903628835,0.0,peripheral,UNESP-SJRP,Geraldo Francisco Donegá Zafalon
+660,9,15,1763,-1748,0.48,0.0,peripheral,IFCE,Geraldo Luis Bezerra Ramalho
+661,2,239,4900,-4661,0.3753085555224873,0.0,peripheral,UNB,Geraldo Pereira Rocha Filho
+662,1,27,3828,-3801,0.5925925925925926,0.0,peripheral,UFES,Geraldo Regis Mauri
+663,2,51,4900,-4849,0.49519415609381,0.0,peripheral,UFMG,Geraldo Robson Mateus
+664,10,31,1873,-1842,0.0,0.0,peripheral,UFRJ-COMP,Geraldo Zimbrao da Silva
+665,9,5,1763,-1758,0.0,0.0,peripheral,UECE,Gerardo Valdisio Rodrigues Viana
+666,4,4,2197,-2193,0.0,0.0,peripheral,UNICAMP,Gerberth Adín Ramírez Rivera
+667,8,8,1492,-1484,0.59375,0.0,peripheral,UFPE,Germano Crispim Vasconcelos
+668,11,47,3526,-3479,0.23268447261204162,0.0,peripheral,UFPEL,Gerson Geraldo Homrich Cavalheiro
+669,1,16,3828,-3812,0.1171875,0.0,peripheral,UFRJ-COMP,Gerson Zaverucha
+670,0,98,5167,-5069,0.11765930862140761,0.0,peripheral,UFES,Giancarlo Guizzardi
+671,6,9,3006,-2997,0.4444444444444444,0.0,peripheral,UFRN,Gilberto Amado de Azevedo Cysneiros Filho
+672,1,38,3828,-3790,0.0,0.0,peripheral,UFPB-JP,Gilberto Farias de Sousa Filho
+673,2,4,4900,-4896,0.0,0.0,peripheral,UFMG,Gilberto Medeiros Ribeiro
+674,8,27,1492,-1465,0.4636488340192043,0.0,peripheral,FUFSE,Gilton José Ferreira da Silva
+675,3,40,2603,-2563,0.21875,0.0,peripheral,UFU,Gina Maira Barbosa de Oliveira
+676,6,32,3006,-2974,0.060546875,0.0,peripheral,UFPE,Giordano Ribeiro Eulalio Cabral
+677,2,15,4900,-4885,0.24,0.0,peripheral,UNIFEI,Giovani Bernardes Vitor
+678,4,9,2197,-2188,0.0,0.0,peripheral,UFRPE,Giovani Gracioli
+679,2,25,4900,-4875,0.4032,0.0,peripheral,UFES,Giovanni Ventorim Comarela
+680,2,85,4900,-4815,0.2737716262975779,0.0,peripheral,UFMG,Gisele Lobo Pappa
+681,10,104,1873,-1769,0.23021449704142016,0.0,peripheral,UFRJ-COMP,Giseli Rabello Lopes
+682,0,70,5167,-5097,0.0,0.0,peripheral,UEM,Gislaine Camila Lapasini Leal
+683,4,89,2197,-2108,0.18937002903673783,0.0,peripheral,UFOP,Gladston Juliano Prates Moreira
+684,6,4,3006,-3002,0.375,0.0,peripheral,UFAL,Glauber Jose Ferreira Tomaz da Silva
+685,14,123,946,-823,0.0934628858483707,0.0,peripheral,UFRN,Glauco Estácio Gonçalves
+686,1,40,3828,-3788,0.04875000000000007,0.0,peripheral,CEFET,Glauco Fiorott Amorim
+687,10,20,1873,-1853,0.4650000000000001,0.0,peripheral,UNIFACS,Glauco de Figueiredo Carneiro
+688,8,34,1492,-1458,0.25086505190311414,0.0,peripheral,UTFPR,Gleifer Vaz Alves
+689,0,94,5167,-5073,0.12154821186057041,0.0,peripheral,UNIRIO,Gleison dos Santos Souza
+691,11,164,3526,-3362,0.09466091612135641,0.0,peripheral,FURG,Graçaliz Pereira Dimuro
+692,4,47,2197,-2150,0.12132186509732912,0.0,peripheral,UNICAMP,Guido Costa Souza de Araújo
+693,1,30,3828,-3798,0.29555555555555546,0.0,peripheral,UFPB-JP,Guido Lemos de Souza Filho
+694,0,23,5167,-5144,0.5368620037807184,0.0,peripheral,FUFPI,Guilherme Amaral Avelino
+695,16,163,1112,-949,0.23508600248409806,0.0,peripheral,UNIOESTE,Guilherme Galante
+696,0,35,5167,-5132,0.20734693877551025,0.0,peripheral,UFRJ-COMP,Guilherme Horta Travassos
+697,4,48,2197,-2149,0.0,0.0,peripheral,UFABC,Guilherme Oliveira Mota
+698,5,47,1985,-1938,0.1584427342689,0.0,peripheral,UNICAMP,Guilherme Pimentel Telles
+699,15,180,447,-267,0.06512345679012344,0.0,peripheral,UDESC,Guilherme Piêgas Koslovski
+700,11,303,3526,-3223,0.0946965983727086,0.0,peripheral,UFPEL,Guilherme Ribeiro Corrêa
+701,3,7,2603,-2596,0.40816326530612246,0.0,peripheral,UNIFEI,Guilherme Sousa Bastos
+702,4,31,2197,-2166,0.06243496357960443,0.0,peripheral,UFOP,Guillermo Cámara Chávez
+703,9,60,1763,-1703,0.5116666666666667,0.0,peripheral,UECE,Gustavo Augusto Lima de Campos
+704,2,29,4900,-4871,0.43995243757431624,0.0,peripheral,UFBA,Gustavo Bittencourt Figueiredo
+705,5,73,1985,-1912,0.0,0.0,peripheral,USP-SC,Gustavo Carlos Buscaglia
+706,5,54,1985,-1931,0.20507544581618664,0.0,peripheral,USP-SC,Gustavo Enrique de Almeida Prado Alves Batista
+707,0,148,5167,-5019,0.10445580715850988,0.0,peripheral,UFPA,Gustavo Henrique Lima Pinto
+708,6,2,3006,-3004,0.0,0.0,peripheral,UFPB-JP,Gustavo Henrique Matos Bezerra Motta
+709,6,27,3006,-2979,0.07133058984910856,0.0,peripheral,UFPE,Gustavo Henrique Porto de Carvalho
+710,2,2,4900,-4898,0.0,0.0,peripheral,UFSCAR,Gustavo Maciel Dias Vieira
+711,1,53,3828,-3775,0.10679957280170882,0.0,peripheral,CEFET,Gustavo Paiva Guedes e Silva
+712,2,165,4900,-4735,0.5744719926538109,0.0,peripheral,UFPA,Gustavo Pessin
+713,14,87,946,-859,0.08772625181662053,0.0,peripheral,UFRN,Gustavo Rau de Almeida Callou
+715,3,75,2603,-2528,0.12657777777777768,0.0,peripheral,UFG,Gustavo Teodoro Laureano
+716,4,2,2197,-2195,0.0,0.0,peripheral,UFMG,Haniel Moreira Barbosa
+717,8,9,1492,-1483,0.19753086419753085,0.0,peripheral,UFPE,Hansenclever de França Bassani
+718,1,38,3828,-3790,0.35595567867036004,0.0,peripheral,UFOP,Haroldo Gambini Santos
+719,1,79,3828,-3749,0.04935106553436963,0.0,peripheral,UFG,Hebert Coelho da Silva
+720,2,47,4900,-4853,0.1557265731100046,0.0,peripheral,UFJF,Heder Soares Bernardino
+721,0,112,5167,-5055,0.0696747448979591,0.0,peripheral,UFLA,Heitor Augustus Xavier Costa
+722,6,11,3006,-2995,0.39669421487603307,0.0,peripheral,UFAL,Heitor Judiss Savino
+723,2,89,4900,-4811,0.10806716323696508,0.0,peripheral,UFMG,Heitor Soares Ramos Filho
+724,2,118,4900,-4782,0.21947716173513354,0.0,peripheral,UFPA,Helder May Nunes da Silva Oliveira
+725,5,17,1985,-1968,0.11072664359861584,0.0,peripheral,UFSCAR,Helena de Medeiros Caseli
+726,0,88,5167,-5079,0.46642561983471065,0.0,peripheral,PUC-RIO,Helio Côrtes Vieira Lopes
+727,5,23,1985,-1962,0.5897920604914934,0.0,peripheral,UFSCAR,Heloisa de Arruda Camargo
+728,12,6,733,-727,0.4444444444444444,0.0,peripheral,USP-SINF,Helton Hideraldo Bíscaro
+729,8,57,1492,-1435,0.0,0.0,peripheral,UTFPR,Helyane Bronoski Borges
+730,5,54,1985,-1931,0.20507544581618664,0.0,peripheral,UFMS,Hemerson Pistori
+731,8,48,1492,-1444,0.19444444444444442,0.0,peripheral,FUFSE,Hendrik Teixeira Macedo
+732,3,10,2603,-2593,0.17999999999999994,0.0,peripheral,UFU,Henrique Coelho Fernandes
+733,7,50,2362,-2312,0.3752,0.0,peripheral,PUC-MG,Henrique Cota de Freitas
+734,0,11,5167,-5156,0.49586776859504145,0.0,peripheral,UFPE,Henrique Emanuel Mostaert Rebêlo
+736,1,31,3828,-3797,0.3850156087408949,0.0,peripheral,UFCG,Herman Martins Gomes
+737,6,56,3006,-2950,0.375,0.0,peripheral,UFPE,Hermano Perrelli de Moura
+738,5,10,1985,-1975,0.33999999999999986,0.0,peripheral,UFSCAR,Hermes Senger
+739,4,14,2197,-2183,0.0,0.0,peripheral,UNICAMP,Hervé Cédric Yviquel
+740,0,56,5167,-5111,0.4362244897959183,0.0,peripheral,UFAM,Horacio Antonio Braga Fernandes de Oliveira
+741,3,36,2603,-2567,0.1049382716049383,0.0,peripheral,UNIFESP,Horacio Hideki Yanasse
+742,3,45,2603,-2558,0.2775308641975309,0.0,peripheral,UFMS,Hugo Alexandre Dantas do Nascimento
+743,8,89,1492,-1403,0.0858477464966545,0.0,peripheral,UTFPR,Hugo Valadares Siqueira
+744,3,38,2603,-2565,0.42520775623268703,0.0,peripheral,UFG,Humberto José Longo
+745,3,25,2603,-2578,0.4032,0.0,peripheral,UFU,Humberto Luiz Razente
+746,2,36,4900,-4864,0.5046296296296297,0.0,peripheral,PUC-MG,Humberto Torres Marques Neto
+747,6,173,3006,-2833,0.045173577466671055,0.0,peripheral,UFCG,Hyggo Oliveira de Almeida
+748,11,129,3526,-3397,0.015383690883961298,0.0,peripheral,FURG,Hélida Salles Santos
+749,5,7,1985,-1978,0.24489795918367352,0.0,peripheral,UFSCAR,Hélio Crestana Guardia
+750,4,137,2197,-2060,0.4920880174756246,0.0,peripheral,UNICAMP,Hélio Pedrini
+751,6,411,3006,-2595,0.129658242610451,0.0,peripheral,UFAL,Ig Ibert Bittencourt Santana Pinto
+752,0,232,5167,-4935,0.017092746730083208,0.0,peripheral,UTFPR,Igor Fabio Steinmacher
+753,1,104,3828,-3724,0.12814349112426038,0.0,peripheral,UFF,Igor Machado Coelho
+754,1,47,3828,-3781,0.19556360344047086,0.0,peripheral,UFF,Igor Monteiro Moraes
+755,0,198,5167,-4969,0.029945923885317804,0.0,peripheral,UTFPR,Igor Scaliante Wiese
+756,1,59,3828,-3769,0.18902614191324318,0.0,peripheral,UFPB-JP,Iguatemi Eduardo da Fonseca
+757,0,43,5167,-5124,0.5884261763115197,0.0,peripheral,UFRGS,Ingrid Oliveira de Nunes
+758,9,41,1763,-1722,0.6365258774538964,0.0,connector,UFC,Ingrid Teixeira Monteiro
+759,8,3,1492,-1489,0.0,0.0,peripheral,UTFPR,Ionildo José Sanches
+760,17,26,152,-126,0.0,0.0,peripheral,UFES,Isaac Pinheiro dos Santos
+761,6,3,3006,-3003,0.0,0.0,peripheral,UFERSA,Isaac de Lima Oliveira Filho
+762,1,51,3828,-3777,0.0,0.0,peripheral,UFF,Isabel Cristina Mello Rosseti
+763,3,77,2603,-2526,0.1474110305279137,0.0,peripheral,PUC-RS,Isabel Harb Manssour
+764,6,257,3006,-2749,0.44787960453602627,0.0,peripheral,UDESC,Isabela Gasparini
+765,2,16,4900,-4884,0.21875,0.0,peripheral,UNICAMP,Islene Calciolari Garcia
+766,9,106,1763,-1657,0.12548949804200782,0.0,peripheral,UFC,Ismayle de Sousa Santos
+767,2,107,4900,-4793,0.14097301074329638,0.0,peripheral,UFMG,Italo Fernando Scotá Cunha
+768,6,15,3006,-2991,0.0,0.0,peripheral,UFABC,Itana Stiubiener
+769,4,27,2197,-2170,0.07133058984910856,0.0,peripheral,UNESP-SJRP,Ivan Rizzo Guilherme
+770,13,18,1397,-1379,0.7654320987654322,0.0,connector,FUFPI,Ivan Saraiva Silva
+771,0,129,5167,-5038,0.4320653806862569,0.0,peripheral,UFBA,Ivan do Carmo Machado
+772,12,3,733,-730,0.0,0.0,peripheral,USP-SINF,Ivandre Paraboni
+773,0,27,5167,-5140,0.13991769547325095,0.0,peripheral,UTFPR,Ivanilton Polato
+774,6,20,3006,-2986,0.5249999999999999,0.0,peripheral,UFAL,Ivo Augusto Andrade Rocha Calado
+775,16,67,1112,-1045,0.36444642459345067,0.0,peripheral,UNIOESTE,Ivonei Freitas da Silva
+776,7,21,2362,-2341,0.09070294784580502,0.0,peripheral,UNB,Jacir Luiz Bordim
+777,3,6,2603,-2597,0.7222222222222222,0.0,connector,UFRGS,Jacob Scharcanski
+778,3,19,2603,-2584,0.3490304709141274,0.0,peripheral,UFG,Jacques Duílio Brancher
+779,4,23,2197,-2174,0.08317580340264641,0.0,peripheral,UNICAMP,Jacques Wainer
+780,6,117,3006,-2889,0.16144349477682818,0.0,peripheral,UFPE,Jaelson Freire Brelaz de Castro
+781,12,15,733,-718,0.5955555555555556,0.0,peripheral,USP-COMP,Jaime Simão Sichman
+782,10,62,1873,-1811,0.45369406867845985,0.0,peripheral,UFJF,Jairo Francisco de Souza
+783,14,127,946,-819,0.015624031248062442,0.0,peripheral,UFPE,Jamilson Ramalho Dantas
+784,15,15,447,-432,0.23111111111111104,0.0,peripheral,UDESC,Janine Kniess
+785,10,102,1873,-1771,0.1999231064975009,0.0,peripheral,UFRJ-COMP,Jano Moreira de Souza
+786,1,18,3828,-3810,0.47530864197530864,0.0,peripheral,IME,Jauvane Cavalcante de Oliveira
+787,9,106,1763,-1657,0.2906728373086507,0.0,peripheral,UFC,Javam de Castro Machado
+788,1,120,3828,-3708,0.21291666666666675,0.0,peripheral,UFRJ-COMP,Jayme Luiz Szwarcfiter
+789,10,77,1873,-1796,0.05093607691010282,0.0,peripheral,UFRPE,Jean Carlo Rossa Hauck
+790,14,136,946,-810,0.1257569204152249,0.0,peripheral,FUFSE,Jean Carlos Teixeira de Araujo
+791,10,17,1873,-1856,0.3044982698961938,0.0,peripheral,UFRPE,Jean Everson Martina
+792,8,75,1492,-1417,0.15039999999999998,0.0,peripheral,PUC-PR,Jean Paul Barddal
+793,0,17,5167,-5150,0.5397923875432525,0.0,peripheral,UNIRIO,Jean-Pierre Briot
+794,7,77,2362,-2285,0.5454545454545454,0.0,peripheral,UFRGS,Jeferson Campos Nobre
+795,4,117,2197,-2080,0.30345532909635464,0.0,peripheral,UFMG,Jefersson Alex dos Santos
+796,12,62,733,-671,0.0,0.0,peripheral,UFPA,Jefferson Magalhães de Morais
+797,3,65,2603,-2538,0.3592899408284024,0.0,peripheral,UFU,Jefferson Rodrigo de Souza
+798,3,3,2603,-2600,0.4444444444444444,0.0,peripheral,UNIFEI,Jeremias Barbosa Machado
+799,9,34,1763,-1729,0.47231833910034604,0.0,peripheral,UECE,Jerffeson Teixeira de Souza
+801,6,84,3006,-2922,0.06944444444444442,0.0,peripheral,UFPE,Jessyka Flavyanne Ferreira Vilela
+802,12,26,733,-707,0.3905325443786982,0.0,peripheral,UFABC,Jesús Pascual Mena Chalco
+803,7,17,2362,-2345,0.2145328719723184,0.0,peripheral,UFSM,Joao Baptista dos Santos Martins
+804,6,38,3006,-2968,0.5983379501385042,0.0,peripheral,UFSM,Joao Carlos Damasceno Lima
+805,12,100,733,-633,0.20619999999999994,0.0,peripheral,UFPA,Joao Crisóstomo Weyl Albuquerque Costa
+806,0,9,5167,-5158,0.5679012345679012,0.0,peripheral,UFC,Joao Fernando Lima Alcântara
+807,13,85,1397,-1312,0.1334256055363321,0.0,peripheral,UNIFOR,Joao Jose Vasco Peixoto Furtado
+809,18,23,33,-10,0.0,0.0,peripheral,FUFPI,Joao Xavier da Cruz Neto
+810,9,107,1763,-1656,0.018516901039392186,0.0,peripheral,UFC,Joaquim Bento Cavalcante Neto
+811,2,42,4900,-4858,0.4138321995464852,0.0,peripheral,UECE,Joaquim Celestino Júnior
+812,5,12,1985,-1973,0.1527777777777779,0.0,peripheral,USP-RP,Joaquim Cezar Felipe
+813,7,28,2362,-2334,0.3137755102040817,0.0,peripheral,UNIFACS,Joberto Sérgio Barbosa Martins
+814,1,63,3828,-3765,0.17888636936255975,0.0,peripheral,CEFET,Joel André Ferreira dos Santos
+815,3,72,2603,-2531,0.15779320987654333,0.0,peripheral,UFRGS,Joel Luis Carbonera
+817,0,13,5167,-5154,0.37869822485207094,0.0,peripheral,UFRN,Jones Oliveira de Albuquerque
+818,10,115,1873,-1758,0.5571266540642723,0.0,peripheral,UFRJ-COMP,Jonice de Oliveira Sampaio
+819,10,22,1873,-1851,0.37603305785123975,0.0,peripheral,UNIFACS,Jorge Alberto Prado de Campos
+821,8,22,1492,-1470,0.08677685950413205,0.0,peripheral,UFCG,Jorge Cesar Abrantes de Figueiredo
+822,0,5,5167,-5162,0.0,0.0,peripheral,PUC-RS,Jorge Luis Nicolas Audy
+823,16,249,1112,-863,0.3577039080014839,0.0,peripheral,UNISINOS,Jorge Luis Victória Barbosa
+824,5,8,1985,-1977,0.21875,0.0,peripheral,UNICAMP,Jorge Stolfi
+825,1,48,3828,-3780,0.0,0.0,peripheral,CEFET,Jorge de Abreu Soares
+827,0,102,5167,-5065,0.3552479815455595,0.0,peripheral,USP-SC,Jose Carlos Maldonado
+828,12,8,733,-725,0.21875,0.0,peripheral,UFSCAR,Jose Hiroki Saito
+829,2,100,4900,-4800,0.32179999999999986,0.0,peripheral,UFMG,Jose Marcos Silva Nogueira
+830,10,334,1873,-1539,0.04688228333751654,0.0,peripheral,UFJF,Jose Maria Nazar David
+831,9,196,1763,-1567,0.18971261974177422,0.0,peripheral,UFC,Jose Neuman de Souza
+832,10,49,1873,-1824,0.0,0.0,peripheral,UFRJ-COMP,Jose Orlando Gomes
+833,2,73,4900,-4827,0.3073747419778571,0.0,peripheral,UNESP-SJRP,Jose Remo Ferreira Brega
+834,13,39,1397,-1358,0.04996712689020377,0.0,peripheral,FUFPI,Jose Valdemir dos Reis Junior
+835,6,39,3006,-2967,0.39447731755424065,0.0,peripheral,UFCG,Joseana Macêdo Fechine Régis de Araújo
+836,1,6,3828,-3822,0.5,0.0,peripheral,UFRJ-COMP,Josefino Cabral MELO LIMA
+837,6,9,3006,-2997,0.0,0.0,peripheral,UFPA,Josivaldo de Souza Araújo
+838,5,28,1985,-1957,0.19132653061224492,0.0,peripheral,USP-SC,José Alberto Cuminato
+839,0,24,5167,-5143,0.53125,0.0,peripheral,UEFS,José Amancio Macedo Santos
+840,9,116,1763,-1647,0.29756242568370983,0.0,peripheral,UFC,José Antonio Fernandes de Macêdo
+841,9,44,1763,-1719,0.375,0.0,peripheral,UFCG,José Antão Beltrão Moura
+842,0,22,5167,-5145,0.4628099173553719,0.0,peripheral,USP-RP,José Augusto Baranauskas
+843,2,251,4900,-4649,0.023682163775178178,0.0,peripheral,UFV,José Augusto Miranda Nacif
+844,7,37,2362,-2325,0.5960555149744339,0.0,peripheral,UFPE,José Augusto Suruagy Monteiro
+845,9,10,1763,-1753,0.0,0.0,peripheral,IFCE,José Daniel de Alencar Santos
+846,2,12,4900,-4888,0.2777777777777777,0.0,peripheral,UFV,José Elias Claudio Arroyo
+847,1,10,3828,-3818,0.31999999999999984,0.0,peripheral,UFCG,José Eustáquio Rangel de Queiroz
+848,9,14,1763,-1749,0.5408163265306123,0.0,peripheral,UECE,José Everardo Bessa Maia
+849,5,63,1985,-1922,0.28319475938523553,0.0,peripheral,USP-SC,José Fernando Rodrigues Júnior
+850,7,37,2362,-2325,0.5200876552227902,0.0,peripheral,UFRJ-COMP,José Ferreira de Rezende
+851,0,21,5167,-5146,0.09070294784580502,0.0,peripheral,UFAM,José Francisco de Magalhães Netto
+852,10,11,1873,-1862,0.7272727272727273,0.0,connector,UFES,José Gonçalves Pereira Filho
+853,3,23,2603,-2580,0.5897920604914935,0.0,peripheral,UFU,José Gustavo de Souza Paiva
+854,11,36,3526,-3490,0.10648148148148151,0.0,peripheral,UFRPE,José Luís Almada Güntzel
+855,9,139,1763,-1624,0.323068164173697,0.0,peripheral,UFC,José Maria da Silva Monteiro Filho
+856,6,110,3006,-2896,0.5583471074380165,0.0,peripheral,UFRGS,José Palazzo Moreira de Oliveira
+857,0,21,5167,-5146,0.47165532879818595,0.0,peripheral,UFAM,José Reginaldo Hughes Carvalho
+858,7,35,2362,-2327,0.4228571428571428,0.0,peripheral,UFRGS,José Rodrigo Furlanetto de Azambuja
+859,1,185,3828,-3643,0.30130021913805694,0.0,peripheral,UFF,José Viterbo Filho
+860,1,3,3828,-3825,0.4444444444444444,0.0,peripheral,UFRJ-COMP,João Antonio Recio da Paixão
+861,8,19,1492,-1473,0.40997229916897515,0.0,peripheral,UFCG,João Arthur Brunet Monteiro
+862,13,6,1397,-1391,0.4444444444444444,0.0,peripheral,UNIFOR,João Batista Furlan Duarte
+863,0,13,5167,-5154,0.6035502958579881,0.0,peripheral,UEFS,João Batista da Rocha Junior
+864,9,13,1763,-1750,0.0,0.0,peripheral,UFC,João Bosco Ferreira Filho
+865,0,13,5167,-5154,0.5562130177514792,0.0,peripheral,UFG,João Carlos da Silva
+866,18,24,33,-9,0.0,0.0,peripheral,FUFPI,João Carlos de Oliveira Souza
+867,13,292,1397,-1105,0.10581253518483769,0.0,peripheral,UFMA,João Dallyson Sousa de Almeida
+868,14,58,946,-888,0.643281807372176,0.0,connector,USP-COMP,João Eduardo Ferreira
+869,8,64,1492,-1428,0.3466796875,0.0,peripheral,UPE,João Fausto Lorenzato de Oliveira
+870,2,114,4900,-4786,0.051554324407509844,0.0,peripheral,UFMG,João Guilherme Maia de Menezes
+871,7,29,2362,-2333,0.328180737217598,0.0,peripheral,UFU,João Henrique de Souza Pereira
+872,4,30,2197,-2167,0.72,0.0,connector,UFRGS,João Luiz Dihl Comba
+873,5,7,1985,-1978,0.0,0.0,peripheral,USP-SC,João Luís Garcia Rosa
+874,0,84,5167,-5083,0.0,0.0,peripheral,UFES,João Paulo Andrade Almeida
+875,1,11,3828,-3817,0.5950413223140496,0.0,peripheral,UFABC,João Paulo Gois
+876,4,175,2197,-2022,0.32561632653061223,0.0,peripheral,UFSCAR,João Paulo Papa
+877,9,101,1763,-1662,0.20370551906675816,0.0,peripheral,UFC,João Paulo Pordeus Gomes
+878,3,9,2603,-2594,0.0,0.0,peripheral,UNIFEI,João Paulo Reus Rodrigues Leite
+879,6,62,3006,-2944,0.031737773152965554,0.0,peripheral,UFRN,João Paulo Silva do Monte Lima
+880,9,24,1763,-1739,0.0,0.0,peripheral,UFC,João Paulo do Vale Madeiro
+881,0,48,5167,-5119,0.5954861111111112,0.0,peripheral,USP-SC,João Porto de Albuquerque
+882,1,24,3828,-3804,0.07986111111111094,0.0,peripheral,CEFET,João Roberto de Toledo Quadros
+883,7,33,2362,-2329,0.2681359044995407,0.0,peripheral,UFSM,João Vicente Ferreira Lima
+884,5,7,1985,-1978,0.24489795918367352,0.0,peripheral,USP-SC,João do Espirito Santo Batista Neto
+885,0,34,5167,-5133,0.11245674740484424,0.0,peripheral,UFAM,Juan Gabriel Colonna
+886,14,195,946,-751,0.1912952005259697,0.0,peripheral,UFPE,Judith Kelner
+887,7,80,2362,-2282,0.30718750000000006,0.0,peripheral,UFRGS,Juergen Rochol
+888,2,24,4900,-4876,0.22569444444444442,0.0,peripheral,UFV,Jugurta Lisboa Filho
+889,8,5,1492,-1487,0.31999999999999984,0.0,peripheral,FUFSE,Jugurta Rosa Montalvao Filho
+890,6,32,3006,-2974,0.375,0.0,peripheral,UFABC,Juliana Cristina Braga
+891,2,9,4900,-4891,0.49382716049382713,0.0,peripheral,UNICAMP,Juliana Freitag Borin
+892,9,9,1763,-1754,0.37037037037037035,0.0,peripheral,FUFPI,Juliana Oliveira de Carvalho
+893,7,110,2362,-2252,0.22876033057851242,0.0,peripheral,UFRGS,Juliano Araujo Wickboldt
+894,6,31,3006,-2975,0.4432882414151924,0.0,peripheral,UFPE,Juliano Manabu Iyoda
+895,1,23,3828,-3805,0.08317580340264641,0.0,peripheral,IME,Julio Cesar Duarte
+896,8,27,1492,-1465,0.07133058984910856,0.0,peripheral,PUC-PR,Julio Cesar Nievola
+897,2,86,4900,-4814,0.0,0.0,peripheral,UFV,Julio Cesar Soares dos Reis
+898,1,55,3828,-3773,0.0,0.0,peripheral,UFF,Julio Cesar Stacchini de Souza
+899,4,99,2197,-2098,0.33323130292827263,0.0,peripheral,UNICAMP,Julio Cesar dos Reis
+900,4,24,2197,-2173,0.0,0.0,peripheral,UNICAMP,Julio César López Hernández
+902,1,51,3828,-3777,0.03844675124951946,0.0,peripheral,UFG,Julliano Rosa Nascimento
+903,4,10,2197,-2187,0.31999999999999984,0.0,peripheral,USP-COMP,Junior Barrera
+904,4,106,2197,-2091,0.160377358490566,0.0,peripheral,UNIFESP,Jurandy Gomes de Almeida Junior
+905,2,263,4900,-4637,0.06702424496522996,0.0,peripheral,UFMG,Jussara Marques de Almeida
+906,2,217,4900,-4683,0.44341565970821206,0.0,peripheral,USP-SC,Jó Ueyama
+907,11,43,3526,-3483,0.045429962141698255,0.0,peripheral,UFPEL,Júlio Carlos Balzano de Mattos
+908,3,74,2603,-2529,0.554054054054054,0.0,peripheral,USP-SC,Júlio Cezar Estrella
+909,8,25,1492,-1467,0.5696,0.0,peripheral,FUFSE,Kalil Araujo Bispo
+910,3,72,2603,-2531,0.44945987654320985,0.0,peripheral,USP-SC,Kalinka Regina Lucas Jaquie Castelo Branco
+911,5,93,1985,-1892,0.23609665857324547,0.0,peripheral,USP-SC,Kamila Rios da Hora Rodrigues
+912,7,21,2362,-2341,0.7664399092970522,0.0,connector,UFRGS,Karin Becker
+913,12,83,733,-650,0.19944839599361297,0.0,peripheral,USP-COMP,Karina Valdivia Delgado
+914,11,83,3526,-3443,0.1367397300043548,0.0,peripheral,FURG,Karina dos Santos Machado
+915,4,10,2197,-2187,0.0,0.0,peripheral,UFBA,Karl Philips Apaza Aguero
+916,4,5,2197,-2192,0.56,0.0,peripheral,USP-COMP,Karla Roberta Pereira Sampaio Lima
+917,13,3,1397,-1394,0.6666666666666667,0.0,connector,UFABC,Karla Vittori
+918,12,17,733,-716,0.20761245674740492,0.0,peripheral,USP-COMP,Kathia Maria Honorio
+919,1,36,3828,-3792,0.0,0.0,peripheral,CEFET,Kele Teixeira Belloze
+920,3,15,2603,-2588,0.23111111111111104,0.0,peripheral,UFSCAR,Kelen Cristiane Teixeira Vivaldini
+921,10,20,1873,-1853,0.31999999999999984,0.0,peripheral,IME,Kelli de Faria Cordeiro
+922,4,13,2197,-2184,0.7692307692307692,0.0,connector,USP-COMP,Kelly Rosa Braghetto
+923,13,93,1397,-1304,0.042317030870620886,0.0,peripheral,FUFPI,Kelson Romulo Teixeira Aires
+924,4,54,2197,-2143,0.26268861454046644,0.0,peripheral,UNESP-SJRP,Kelton Augusto Pontara da Costa
+925,6,34,3006,-2972,0.3581314878892734,0.0,peripheral,UFPE,Kelvin Lopes Dias
+926,0,37,5167,-5130,0.6150474799123448,0.0,peripheral,UFPE,Kiev Santos da Gama
+927,7,169,2362,-2193,0.1975421028675466,0.0,peripheral,UFG,Kleber Vieira Cardoso
+928,16,63,1112,-1049,0.3723859914336105,0.0,peripheral,UNISINOS,Kleinner Silva Farias de Oliveira
+929,6,94,3006,-2912,0.0,0.0,peripheral,UFCG,Kyller Costa Gorgônio
+930,15,6,447,-441,0.0,0.0,peripheral,UNIVALI,Laio Oriel Seman
+931,3,9,2603,-2594,0.19753086419753085,0.0,peripheral,UEM,Landir Saviniec
+932,0,54,5167,-5113,0.20713305898491086,0.0,peripheral,UEFS,Larissa Rocha Soares Bastos
+933,1,3,3828,-3825,0.0,0.0,peripheral,UFAC,Laura Costa Sarkis
+934,1,66,3828,-3762,0.1138659320477502,0.0,peripheral,CEFET,Laura Silva de Assis
+935,1,10,3828,-3818,0.0,0.0,peripheral,UFRJ-COMP,Laura Silvia Bahiense da Silva Leite
+936,4,20,2197,-2177,0.625,0.0,connector,UFPR,Laura Sánchez García
+937,3,2,2603,-2601,0.0,0.0,peripheral,UFU,Laurence Rodrigues do Amaral
+938,13,41,1397,-1356,0.2831647828673409,0.0,peripheral,FUFPI,Laurindo de Sousa Britto Neto
+939,3,1,2603,-2602,0.0,0.0,peripheral,UNIFEI,Laércio Augusto Baldochi Júnior
+940,10,20,1873,-1853,0.31999999999999984,0.0,peripheral,UFBA,Laís do Nascimento Salvador
+941,3,187,2603,-2416,0.010637993651519961,0.0,peripheral,UNESP-SJRP,Leandro Alves Neves
+942,2,447,4900,-4453,0.19650766481990312,0.0,peripheral,UNICAMP,Leandro Aparecido Villas
+943,1,16,3828,-3812,0.40625,0.0,peripheral,UFF,Leandro Augusto Frata Fernandes
+944,9,59,1763,-1704,0.7107153116920426,0.0,connector,UFCG,Leandro Balby Marinho
+945,6,16,3006,-2990,0.2265625,0.0,peripheral,UFPB-JP,Leandro Carlos de Souza
+946,6,91,3006,-2915,0.2946504045405143,0.0,peripheral,UFCG,Leandro Dias da Silva
+947,5,15,1985,-1970,0.12444444444444436,0.0,peripheral,USP-SC,Leandro Franco de Souza
+948,6,48,3006,-2958,0.5590277777777777,0.0,peripheral,UFRGS,Leandro Krug Wives
+949,8,8,1492,-1484,0.21875,0.0,peripheral,UFPE,Leandro Maciel Almeida
+950,6,8,3006,-2998,0.0,0.0,peripheral,UFAL,Leandro Melo de Sales
+951,3,15,2603,-2588,0.31999999999999984,0.0,peripheral,UFU,Leandro Nogueira Couto
+952,1,62,3828,-3766,0.12070759625390237,0.0,peripheral,UFF,Leandro Santiago de Araujo
+953,4,31,2197,-2166,0.23309053069719043,0.0,peripheral,UNICAMP,Lehilton Lelis Chaves Pedrosa
+954,8,11,1492,-1481,0.0,0.0,peripheral,FUFSE,Leila Maciel de Almeida e Silva
+955,11,40,3526,-3486,0.27000000000000013,0.0,peripheral,UFRGS,Leila Ribeiro
+956,6,9,3006,-2997,0.345679012345679,0.0,peripheral,UFERSA,Leiva Casemiro Oliveira
+957,7,26,2362,-2336,0.20414201183431957,0.0,peripheral,UFG,Leizer de Lima Pinto
+958,12,52,733,-681,0.18047337278106512,0.0,peripheral,USP-COMP,Leliane Nunes de Barros
+959,6,80,3006,-2926,0.024687499999999973,0.0,peripheral,UFERSA,Lenardo Chaves e Silva
+960,7,47,2362,-2315,0.6654594839293799,0.0,connector,UFBA,Leobino Nascimento Sampaio
+961,11,164,3526,-3362,0.07049375371802502,0.0,peripheral,UFPEL,Leomar Soares da Rosa Junior
+962,3,21,2603,-2582,0.526077097505669,0.0,peripheral,UFG,Leonardo Andrade Ribeiro
+963,4,32,2197,-2165,0.17578125,0.0,peripheral,UNIFESP,Leonardo Bacelar Lima Santos
+964,2,68,4900,-4832,0.5099480968858132,0.0,peripheral,UFMG,Leonardo Barbosa e Oliveira
+965,2,26,4900,-4874,0.6005917159763314,0.0,peripheral,UNESP-SJRP,Leonardo Castro Botega
+966,2,104,4900,-4796,0.2300295857988166,0.0,peripheral,UFSJ,Leonardo Chaves Dutra da Rocha
+967,1,112,3828,-3716,0.1930803571428571,0.0,peripheral,UFF,Leonardo Gresta Paulino Murta
+968,0,18,5167,-5149,0.5123456790123457,0.0,peripheral,UNICAMP,Leonardo Montecchi
+969,8,45,1492,-1447,0.08592592592592585,0.0,peripheral,FUFSE,Leonardo Nogueira Matos
+970,11,51,3526,-3475,0.07535563244905807,0.0,peripheral,FURG,Leonardo Ramos Emmendorfer
+971,9,27,1763,-1736,0.5761316872427984,0.0,peripheral,UECE,Leonardo Sampaio Rocha
+972,1,18,3828,-3810,0.2901234567901234,0.0,peripheral,CEFET,Leonardo Silva de Lima
+973,1,16,3828,-3812,0.1171875,0.0,peripheral,UFPB-JP,Leonardo Vidal Batista
+974,0,72,5167,-5095,0.15740740740740755,0.0,peripheral,UFPE,Leopoldo Motta Teixeira
+975,3,20,2603,-2583,0.33499999999999985,0.0,peripheral,UFMS,Leslie Richard Foulds
+976,7,69,2362,-2293,0.2516278092837638,0.0,peripheral,UFPR,Leticia Mara Peres
+977,3,4,2603,-2599,0.625,0.0,connector,UFV,Levi Henrique Santana de Lelis
+978,12,35,733,-698,0.29877551020408155,0.0,peripheral,USP-COMP,Leônidas de Oliveira Brandão
+979,2,40,4900,-4860,0.4337500000000001,0.0,peripheral,UNB,Li Weigang
+980,4,37,2197,-2160,0.3710737764791818,0.0,peripheral,UFMS,Liana Dessandre Duenha Garanhani
+981,5,34,1985,-1951,0.309688581314879,0.0,peripheral,UNIFESP,Lilian Berton
+982,1,4,3828,-3824,0.0,0.0,peripheral,UFRJ-COMP,Lilian Markenzon
+983,22,60,53,7,0.21444444444444444,0.0,peripheral,UFPB-JP,Liliane dos Santos Machado
+984,0,49,5167,-5118,0.07913369429404415,0.0,peripheral,UNIFEI,Lina Garcés
+985,9,101,1763,-1662,0.07607097343397706,0.0,peripheral,UFC,Lincoln Souza Rocha
+986,2,81,4900,-4819,0.2856271909769853,0.0,peripheral,UEM,Linnyer Beatrys Ruiz Aylon
+987,7,20,2362,-2342,0.31999999999999984,0.0,peripheral,UFSM,Lisandra Manzoni Fontoura
+988,7,227,2362,-2135,0.25368239243920887,0.0,peripheral,UFRGS,Lisandro Zambenedetti Granville
+989,11,38,3526,-3488,0.0,0.0,peripheral,UFPEL,Lisane Brisolara de Brisolara
+990,23,3,3,0,0.0,0.0,peripheral,UTFPR,Lourival Aparecido de Góis
+991,1,2,3828,-3826,0.0,0.0,peripheral,UFMG,Loïc Pascal Gilles Cerf
+992,0,22,5167,-5145,0.3099173553719007,0.0,peripheral,UFAM,Lucas Carvalho Cordeiro
+993,4,7,2197,-2190,0.5714285714285714,0.0,peripheral,UFPR,Lucas Ferrari de Oliveira
+994,4,19,2197,-2178,0.0,0.0,peripheral,UNICAMP,Lucas Francisco Wanner
+995,7,43,2362,-2319,0.38182801514332065,0.0,peripheral,UFRGS,Lucas Mello Schnorr
+996,17,43,152,-109,0.0,0.0,peripheral,UFES,Lucia Catabriga
+997,0,66,5167,-5101,0.5119375573921029,0.0,peripheral,UFSCAR,Luciana Aparecida Martinez Zaina
+998,1,73,3828,-3755,0.4747607431037718,0.0,peripheral,UFF,Luciana Cardoso de Castro Salgado
+999,11,301,3526,-3225,0.0,0.0,peripheral,UFPEL,Luciana Foss
+1000,3,85,2603,-2518,0.046228373702422165,0.0,peripheral,UFRGS,Luciana Porcher Nedel
+1001,7,31,2362,-2331,0.33090530697190434,0.0,peripheral,UFRGS,Luciana Salete Buriol
+1002,3,43,2603,-2560,0.0,0.0,peripheral,UFG,Luciana de Oliveira Berretta
+1003,10,5,1873,-1868,0.48,0.0,peripheral,UFSC,Luciana de Oliveira Rech
+1004,12,60,733,-673,0.48944444444444446,0.0,peripheral,USP-COMP,Luciano Antonio Digiampietri
+1005,7,103,2362,-2259,0.16514280328023367,0.0,peripheral,UFRGS,Luciano Paschoal Gaspary
+1006,4,49,2197,-2148,0.3573511037067889,0.0,peripheral,UFBA,Luciano Rebouças de Oliveira
+1007,0,103,5167,-5064,0.1297011970968046,0.0,peripheral,UFMA,Luciano Reis Coutinho
+1008,4,59,2197,-2138,0.12984774490089057,0.0,peripheral,UFPR,Luciano Silva
+1009,0,15,5167,-5152,0.31999999999999984,0.0,peripheral,USP-COMP,Luciano Vieira de Araújo
+1010,11,565,3526,-2961,0.06576552588299789,0.0,peripheral,UFPEL,Luciano Volcan Agostini
+1011,5,122,1985,-1863,0.19793066380005375,0.0,peripheral,USP-SC,Luciano da Fontoura Costa
+1012,8,22,1492,-1470,0.6818181818181819,0.0,connector,UFPE,Luciano de Andrade Barbosa
+1013,1,58,3828,-3770,0.2520808561236624,0.0,peripheral,UFPB-JP,Lucidio dos Anjos Formiga Cabral
+1014,7,11,2362,-2351,0.31404958677685935,0.0,peripheral,PUC-MG,Lucila Ishitani
+1015,12,63,733,-670,0.5401864449483498,0.0,peripheral,UFRGS,Lucinéia Heloisa Thom
+1016,11,21,3526,-3505,0.49433106575963726,0.0,peripheral,UFRGS,Lucio Mauro Duarte
+1017,1,103,3828,-3725,0.05693279291167874,0.0,peripheral,UFRJ-COMP,Luidi Gelabert Simonetti
+1018,7,192,2362,-2170,0.10031467013888895,0.0,peripheral,UFRGS,Luigi Carro
+1019,1,62,3828,-3766,0.06295525494276788,0.0,peripheral,UFF,Luis Antonio Brasil Kowada
+1020,7,112,2362,-2250,0.4470663265306123,0.0,peripheral,UFPR,Luis Carlos Erpen de Bona
+1021,7,86,2362,-2276,0.06787452677122752,0.0,peripheral,PUC-MG,Luis Enrique Zárate Gálvez
+1022,7,23,2362,-2339,0.446124763705104,0.0,peripheral,PUC-MG,Luis Fabricio Wanderley Goes
+1023,1,9,3828,-3819,0.345679012345679,0.0,peripheral,UFRJ-COMP,Luis Felipe Magalhães de Moraes
+1024,5,55,1985,-1930,0.29355371900826455,0.0,peripheral,USP-SC,Luis Gustavo Nonato
+1025,0,165,5167,-5002,0.42909090909090897,0.0,peripheral,UFMA,Luis Jorge Enrique Rivero Cabrejos
+1026,12,21,733,-712,0.17233560090702937,0.0,peripheral,UNIFACCAMP,Luis Mariano del Val Cura
+1027,10,88,1873,-1785,0.12913223140495877,0.0,peripheral,UFF,Luiz André Portes Paes Leme
+1028,6,2,3006,-3004,0.0,0.0,peripheral,UFABC,Luiz Antonio Celiberto Junior
+1029,6,119,3006,-2887,0.5952969423063343,0.0,peripheral,UNIOESTE,Luiz Antonio Rodrigues
+1030,1,1,3828,-3827,0.0,0.0,peripheral,UFAC,Luiz Augusto Matos da Silva
+1031,7,16,2362,-2346,0.3203125,0.0,peripheral,UFPR,Luiz Carlos Pessoa Albini
+1032,4,32,2197,-2165,0.119140625,0.0,peripheral,UFABC,Luiz Carlos da Silva Rozante
+1033,2,59,4900,-4841,0.21890261419132429,0.0,peripheral,UFMG,Luiz Chaimowicz
+1034,11,6,3526,-3520,0.5,0.0,peripheral,UFSC,Luiz Cláudio Villar dos Santos
+1035,2,2,4900,-4898,0.0,0.0,peripheral,UNICAMP,Luiz Eduardo Buzato
+1036,6,33,3006,-2973,0.30670339761248844,0.0,peripheral,UNIFESP,Luiz Eduardo Galvão Martins
+1037,8,161,1492,-1331,0.5509818294047297,0.0,peripheral,UFPR,Luiz Eduardo Soares de Oliveira
+1038,2,149,4900,-4751,0.24665555605603362,0.0,peripheral,UNICAMP,Luiz Fernando Bittencourt
+1039,1,57,3828,-3771,0.13357956294244389,0.0,peripheral,UFRJ-COMP,Luiz Fernando Rust da Costa Carmo
+1040,2,260,4900,-4640,0.07476331360946742,0.0,peripheral,UFMG,Luiz Filipe Menezes Vieira
+1041,16,140,1112,-972,0.09663265306122448,0.0,peripheral,UNISINOS,Luiz Gonzaga da Silveira Junior
+1042,3,32,2603,-2571,0.060546875,0.0,peripheral,UFU,Luiz Gustavo Almeida Martins
+1043,3,142,2603,-2461,0.1460027772267407,0.0,peripheral,PUC-RS,Luiz Gustavo Leão Fernandes
+1044,2,33,4900,-4867,0.1707988980716254,0.0,peripheral,UFLA,Luiz Henrique Andrade Correia
+1045,1,16,3828,-3812,0.5859375,0.0,peripheral,UFLA,Luiz Henrique de Campos Merschmann
+1046,4,3,2197,-2194,0.0,0.0,peripheral,UFJF,Luiz Maurílio da Silva Maciel
+1047,5,11,1985,-1974,0.0,0.0,peripheral,USP-RP,Luiz Otavio Murta Junior
+1048,1,198,3828,-3630,0.08825630037751242,0.0,peripheral,UFF,Luiz Satoru Ochi
+1049,7,46,2362,-2316,0.12381852551984873,0.0,peripheral,UFSM,Luís Alvaro de Lima Silva
+1050,1,53,3828,-3775,0.03702385190459245,0.0,peripheral,UFF,Luís Felipe Ignácio Cunha
+1051,3,36,2603,-2567,0.3348765432098765,0.0,peripheral,UNB,Luís Paulo Faina Garcia
+1052,15,35,447,-412,0.7624489795918368,0.0,connector,UFRGS,Luís da Cunha Lamb
+1053,6,8,3006,-2998,0.65625,0.0,connector,UFRN,Lyrene Fernandes da Silva
+1054,7,34,2362,-2328,0.4238754325259514,0.0,peripheral,UFU,Lásaro Jonas Camargos
+1055,9,8,1763,-1755,0.0,0.0,peripheral,UFPA,Lídio Mauro Lima de Campos
+1056,8,26,1492,-1466,0.5798816568047338,0.0,peripheral,UFCG,Lívia Maria Rodrigues Sampaio Campos
+1057,5,8,1985,-1977,0.0,0.0,peripheral,USP-SC,Lívia Souza Freire Grion
+1058,1,62,3828,-3766,0.15244536940686793,0.0,peripheral,UFF,Lúcia Maria de Assumpção Drummond
+1060,7,94,2362,-2268,0.44454504300588493,0.0,peripheral,UFES,Magnos Martinello
+1061,1,31,3828,-3797,0.5327783558792923,0.0,peripheral,UFC,Manoel Bezerra Campêlo Neto
+1062,12,15,733,-718,0.6844444444444444,0.0,connector,UFPE,Manoel Eusebio de Lima
+1063,0,114,5167,-5053,0.11742074484456744,0.0,peripheral,UFBA,Manoel Gomes de Mendonça Neto
+1064,1,23,3828,-3805,0.0,0.0,peripheral,UFAC,Manoel Limeira de Lima Júnior
+1065,7,10,2362,-2352,0.4600000000000001,0.0,peripheral,UFRGS,Manuel Menezes de Oliveira Neto
+1066,3,65,2603,-2538,0.3233136094674557,0.0,peripheral,UFRGS,Mara Abel
+1067,2,2,4900,-4898,0.0,0.0,peripheral,USP-COMP,Marcel Kenji de Carli Silva
+1068,0,3,5167,-5164,0.0,0.0,peripheral,USP-COMP,Marcel Parolin Jackowski
+1069,6,18,3006,-2988,0.5679012345679012,0.0,peripheral,UFRN,Marcel Vinicius Medeiros Oliveira
+1070,5,25,1985,-1960,0.07679999999999998,0.0,peripheral,UFSCAR,Marcela Xavier Ribeiro
+1071,6,16,3006,-2990,0.2265625,0.0,peripheral,UFERSA,Marcelino Pereira dos Santos Silva
+1072,12,55,733,-678,0.6142148760330579,0.0,peripheral,UFPA,Marcelle Pereira Mota
+1073,0,4,5167,-5163,0.0,0.0,peripheral,UFRJ-INFO,Marcello Goulart Teixeira
+1074,7,71,2362,-2291,0.5431462011505653,0.0,peripheral,UNB,Marcelo Antonio Marotta
+1075,4,38,2197,-2159,0.40027700831024937,0.0,peripheral,UFJF,Marcelo Bernardes Vieira
+1076,0,35,5167,-5132,0.10775510204081629,0.0,peripheral,UFPE,Marcelo Bezerra d'Amorim
+1077,6,13,3006,-2993,0.3905325443786982,0.0,peripheral,UFAL,Marcelo Costa Oliveira
+1078,8,8,1492,-1484,0.0,0.0,peripheral,PUC-PR,Marcelo Eduardo Pellenz
+1079,12,109,733,-624,0.3905395168756838,0.0,peripheral,USP-COMP,Marcelo Fantinato
+1080,1,36,3828,-3792,0.7638888888888888,0.0,connector,UFJF,Marcelo Ferreira Moreno
+1081,0,16,5167,-5151,0.6796875,0.0,connector,USP-COMP,Marcelo Finger
+1082,0,39,5167,-5128,0.47337278106508873,0.0,peripheral,UNIRIO,Marcelo Fornazin
+1083,5,49,1985,-1936,0.4573094543940025,0.0,peripheral,USP-SC,Marcelo Garcia Manzato
+1084,13,170,1397,-1227,0.17321799307958474,0.0,peripheral,PUC-RIO,Marcelo Gattass
+1085,0,9,5167,-5158,0.49382716049382713,0.0,peripheral,USP-COMP,Marcelo Gomes de Queiroz
+1086,4,5,2197,-2192,0.31999999999999984,0.0,peripheral,UFMS,Marcelo Henriques de Carvalho
+1087,3,19,2603,-2584,0.3324099722991689,0.0,peripheral,UFU,Marcelo Keese Albertini
+1088,6,63,3006,-2943,0.22826908541194246,0.0,peripheral,UFRN,Marcelo Luiz Monteiro Marinho
+1089,0,36,5167,-5131,0.5108024691358025,0.0,peripheral,USP-COMP,Marcelo Medeiros Eler
+1090,0,39,5167,-5128,0.30243261012491784,0.0,peripheral,USP-COMP,Marcelo Morandini
+1091,11,482,3526,-3044,0.06459943871489815,0.0,peripheral,UFPEL,Marcelo Schiavon Porto
+1092,11,4,3526,-3522,0.5,0.0,peripheral,UFSM,Marcelo Serrano Zanetti
+1093,6,47,3006,-2959,0.5070167496604799,0.0,peripheral,UFRGS,Marcelo Soares Pimenta
+1094,3,29,2603,-2574,0.24970273483947691,0.0,peripheral,UFRGS,Marcelo Walter
+1095,3,155,2603,-2448,0.025473465140478657,0.0,peripheral,UFU,Marcelo Zanchetta do Nascimento
+1096,6,87,3006,-2919,0.26978464790593215,0.0,peripheral,UDESC,Marcelo da Silva Hounsell
+1097,0,11,5167,-5156,0.5123966942148761,0.0,peripheral,UFU,Marcelo de Almeida Maia
+1098,2,144,4900,-4756,0.32060185185185197,0.0,peripheral,UNIFACCAMP,Marcelo de Paiva Guimarães
+1099,1,10,3828,-3818,0.0,0.0,peripheral,UFRJ-INFO,Marcia Helena Costa Fampa
+1100,6,23,3006,-2983,0.22684310018903586,0.0,peripheral,UFRN,Marcia Jacyntha Nunes Rodrigues Lucena
+1101,16,16,1112,-1096,0.7578125,0.0,connector,UFSM,Marcia Pasin
+1102,9,9,1763,-1754,0.5679012345679012,0.0,peripheral,UECE,Marcial Porto Fernandez
+1103,9,29,1763,-1734,0.06658739595719365,0.0,peripheral,UFC,Marcio Espíndola Freire Maia
+1104,5,1,1985,-1984,0.0,0.0,peripheral,USP-SC,Marcio Fuzeto Gameiro
+1105,3,12,2603,-2591,0.0,0.0,peripheral,PUC-RS,Marcio Sarroglia Pinho
+1106,1,19,3828,-3809,0.7091412742382273,0.0,connector,UNIOESTE,Marcio Seiji Oyamada
+1107,10,164,1873,-1709,0.4304729327781083,0.0,peripheral,PUC-RIO,Marco Antonio Casanova
+1108,1,16,3828,-3812,0.5390625,0.0,peripheral,UFOP,Marco Antonio Moreira de Carvalho
+1109,7,101,2362,-2261,0.21919419664738748,0.0,peripheral,UFPR,Marco Antonio Zanata Alves
+1110,0,39,5167,-5128,0.6272189349112426,0.0,connector,UFAM,Marco Antônio Pinheiro de Cristo
+1111,4,14,2197,-2183,0.0,0.0,peripheral,UFMS,Marco Aurelio Stefanes
+1112,0,168,5167,-4999,0.08120748299319713,0.0,peripheral,USP-COMP,Marco Aurélio Gerosa
+1113,0,23,5167,-5144,0.0,0.0,peripheral,UTFPR,Marco Aurélio Graciotto Silva
+1114,7,11,2362,-2351,0.0,0.0,peripheral,UFRN,Marco Cesar Goldbarg
+1115,7,5,2362,-2357,0.0,0.0,peripheral,PUC-RIO,Marco Serpa Molinaro
+1116,0,87,5167,-5080,0.11018628616726134,0.0,peripheral,UFMG,Marco Tulio de Oliveira Valente
+1117,1,87,3828,-3741,0.4531642224864578,0.0,peripheral,UFOP,Marcone Jamilson Freitas Souza
+1118,7,42,2362,-2320,0.28458049886621306,0.0,peripheral,UFPR,Marcos Alexandre Castilho
+1119,2,184,4900,-4716,0.43992202268431,0.0,peripheral,UFMG,Marcos André Gonçalves
+1120,6,45,3006,-2961,0.5698765432098766,0.0,peripheral,UFC,Marcos Antonio de Oliveira
+1121,2,234,4900,-4666,0.025385345898166323,0.0,peripheral,UFMG,Marcos Augusto Menezes Vieira
+1122,5,60,1985,-1925,0.41722222222222227,0.0,peripheral,UEM,Marcos Aurelio Domingues
+1123,7,61,2362,-2301,0.18435904326793862,0.0,peripheral,UFPR,Marcos Didonet Del Fabro
+1124,3,17,2603,-2586,0.8027681660899654,0.0,connector,UFBA,Marcos Ennes Barreto
+1125,5,7,1985,-1978,0.6122448979591837,0.0,peripheral,UFERSA,Marcos Evandro Cintra
+1126,4,56,2197,-2141,0.6186224489795917,0.0,peripheral,UNIFESP,Marcos Gonçalves Quiles
+1127,0,126,5167,-5041,0.38120433358528594,0.0,peripheral,PUC-RIO,Marcos Kalinowski
+1128,0,17,5167,-5150,0.0,0.0,peripheral,USP-COMP,Marcos Lordello Chaim
+1129,10,76,1873,-1797,0.19494459833795008,0.0,peripheral,UFRJ-INFO,Marcos Roberto da Silva Borges
+1130,7,25,2362,-2337,0.15039999999999998,0.0,peripheral,UFPR,Marcos Sfair Sunye
+1131,1,36,3828,-3792,0.15586419753086433,0.0,peripheral,UFF,Marcos de Oliveira Lage Ferreira
+1132,0,5,5167,-5162,0.6399999999999999,0.0,connector,IME,Marcos dos Santos
+1133,7,32,2362,-2330,0.322265625,0.0,peripheral,UFRGS,Marcus Rolf Peter Ritt
+1134,0,24,5167,-5143,0.7222222222222222,0.0,connector,PUC-RIO,Marcus Vinicius Soledade Poggi de Aragao
+1135,2,20,4900,-4880,0.0,0.0,peripheral,UFCG,Marcus Williams Aquino de Carvalho
+1136,9,2,1763,-1761,0.5,0.0,peripheral,UNIFOR,Maria Andréia Formico Rodrigues
+1137,0,56,5167,-5111,0.7691326530612245,0.0,connector,UNIRIO,Maria Augusta Silveira Netto Nunes
+1138,3,34,2603,-2569,0.26470588235294124,0.0,peripheral,UFU,Maria Camila Nardini Barioni
+1139,4,106,2197,-2091,0.3182627269490922,0.0,peripheral,UFPR,Maria Cecília Calani Baranauskas
+1140,1,55,3828,-3773,0.5203305785123967,0.0,peripheral,IME,Maria Claudia Reis Cavalcanti
+1141,17,35,152,-117,0.3526530612244898,0.0,peripheral,UFES,Maria Claudia Silva Boeres
+1142,5,53,1985,-1932,0.3004627981488074,0.0,peripheral,USP-SC,Maria Cristina Ferreira de Oliveira
+1143,1,35,3828,-3793,0.20734693877551025,0.0,peripheral,UFF,Maria Cristina Silva Boeres
+1144,13,51,1397,-1346,0.6589773164167627,0.0,connector,UNIFOR,Maria Elizabeth Sucupira Furtado
+1145,5,75,1985,-1910,0.2652444444444443,0.0,peripheral,UNB,Maria Emília Machado Telles Walter
+1146,0,65,5167,-5102,0.14390532544378687,0.0,peripheral,UFMS,Maria Istela Cagnin
+1147,6,44,3006,-2962,0.38119834710743805,0.0,peripheral,UPE,Maria Lencastre Pinheiro de Menezes Cruz
+1148,10,67,1873,-1806,0.3898418355981288,0.0,peripheral,UFRJ-INFO,Maria Luiza Machado Campos
+1149,12,11,733,-722,0.5123966942148761,0.0,peripheral,UFC,Maria Viviane de Menezes
+1150,8,7,1492,-1485,0.40816326530612246,0.0,peripheral,UFRPE,Maria da Conceição Moraes Batista
+1151,5,61,1985,-1924,0.3800053748992207,0.0,peripheral,USP-SC,Maria da Graca Campos Pimentel
+1152,5,15,1985,-1970,0.23111111111111104,0.0,peripheral,USP-SC,Maria das Graças Volpe Nunes
+1153,12,28,733,-705,0.520408163265306,0.0,peripheral,UFSCAR,Maria do Carmo Nicoletti
+1154,5,6,1985,-1979,0.0,0.0,peripheral,USP-SC,Mariana Cúri
+1155,3,57,2603,-2546,0.13050169282856272,0.0,peripheral,UFRGS,Mariana Luderitz Kolberg
+1156,16,19,1112,-1093,0.814404432132964,0.0,connector,UFRGS,Mariana Recamonde Mendoza
+1157,10,34,1873,-1839,0.5449826989619377,0.0,peripheral,UNIRIO,Mariano Pimentel
+1158,9,49,1763,-1714,0.5006247396917951,0.0,peripheral,UECE,Mariela Inés Cortés
+1159,5,22,1985,-1963,0.08677685950413205,0.0,peripheral,UFSCAR,Marilde Terezinha Prado Santos
+1160,11,176,3526,-3350,0.09794679752066116,0.0,peripheral,UFPEL,Marilton Sanchotene de Aguiar
+1161,7,12,2362,-2350,0.2777777777777777,0.0,peripheral,USP-SC,Marina Andretta
+1162,1,25,3828,-3803,0.0,0.0,peripheral,UFPR,Marina Esther Groshaus
+1163,10,147,1873,-1726,0.41825165440325784,0.0,peripheral,UFJF,Mario Antonio Ribeiro Dantas
+1164,2,112,4900,-4788,0.19610969387755095,0.0,peripheral,UFMG,Mario Fernando Montenegro Campos
+1165,3,11,2603,-2592,0.0,0.0,peripheral,UEL,Mario Lemes Proença Junior
+1166,4,13,2197,-2184,0.0,0.0,peripheral,UNICAMP,Mario Lúcio Côrtes
+1167,5,13,1985,-1972,0.14201183431952646,0.0,peripheral,UFF,Mario Roberto Folhadela Benevides
+1168,0,3,5167,-5164,0.4444444444444444,0.0,peripheral,USP-COMP,Marislei Nishijima
+1169,3,22,2603,-2581,0.3181818181818181,0.0,peripheral,USP-SC,Maristela Oliveira dos Santos
+1170,5,137,1985,-1848,0.125845809579626,0.0,peripheral,UNB,Maristela Terto de Holanda
+1171,0,6,5167,-5161,0.2777777777777777,0.0,peripheral,UFMG,Mariza Andrade da Silva Bigonha
+1172,3,39,2603,-2564,0.18803418803418803,0.0,peripheral,UNIFESP,Mariá Cristina Vasconcelos Nascimento Rosset
+1173,7,5,2362,-2357,0.48,0.0,peripheral,UFRN,Marjory Cristiany Da Costa Abreu
+1174,7,53,2362,-2309,0.10679957280170882,0.0,peripheral,PUC-MG,Mark Alan Junho Song
+1175,0,112,5167,-5055,0.2602040816326532,0.0,peripheral,PUC-RIO,Markus Endler
+1176,10,48,1873,-1825,0.5859375,0.0,peripheral,UFBA,Marlo Vieira dos Santos e Souza
+1178,1,89,3828,-3739,0.16891806590077008,0.0,peripheral,UFRJ-INFO,Marta Lima de Queiros Mattoso
+1179,2,29,4900,-4871,0.13079667063020217,0.0,peripheral,UFRN,Martin Alejandro Musicante
+1180,2,24,4900,-4876,0.1527777777777779,0.0,peripheral,UFMG,Martín Gómez Ravetti
+1181,7,72,2362,-2290,0.0,0.0,peripheral,UFSM,Mateus Beck Rutzig
+1182,11,115,3526,-3411,0.01724007561436669,0.0,peripheral,UFSC,Mateus Grellert da Silva
+1183,8,6,1492,-1486,0.0,0.0,peripheral,UFCG,Matheus Gaudencio do Rêgo
+1184,4,4,2197,-2193,0.375,0.0,peripheral,UEFS,Matheus Giovanni Pires
+1185,9,28,1763,-1735,0.3035714285714287,0.0,peripheral,UECE,Matheus Henrique Esteves Paixão
+1186,8,9,1492,-1483,0.345679012345679,0.0,peripheral,UTFPR,Mauren Louise Sguario Coelho de Andrade
+1187,5,6,1985,-1979,0.0,0.0,peripheral,UNB,Mauricio Ayala Rincon
+1188,3,22,2603,-2581,0.2479338842975206,0.0,peripheral,UFU,Mauricio Cunha Escarpinati
+1189,1,40,3828,-3788,0.0,0.0,peripheral,UFF,Mauricio Kischinhevsky
+1190,16,116,1112,-996,0.0998810939357907,0.0,peripheral,UNISINOS,Mauricio Roberto Veronez
+1191,0,8,5167,-5159,0.0,0.0,peripheral,UFRJ-INFO,Mauro Antonio Rincon
+1192,9,7,1763,-1756,0.40816326530612246,0.0,peripheral,UFSC,Mauro Roisenberg
+1193,15,162,447,-285,0.07216887669562577,0.0,peripheral,UDESC,Maurício Aronne Pillon
+1194,4,15,2197,-2182,0.0,0.0,peripheral,UFBA,Maurício Pamplona Segundo
+1195,0,54,5167,-5113,0.5315500685871057,0.0,peripheral,UFLA,Maurício Ronny de Almeida Souza
+1196,8,21,1492,-1471,0.25396825396825407,0.0,peripheral,UTFPR,Max Mauro Dias Santos
+1197,7,15,2362,-2347,0.6844444444444444,0.0,connector,UFES,Maxwell Eduardo Monteiro
+1198,3,99,2603,-2504,0.5391286603407814,0.0,peripheral,UFBA,Maycon Leone Maciel Peixoto
+1199,7,8,2362,-2354,0.21875,0.0,peripheral,UFLA,Mayron César de Oliveira Moreira
+1200,0,38,5167,-5129,0.19252077562326864,0.0,peripheral,UFCG,Melina Mongiovi
+1201,10,18,1873,-1855,0.4444444444444444,0.0,peripheral,UNIFEI,Melise Maria Veiga de Paula
+1202,0,35,5167,-5132,0.47183673469387755,0.0,peripheral,FUFSE,Methanias Colaço Júnior
+1203,2,26,4900,-4874,0.14497041420118328,0.0,peripheral,UFV,Michel Melo da Silva
+1204,7,40,2362,-2322,0.47625000000000006,0.0,peripheral,FUFSE,Michel dos Santos Soares
+1205,4,30,2197,-2167,0.29555555555555546,0.0,peripheral,UEFS,Michele Fúlvia Angelo
+1206,2,236,4900,-4664,0.22787991956334397,0.0,peripheral,UFPR,Michele Nogueira Lima
+1207,15,33,447,-414,0.7033976124885216,0.0,connector,UNIVALI,Michelle Silva Wangham
+1208,9,33,1763,-1730,0.42240587695133147,0.0,peripheral,UFC,Miguel Franklin de Castro
+1209,3,108,2603,-2495,0.718278463648834,0.0,connector,PUC-RS,Milene Selbach Silveira
+1210,1,54,3828,-3774,0.0,0.0,peripheral,UFF,Milton Brown Do Coutto Filho
+1211,2,91,4900,-4809,0.4443907740611036,0.0,peripheral,UFMG,Mirella Moura Moro
+1212,6,145,3006,-2861,0.0,0.0,peripheral,UFCG,Mirko Barbosa Perkusich
+1213,1,72,3828,-3756,0.05439814814814825,0.0,peripheral,UFRJ-INFO,Mitre Costa Dourado
+1214,5,29,1985,-1956,0.4494649227110582,0.0,peripheral,USP-SC,Moacir Antonelli Ponti
+1215,8,1,1492,-1491,0.0,0.0,peripheral,UFRPE,Moacyr Cunha Filho
+1216,0,56,5167,-5111,0.10267857142857151,0.0,peripheral,UFES,Monalessa Perini Barcellos
+1217,7,46,2362,-2316,0.12381852551984873,0.0,peripheral,UFRN,Monica Magalhães Pereira
+1218,5,42,1985,-1943,0.49546485260770967,0.0,peripheral,UFU,Murillo Guimarães Carneiro
+1219,5,18,1985,-1967,0.49382716049382713,0.0,peripheral,UFSCAR,Murilo Coelho Naldi
+1220,5,4,1985,-1981,0.0,0.0,peripheral,USP-SC,Murilo Francisco Tome
+1221,1,19,3828,-3809,0.09972299168975085,0.0,peripheral,UFPR,Murilo Vicente Gonçalves da Silva
+1222,5,7,1985,-1978,0.44897959183673464,0.0,peripheral,UNB,Mylene Christine Queiroz de Farias
+1223,3,15,2603,-2588,0.5244444444444445,0.0,peripheral,UFU,Márcia Aparecida Fernandes
+1224,1,40,3828,-3788,0.2612500000000001,0.0,peripheral,UFG,Márcia Rodrigues Cappelle
+1225,4,9,2197,-2188,0.49382716049382713,0.0,peripheral,UFRJ-INFO,Márcia Rosana Cerioli
+1226,7,70,2362,-2292,0.4114285714285715,0.0,peripheral,UFSC,Márcio Bastos Castro
+1227,15,7,447,-440,0.653061224489796,0.0,connector,UFRGS,Márcio Dorn
+1228,0,130,5167,-5037,0.11798816568047343,0.0,peripheral,USP-SC,Márcio Eduardo Delamaro
+1229,7,42,2362,-2320,0.40022675736961466,0.0,peripheral,UFRN,Márcio Eduardo Kreutz
+1230,14,7,946,-939,0.653061224489796,0.0,connector,UFPE,Márcio Lopes Cornélio
+1231,3,36,2603,-2567,0.2499999999999999,0.0,peripheral,UNIFESP,Márcio Porto Basgalupp
+1232,0,217,5167,-4950,0.15413366178937749,0.0,peripheral,UFCG,Márcio de Medeiros Ribeiro
+1233,0,18,5167,-5149,0.345679012345679,0.0,peripheral,UNIRIO,Márcio de Oliveira Barros
+1234,0,34,5167,-5133,0.31314878892733566,0.0,peripheral,UFMA,Mário Antonio Meireles Teixeira
+1235,2,15,4900,-4885,0.23111111111111104,0.0,peripheral,UFMG,Mário Sérgio Ferreira Alvim Júnior
+1236,8,17,1492,-1475,0.20761245674740492,0.0,peripheral,UPE,Mêuser Jorge Silva Valença
+1237,10,74,1873,-1799,0.24579985390796188,0.0,peripheral,UFRJ-INFO,Mônica Ferreira da Silva
+1238,9,30,1763,-1733,0.5266666666666666,0.0,peripheral,UNIFOR,Nabor das Chagas Mendonça
+1239,5,25,1985,-1960,0.5055999999999999,0.0,peripheral,UFMS,Nalvo Franco de Almeida Junior
+1240,12,50,733,-683,0.41759999999999997,0.0,peripheral,UNIFESP,Nandamudi Lankalapalli Vijaykumar
+1241,13,6,1397,-1391,0.2777777777777777,0.0,peripheral,UNIFOR,Napoleão Vieira Nepomuceno
+1242,8,4,1492,-1488,0.0,0.0,peripheral,UEM,Nardênio Almeida Martins
+1243,6,7,3006,-2999,0.0,0.0,peripheral,UFPB-JP,Natasha Correia Queiroz Lino
+1244,0,58,5167,-5109,0.0998810939357907,0.0,peripheral,UFPR,Natasha Malveira Costa Valentim
+1245,2,39,4900,-4861,0.5378040762656147,0.0,peripheral,UFCG,Nazareno Ferreira de Andrade
+1246,3,15,2603,-2588,0.3911111111111112,0.0,peripheral,UNIFESP,Nei Yoshihiro Soma
+1247,1,22,3828,-3806,0.5909090909090909,0.0,peripheral,UFRN,Nelio Alessandro Azevedo Cacho
+1248,12,44,733,-689,0.1270661157024795,0.0,peripheral,UFPA,Nelson Cruz Sampaio Neto
+1249,4,19,2197,-2178,0.2825484764542937,0.0,peripheral,UFSCAR,Nelson Delfino d'Ávila Mascarenhas
+1250,11,68,3526,-3458,0.13624567474048432,0.0,peripheral,FURG,Nelson Lopes Duarte Filho
+1251,2,89,4900,-4811,0.18684509531624804,0.0,peripheral,UNICAMP,Nelson Luis Saldanha da Fonseca
+1252,1,60,3828,-3768,0.45277777777777783,0.0,peripheral,UFRJ-INFO,Nelson Maculan Filho
+1253,14,34,946,-912,0.47231833910034593,0.0,peripheral,UFPE,Nelson Souto Rosa
+1254,11,40,3526,-3486,0.09625000000000006,0.0,peripheral,PUC-RS,Ney Laert Vilar Calazans
+1255,2,16,4900,-4884,0.3984375,0.0,peripheral,USP-COMP,Nina Sumiko Tomita Hirata
+1256,1,21,3828,-3807,0.526077097505669,0.0,peripheral,UFPE,Nivan Roberto Ferreira Júnior
+1257,2,65,4900,-4835,0.2527810650887574,0.0,peripheral,UFMG,Nivio Ziviani
+1258,0,22,5167,-5145,0.44628099173553715,0.0,peripheral,PUC-RIO,Noemi de La Rocque Rodriguez
+1259,12,29,733,-704,0.3662306777645661,0.0,peripheral,USP-COMP,Norton Trevisan Roman
+1260,3,44,2603,-2559,0.6053719008264462,0.0,peripheral,UFG,Nádia Félix Felipe da Silva
+1261,5,35,1985,-1950,0.3526530612244898,0.0,peripheral,USP-SC,Odemir Martinez Bruno
+1263,11,48,3526,-3478,0.28385416666666663,0.0,peripheral,UFSC,Odorico Machado Mendizabal
+1264,0,12,5167,-5155,0.1527777777777779,0.0,peripheral,UFAC,Olacir Rodrigues Castro Junior
+1265,2,33,4900,-4867,0.058769513314967714,0.0,peripheral,UFMG,Olga Nikolaevna Goussevskaia
+1266,4,43,2197,-2154,0.045429962141698255,0.0,peripheral,UFPR,Olga Regina Pereira Bellon
+1267,6,9,3006,-2997,0.49382716049382713,0.0,peripheral,UFAL,Olival de Gusmão Freitas Júnior
+1268,13,10,1397,-1387,0.74,0.0,connector,UFMA,Omar Andres Carmona Cortes
+1269,2,65,4900,-4835,0.05964497041420125,0.0,peripheral,UFMG,Omar Paranaiba Vilela Neto
+1270,3,3,2603,-2600,0.0,0.0,peripheral,UFSCAR,Orides Morandin Junior
+1271,4,40,2197,-2157,0.0,0.0,peripheral,UNICAMP,Orlando Lee
+1272,5,6,1985,-1979,0.0,0.0,peripheral,USP-RP,Osame Kinouchi Filho
+1273,12,8,733,-725,0.0,0.0,peripheral,UNIFACCAMP,Osvaldo Luiz de Oliveira
+1274,11,7,3526,-3519,0.48979591836734704,0.0,peripheral,IFCE,Otávio Alcântara de Lima Júnior
+1275,8,17,1492,-1475,0.0,0.0,peripheral,UPE,Pablo Vinicius Alves de Barros
+1276,7,136,2362,-2226,0.11148356401384085,0.0,peripheral,UFRGS,Paolo Rech
+1277,6,20,3006,-2986,0.42000000000000004,0.0,peripheral,UFPE,Patricia Cabral de Azevedo Restelli Tedesco
+1278,7,17,2362,-2345,0.4913494809688581,0.0,peripheral,UFSC,Patricia Della Méa Plentz
+1279,8,33,1492,-1459,0.0,0.0,peripheral,UFCG,Patricia Duarte de Lima Machado
+1280,14,176,946,-770,0.2200413223140495,0.0,peripheral,UPE,Patricia Takako Endo
+1281,6,28,3006,-2978,0.24489795918367352,0.0,peripheral,UFAL,Patrick Henrique da Silva Brito
+1282,6,63,3006,-2943,0.4620811287477954,0.0,peripheral,UNISINOS,Patrícia Augustin Jaques Maillard
+1283,7,21,2362,-2341,0.09070294784580502,0.0,peripheral,UFSM,Patrícia Pitthan de Araújo Barcelos
+1284,12,18,733,-715,0.2901234567901234,0.0,peripheral,USP-COMP,Patrícia Rufino Oliveira
+1285,10,9,1873,-1864,0.19753086419753085,0.0,peripheral,UFSC,Patrícia Vilain
+1286,6,31,3006,-2975,0.0,0.0,peripheral,UFERSA,Patrício de Alencar Silva
+1287,5,33,1985,-1952,0.4995408631772268,0.0,peripheral,UFLA,Paula Christina Figueira Cardoso
+1288,0,73,5167,-5094,0.07956464627509863,0.0,peripheral,UFLA,Paulo Afonso Parreira Júnior
+1289,4,25,2197,-2172,0.0,0.0,peripheral,USP-COMP,Paulo André Vechiatto de Miranda
+1290,7,2,2362,-2360,0.5,0.0,peripheral,UFPE,Paulo André da Silva Gonçalves
+1291,9,156,1763,-1607,0.1677350427350427,0.0,peripheral,UFC,Paulo Antonio Leal Rego
+1292,5,42,1985,-1943,0.17233560090702937,0.0,peripheral,UFMS,Paulo Aristarco Pagliosa
+1293,9,24,1763,-1739,0.0,0.0,peripheral,UFC,Paulo Armando Cavalcante Aguilar
+1294,5,15,1985,-1970,0.5777777777777777,0.0,peripheral,UNIFACS,Paulo Caetano da Silva
+1295,4,5,2197,-2192,0.56,0.0,peripheral,UFSCAR,Paulo Estevão Cruvinel
+1296,1,23,3828,-3805,0.08317580340264641,0.0,peripheral,IME,Paulo Fernando Ferreira Rosa
+1297,11,170,3526,-3356,0.02325259515570921,0.0,peripheral,FURG,Paulo Francisco Butzen
+1298,6,34,3006,-2972,0.0,0.0,peripheral,UFERSA,Paulo Gabriel Gadelha Queiroz
+1299,9,54,1763,-1709,0.29355281207133055,0.0,peripheral,UECE,Paulo Henrique Mendes Maia
+1300,0,54,5167,-5113,0.07201646090534997,0.0,peripheral,UFPE,Paulo Henrique Monteiro Borba
+1301,3,22,2603,-2581,0.24380165289256195,0.0,peripheral,UFABC,Paulo Henrique Pisani
+1302,3,28,2603,-2575,0.3571428571428572,0.0,peripheral,UFU,Paulo Henrique Ribeiro Gabriel
+1303,6,8,3006,-2998,0.59375,0.0,peripheral,UFPE,Paulo Jorge Leitao Adeodato
+1304,11,179,3526,-3347,0.1953746761961238,0.0,peripheral,FURG,Paulo Lilles Jorge Drews Junior
+1305,7,37,2362,-2325,0.151935719503287,0.0,peripheral,UNICAMP,Paulo Lício de Geus
+1306,3,13,2603,-2590,0.6035502958579881,0.0,peripheral,UFSCAR,Paulo Matias
+1307,2,9,4900,-4891,0.0,0.0,peripheral,UNIFACS,Paulo Nazareno Maia Sampaio
+1308,8,22,1492,-1470,0.3842975206611571,0.0,peripheral,UFPR,Paulo Ricardo Lisboa de Almeida
+1309,11,44,3526,-3482,0.31921487603305776,0.0,peripheral,UFPEL,Paulo Roberto Ferreira Júnior
+1310,6,51,3006,-2955,0.6051518646674356,0.0,peripheral,UFPE,Paulo Roberto Freire Cunha
+1311,0,48,5167,-5119,0.04079861111111116,0.0,peripheral,UNIFESP,Paulo Roberto Miranda Meirelles
+1312,18,17,33,-16,0.0,0.0,peripheral,UFRJ-INFO,Paulo Roberto Oliveira
+1313,7,16,2362,-2346,0.3203125,0.0,peripheral,UFU,Paulo Rodolfo da Silva Leite Coelho
+1314,14,272,946,-674,0.09939987024221464,0.0,peripheral,UFPE,Paulo Romero Martins Maciel
+1315,8,76,1492,-1416,0.2344182825484764,0.0,peripheral,UFPE,Paulo Salgado Gomes de Mattos Neto
+1316,18,3,33,-30,0.4444444444444444,0.0,peripheral,FUFPI,Paulo Sergio Marques dos Santos
+1317,0,115,5167,-5052,0.40317580340264647,0.0,peripheral,USP-SC,Paulo Sérgio Lopes de Souza
+1318,10,59,1873,-1814,0.15512783682849762,0.0,peripheral,UFRJ-INFO,Paulo Victor Rodrigues de Carvalho
+1319,1,160,3828,-3668,0.08484374999999988,0.0,peripheral,UFF,Paulo de Figueiredo Pires
+1320,9,23,1763,-1740,0.0,0.0,peripheral,UFC,Paulyne Matthews Jucá
+1321,7,73,2362,-2289,0.10471007693751166,0.0,peripheral,UFU,Pedro Frosi Rosa
+1322,4,11,2197,-2186,0.16528925619834722,0.0,peripheral,UNIFEI,Pedro Henrique Del Bianco Hokama
+1323,1,108,3828,-3720,0.03652263374485587,0.0,peripheral,CEFET,Pedro Henrique González Silva
+1324,4,51,2197,-2146,0.0,0.0,peripheral,UNICAMP,Pedro Jussieu de Rezende
+1325,0,24,5167,-5143,0.29861111111111105,0.0,peripheral,USP-COMP,Pedro Luiz Pizzigatti Corrêa
+1326,7,18,2362,-2344,0.42592592592592593,0.0,peripheral,UNIRIO,Pedro Nuno de Souza Moura
+1327,2,100,4900,-4800,0.058600000000000096,0.0,peripheral,UFMG,Pedro Olmo Stancioli Vaz De Melo
+1328,9,95,1763,-1668,0.19479224376731297,0.0,peripheral,IFCE,Pedro Pedrosa Rebouças Filho
+1329,9,68,1763,-1695,0.6327854671280277,0.0,connector,FUFPI,Pedro de Alcantara dos Santos Neto
+1330,4,21,2197,-2176,0.0,0.0,peripheral,PUC-MG,Petr Iakovlevitch Ekel
+1331,4,27,2197,-2170,0.345679012345679,0.0,peripheral,UFMG,Phablo Fernando Soares Moura
+1332,7,204,2362,-2158,0.2832564398308344,0.0,peripheral,UFRGS,Philippe Olivier Alexandre Navaux
+1333,0,20,5167,-5147,0.09500000000000008,0.0,peripheral,UFG,Plinio de Sa Leitao Junior
+1334,13,63,1397,-1334,0.17838246409674974,0.0,peripheral,UNIFOR,Plácido Rogerio Pinheiro
+1335,7,39,2362,-2323,0.45496383957922415,0.0,peripheral,UNB,Priscila América Solís Mendez Barreto
+1336,1,105,3828,-3723,0.32090702947845806,0.0,peripheral,UFRJ-INFO,Priscila Machado Vieira Lima
+1337,4,19,2197,-2178,0.09972299168975085,0.0,peripheral,USP-SC,Priscila Tiemi Maeda Saito
+1338,1,41,3828,-3787,0.0,0.0,peripheral,UFOP,Puca Huachi Vaz Penna
+1339,6,111,3006,-2895,0.3015988961934908,0.0,peripheral,UFRPE,Péricles Barbosa Cunha de Miranda
+1340,6,1,3006,-3005,0.0,0.0,peripheral,USP-RP,Rafael Andres Rosales Mitrowsky
+1341,1,10,3828,-3818,0.17999999999999994,0.0,peripheral,UFBA,Rafael Augusto de Melo
+1342,1,19,3828,-3809,0.5207756232686981,0.0,peripheral,UFC,Rafael Castro de Andrade
+1343,4,58,2197,-2139,0.16111771700356703,0.0,peripheral,UNICAMP,Rafael Crivellari Saliba Schouery
+1344,3,102,2603,-2501,0.38927335640138405,0.0,peripheral,UFU,Rafael Dias Araújo
+1345,6,72,3006,-2934,0.13194444444444442,0.0,peripheral,UFPE,Rafael Dueire Lins
+1346,6,310,3006,-2696,0.3217065556711759,0.0,peripheral,UFRPE,Rafael Ferreira Leite de Mello
+1347,2,8,4900,-4892,0.0,0.0,peripheral,UNIFEI,Rafael Francisco dos Santos
+1348,0,23,5167,-5144,0.4234404536862004,0.0,peripheral,UFAM,Rafael Giusti
+1349,3,64,2603,-2539,0.27783203125,0.0,peripheral,PUC-RS,Rafael Heitor Bordini
+1350,11,66,3526,-3460,0.2713498622589531,0.0,peripheral,UFPEL,Rafael Iankowski Soares
+1351,16,71,1112,-1041,0.5558420948224558,0.0,peripheral,UNISINOS,Rafael Kunst
+1352,2,132,4900,-4768,0.32644628099173567,0.0,peripheral,UECE,Rafael Lopes Gomes
+1353,0,17,5167,-5150,0.11072664359861584,0.0,peripheral,FUFSE,Rafael Oliveira Vasconcelos
+1354,7,59,2362,-2303,0.18730249928181553,0.0,peripheral,UFU,Rafael Pasquini
+1355,3,28,2603,-2575,0.5178571428571428,0.0,peripheral,UFPEL,Rafael Piccin Torchelsen
+1356,0,130,5167,-5037,0.1937278106508875,0.0,peripheral,PUC-RS,Rafael Prikladnicki
+1357,15,19,447,-428,0.19390581717451527,0.0,peripheral,UDESC,Rafael Rodrigues Obelheiro
+1358,2,35,4900,-4865,0.21061224489795927,0.0,peripheral,UFSJ,Rafael Sachetto Oliveira
+1359,0,89,5167,-5078,0.22143668728695864,0.0,peripheral,UFLA,Rafael Serapilha Durelli
+1360,15,32,447,-415,0.453125,0.0,peripheral,UDESC,Rafael Stubs Parpinelli
+1361,3,12,2603,-2591,0.75,0.0,connector,UFSCAR,Rafael Vidal Aroca
+1362,6,30,3006,-2976,0.29555555555555546,0.0,peripheral,UFAL,Rafael de Amorim Silva
+1363,15,24,447,-423,0.07986111111111094,0.0,peripheral,UFSC,Rafael de Santiago
+1364,1,54,3828,-3774,0.0,0.0,peripheral,CEFET,Rafaelli de Carvalho Coutinho
+1365,13,30,1397,-1367,0.33999999999999986,0.0,peripheral,UNIFOR,Raimir Holanda Filho
+1366,15,17,447,-430,0.11072664359861584,0.0,peripheral,UNIVALI,Raimundo Celeste Ghizoni Teive
+1367,10,5,1873,-1868,0.56,0.0,peripheral,UFBA,Raimundo José de Araújo Macêdo
+1368,13,28,1397,-1369,0.7270408163265306,0.0,connector,FUFPI,Raimundo Santos Moura
+1369,0,97,5167,-5070,0.3294717823360612,0.0,peripheral,UFAM,Raimundo da Silva Barreto
+1370,6,67,3006,-2939,0.18979728224548897,0.0,peripheral,UFAL,Ranilson Oscar Araújo Paiva
+1371,5,4,1985,-1981,0.5,0.0,peripheral,UFAC,Raoni Simões Ferreira
+1372,1,86,3828,-3742,0.1533261222282315,0.0,peripheral,UFF,Raphael Carlos Santos Machado
+1373,4,24,2197,-2173,0.39236111111111116,0.0,peripheral,UFABC,Raphael Yokoingawa de Camargo
+1374,2,53,4900,-4847,0.1765752936988252,0.0,peripheral,PUC-MG,Raquel Aparecida de Freitas Mini
+1375,2,58,4900,-4842,0.30321046373365046,0.0,peripheral,UFMG,Raquel Cardoso de Melo Minardi
+1376,1,15,3828,-3813,0.31999999999999984,0.0,peripheral,IME,Raquel Coelho Gomes Pinto
+1377,2,61,4900,-4839,0.6578876646062887,0.0,connector,UFMG,Raquel Oliveira Prates
+1378,2,28,4900,-4872,0.25255102040816335,0.0,peripheral,UFCG,Raquel Vigolvino Lopes
+1379,2,19,4900,-4881,0.09972299168975085,0.0,peripheral,UFAL,Raquel da Silva Cabral
+1380,7,45,2362,-2317,0.4612345679012345,0.0,peripheral,UFSM,Raul Ceretta Nunes
+1381,2,27,4900,-4873,0.0,0.0,peripheral,UFJF,Raul Fonseca Neto
+1382,11,20,3526,-3506,0.0,0.0,peripheral,FURG,Regina Barwaldt
+1383,5,3,1985,-1982,0.4444444444444444,0.0,peripheral,UNIFESP,Regina Célia Coelho
+1384,10,406,1873,-1467,0.08125652163362374,0.0,peripheral,UFJF,Regina Maria Maciel Braga
+1385,12,61,733,-672,0.0,0.0,peripheral,UFPA,Reginaldo Cordeiro dos Santos Filho
+1386,3,5,2603,-2598,0.0,0.0,peripheral,UNIFESP,Reginaldo Massanobu Kuroshu
+1387,0,44,5167,-5123,0.044421487603305776,0.0,peripheral,UTFPR,Reginaldo Ré
+1388,9,70,1763,-1693,0.21102040816326528,0.0,peripheral,UFC,Regis Pires Magalhães
+1389,11,37,3526,-3489,0.2790357925493061,0.0,peripheral,UFRN,Regivan Hugo Nunes Santiago
+1390,9,72,1763,-1691,0.15586419753086433,0.0,peripheral,IFCE,Reinaldo Bezerra Braga
+1391,1,20,3828,-3808,0.09500000000000008,0.0,peripheral,UFCG,Reinaldo Cézar de Morais Gomes
+1392,3,83,2603,-2520,0.09261140949339541,0.0,peripheral,UFU,Renan Gonçalves Cattelan
+1393,3,53,2603,-2550,0.0,0.0,peripheral,UFRGS,Renan de Queiroz Maffei
+1394,11,320,3526,-3206,0.0,0.0,peripheral,UFPEL,Renata Hax Sander Reiser
+1395,20,91,90,1,0.021736505252988758,0.0,peripheral,UFLA,Renata Lopes Rosa
+1396,6,45,3006,-2961,0.5451851851851852,0.0,peripheral,UFPE,Renata Maria Cardoso Rodrigues de Souza
+1397,10,107,1873,-1766,0.5759454974233558,0.0,peripheral,USP-COMP,Renata Mendes de Araujo
+1398,0,53,5167,-5114,0.31755072979708077,0.0,peripheral,USP-SC,Renata Pontin de Mattos Fortes
+1399,19,151,203,-52,0.026139204420858597,0.0,peripheral,UNESP-SJRP,Renata Spolon Lobato
+1400,3,94,2603,-2509,0.6014033499320961,0.0,peripheral,PUC-RS,Renata Vieira
+1401,10,17,1873,-1856,0.657439446366782,0.0,connector,USP-COMP,Renata Wassermann
+1402,10,25,1873,-1848,0.8256,0.0,connector,UFRGS,Renata de Matos Galante
+1403,2,70,4900,-4830,0.23591836734693883,0.0,peripheral,UFMG,Renato Antonio Celso Ferreira
+1405,0,53,5167,-5114,0.0,0.0,peripheral,UEM,Renato Balancieri
+1406,5,6,1985,-1979,0.0,0.0,peripheral,UFSCAR,Renato Bueno
+1407,10,21,1873,-1852,0.399092970521542,0.0,peripheral,UFSC,Renato Fileto
+1408,1,18,3828,-3810,0.1049382716049383,0.0,peripheral,UFPR,Renato José da Silva Carmo
+1409,8,3,1492,-1489,0.0,0.0,peripheral,UFPE,Renato Mariz de Moraes
+1410,2,47,4900,-4853,0.0,0.0,peripheral,UFMG,Renato Martins Assunção
+1411,3,29,2603,-2574,0.13079667063020217,0.0,peripheral,UFSCAR,Renato Moraes Silva
+1412,11,77,3526,-3449,0.07556080283353017,0.0,peripheral,UFRGS,Renato Perez Ribas
+1413,5,13,1985,-1972,0.485207100591716,0.0,peripheral,UFMS,Renato Porfirio Ishii
+1414,5,14,1985,-1971,0.520408163265306,0.0,peripheral,USP-RP,Renato Tinós
+1415,8,15,1492,-1477,0.5955555555555556,0.0,peripheral,UFMG,Renato Vimieiro
+1416,0,38,5167,-5129,0.1952908587257618,0.0,peripheral,UFG,Renato de Freitas Bulcão Neto
+1417,8,10,1492,-1482,0.42000000000000004,0.0,peripheral,FUFSE,Renê Pereira de Gusmão
+1418,1,50,3828,-3778,0.4575999999999999,0.0,peripheral,UFAL,Rian Gabriel Santos Pinheiro
+1419,14,39,946,-907,0.608809993425378,0.0,peripheral,UFRPE,Ricardo André Cavalcante de Souza
+1420,5,57,1985,-1928,0.13357956294244389,0.0,peripheral,UFBA,Ricardo Araújo Rios
+1421,4,68,2197,-2129,0.39100346020761245,0.0,peripheral,UFOP,Ricardo Augusto Rabelo Oliveira
+1422,13,14,1397,-1383,0.5306122448979591,0.0,peripheral,UFSCAR,Ricardo Augusto Souza Fernandes
+1423,11,142,3526,-3384,0.20521721880579247,0.0,peripheral,UFRGS,Ricardo Augusto da Luz Reis
+1424,15,3,447,-444,0.0,0.0,peripheral,UFSC,Ricardo Azambuja Silveira
+1425,6,53,3006,-2953,0.5062299750800998,0.0,peripheral,UFPE,Ricardo Bastos Cavalcante Prudencio
+1426,3,52,2603,-2551,0.2781065088757396,0.0,peripheral,UFSCAR,Ricardo Cerri
+1427,1,11,3828,-3817,0.16528925619834722,0.0,peripheral,IME,Ricardo Choren Noya
+1428,4,29,2197,-2168,0.19024970273483943,0.0,peripheral,UNICAMP,Ricardo Dahab
+1429,1,15,3828,-3813,0.0,0.0,peripheral,UFRJ-INFO,Ricardo Farias
+1430,10,7,1873,-1866,0.24489795918367352,0.0,peripheral,UFSC,Ricardo Felipe Custodio
+1431,4,8,2197,-2189,0.0,0.0,peripheral,UFRJ-INFO,Ricardo Guerra Marroquim
+1433,5,17,1985,-1968,0.11072664359861584,0.0,peripheral,USP-SC,Ricardo José Gabrielli Barreto Campello
+1434,1,21,3828,-3807,0.0,0.0,peripheral,UFF,Ricardo Leiderman
+1435,5,11,1985,-1974,0.0,0.0,peripheral,UNB,Ricardo Lopes de Queiroz
+1436,5,98,1985,-1887,0.2757184506455642,0.0,peripheral,USP-SC,Ricardo Marcondes Marcacini
+1437,8,31,1492,-1461,0.7762747138397503,0.0,connector,UFPE,Ricardo Martins de Abreu Silva
+1438,14,32,946,-914,0.45703125,0.0,peripheral,UFPE,Ricardo Massa Ferreira Lima
+1439,11,28,3526,-3498,0.1964285714285714,0.0,peripheral,UFPEL,Ricardo Matsumura de Araújo
+1440,2,11,4900,-4889,0.6446280991735538,0.0,connector,UNB,Ricardo Pezzuol Jacobi
+1441,4,26,2197,-2171,0.39349112426035504,0.0,peripheral,UFMS,Ricardo Ribeiro dos Santos
+1442,5,62,1985,-1923,0.031737773152965554,0.0,peripheral,UFSCAR,Ricardo Rodrigues Ciferri
+1443,0,45,5167,-5122,0.12444444444444436,0.0,peripheral,UFLA,Ricardo Terra Nunes Bueno Villela
+1444,4,1,2197,-2196,0.0,0.0,peripheral,USP-RP,Ricardo Zorzetto Nicoliello Vêncio
+1445,4,211,2197,-1986,0.3108196132162351,0.0,peripheral,UNICAMP,Ricardo da Silva Torres
+1446,13,143,1397,-1254,0.37615531321825024,0.0,peripheral,FUFPI,Ricardo de Andrade Lira Rabêlo
+1447,4,1,2197,-2196,0.0,0.0,peripheral,UNICAMP,Ricardo de Oliveira Anido
+1448,2,127,4900,-4773,0.20534441068882148,0.0,peripheral,UFV,Ricardo dos Santos Ferreira
+1449,6,42,3006,-2964,0.0,0.0,peripheral,UFRPE,Rinaldo José de Lima
+1450,3,14,2603,-2589,0.0,0.0,peripheral,UFU,Rita Maria da Silva Julia
+1451,10,51,1873,-1822,0.3890811226451365,0.0,peripheral,UFBA,Rita Suzana Pitangueira Maciel
+1452,14,9,946,-937,0.5185185185185186,0.0,peripheral,UFU,Rivalino Matias Júnior
+1453,6,53,3006,-2953,0.4421502313990745,0.0,peripheral,UPE,Roberta Andrade de Araujo Fagundes
+1454,19,157,203,-46,0.025153150229218157,0.0,peripheral,UNESP-SJRP,Roberta Spolon
+1455,0,24,5167,-5143,0.22569444444444442,0.0,peripheral,UFRN,Roberta de Souza Coelho
+1456,1,1,3828,-3827,0.0,0.0,peripheral,UFPR,Roberto A Hexsel
+1457,0,43,5167,-5124,0.5494862087614927,0.0,peripheral,UEFS,Roberto Almeida Bittencourt
+1458,5,57,1985,-1928,0.0,0.0,peripheral,USP-SC,Roberto Federico Ausas
+1459,2,43,4900,-4857,0.4142779881016766,0.0,peripheral,USP-COMP,Roberto Hirata Junior
+1460,0,11,5167,-5156,0.16528925619834722,0.0,peripheral,PUC-RIO,Roberto Ierusalimschy
+1461,5,35,1985,-1950,0.6236734693877551,0.0,connector,USP-COMP,Roberto Marcondes Cesar Junior
+1462,4,133,2197,-2064,0.7890779580530274,0.0,connector,UFPR,Roberto Pereira
+1463,7,19,2362,-2343,0.5706371191135734,0.0,peripheral,UFPA,Roberto Samarone dos Santos Araújo
+1464,3,27,2603,-2576,0.07133058984910856,0.0,peripheral,UFSCAR,Roberto Santos Inoue
+1465,4,6,2197,-2191,0.5,0.0,peripheral,UDESC,Roberto Silvio Ubertino Rosso Junior
+1466,0,6,5167,-5161,0.6111111111111112,0.0,peripheral,UFPE,Roberto Souto Maior de Barros
+1467,10,22,1873,-1851,0.6570247933884298,0.0,connector,UFSC,Roberto Willrich
+1468,5,28,1985,-1957,0.06887755102040805,0.0,peripheral,USP-SC,Robson Leonardo Ferreira Cordeiro
+1469,6,17,3006,-2989,0.7197231833910034,0.0,connector,UFPE,Robson do Nascimento Fidalgo
+1470,2,219,4900,-4681,0.25041179291507676,0.0,peripheral,USP-SC,Rodolfo Ipolito Meneguette
+1471,4,59,2197,-2138,0.44987072680264306,0.0,peripheral,UNICAMP,Rodolfo Jardim de Azevedo
+1472,3,22,2603,-2581,0.0,0.0,peripheral,UEL,Rodolfo Miranda de Barros
+1473,16,86,1112,-1026,0.17306652244456477,0.0,peripheral,UNISINOS,Rodolfo Stoffel Antunes
+1474,7,74,2362,-2288,0.3093498904309715,0.0,peripheral,UFES,Rodolfo da Silva Villaca
+1476,11,8,3526,-3518,0.0,0.0,peripheral,FURG,Rodrigo Andrade de Bem
+1477,3,3,2603,-2600,0.4444444444444444,0.0,peripheral,UNIFEI,Rodrigo Aparecido da Silva Braga
+1478,4,111,2197,-2086,0.33308984660336005,0.0,peripheral,UNIFACCAMP,Rodrigo Bonacin
+1479,0,78,5167,-5089,0.1459566074950689,0.0,peripheral,UNB,Rodrigo Bonifacio de Almeida
+1480,3,15,2603,-2588,0.3377777777777776,0.0,peripheral,UEM,Rodrigo Calvo
+1481,2,8,4900,-4892,0.21875,0.0,peripheral,UTFPR,Rodrigo Campiolo
+1482,3,13,2603,-2590,0.2603550295857988,0.0,peripheral,UNESP-SJRP,Rodrigo Capobianco Guido
+1483,0,29,5167,-5138,0.7229488703923901,0.0,connector,UEM,Rodrigo Clemente Thom de Souza
+1484,3,68,2603,-2535,0.028979238754325065,0.0,peripheral,PUC-RS,Rodrigo Coelho Barros
+1485,4,31,2197,-2166,0.6514047866805411,0.0,connector,UFOP,Rodrigo César Pedrosa Silva
+1486,3,11,2603,-2592,0.0,0.0,peripheral,UNIFEI,Rodrigo Duarte Seabra
+1487,5,56,1985,-1929,0.1651785714285715,0.0,peripheral,USP-SC,Rodrigo Fernandes de Mello
+1488,11,22,3526,-3504,0.3801652892561984,0.0,peripheral,UFOP,Rodrigo Geraldo Ribeiro
+1489,4,12,2197,-2185,0.5,0.0,peripheral,UFJF,Rodrigo Luis de Souza da Silva
+1490,3,12,2603,-2591,0.1527777777777779,0.0,peripheral,UNIFEI,Rodrigo Maximiano Antunes de Almeida
+1491,0,100,5167,-5067,0.07779999999999998,0.0,peripheral,UNIFACS,Rodrigo Oliveira Spínola
+1492,0,350,5167,-4817,0.4419428571428572,0.0,peripheral,UNIRIO,Rodrigo Pereira dos Santos
+1493,14,29,946,-917,0.7776456599286563,0.0,connector,UFBA,Rodrigo Rocha Gomes e Souza
+1494,3,68,2603,-2535,0.3628892733564013,0.0,peripheral,UFU,Rodrigo Sanches Miani
+1495,4,71,2197,-2126,0.3780995834159889,0.0,peripheral,UEFS,Rodrigo Tripodi Calumby
+1496,11,33,3526,-3493,0.058769513314967714,0.0,peripheral,FURG,Rodrigo Zelir Azzolin
+1497,16,424,1112,-688,0.2232222321110715,0.0,peripheral,UNISINOS,Rodrigo da Rosa Righi
+1498,13,162,1397,-1235,0.15096784026825183,0.0,peripheral,FUFPI,Rodrigo de Melo Souza Veras
+1499,2,44,4900,-4856,0.16838842975206625,0.0,peripheral,UFMG,Rodrygo Luis Teodoro Santos
+1500,21,4,4,0,0.0,0.0,peripheral,UFAC,Roger Fredy Larico Chavez
+1501,3,54,2603,-2549,0.2661179698216736,0.0,peripheral,UFG,Rogerio Lopes Salvini
+1502,3,43,2603,-2560,0.08869659275283936,0.0,peripheral,UNESP-SJRP,Rogéria Cristiane Gratão de Souza
+1503,0,8,5167,-5159,0.625,0.0,connector,UTFPR,Rogério Aparecido Gonçalves
+1504,5,105,1985,-1880,0.220952380952381,0.0,peripheral,UNESP-SJRP,Rogério Eduardo Garcia
+1505,16,157,1112,-955,0.012657714308896839,0.0,peripheral,UNIOESTE,Rogério Luís Rizzi
+1506,7,24,2362,-2338,0.7222222222222223,0.0,connector,FUFSE,Rogério Patrício Chagas do Nascimento
+1507,0,181,5167,-4986,0.12630872073502042,0.0,peripheral,UFCG,Rohit Gheyi
+1508,1,9,3828,-3819,0.49382716049382713,0.0,peripheral,UFMS,Rommel Melgaço Barbosa
+1509,12,19,733,-714,0.5817174515235457,0.0,peripheral,UFPA,Rommel Thiago Juca Ramos
+1510,13,67,1397,-1330,0.2882601915794164,0.0,peripheral,FUFPI,Romuere Rodrigues Veloso e Silva
+1511,2,22,4900,-4878,0.6115702479338843,0.0,peripheral,UFMS,Ronaldo Alves Ferreira
+1512,5,89,1985,-1896,0.247191011235955,0.0,peripheral,UNESP-SJRP,Ronaldo Celso Messias Correia
+1513,14,18,946,-928,0.5679012345679012,0.0,peripheral,UFABC,Ronaldo Cristiano Prati
+1514,4,15,2197,-2182,0.64,0.0,connector,USP-COMP,Ronaldo Fumio Hashimoto
+1515,3,113,2603,-2490,0.1514605685644922,0.0,peripheral,UFG,Ronaldo Martins da Costa
+1516,1,14,3828,-3814,0.33673469387755106,0.0,peripheral,IME,Ronaldo Moreira Salles
+1517,1,49,3828,-3779,0.03998334027488548,0.0,peripheral,IME,Ronaldo Ribeiro Goldschmidt
+1518,10,16,1873,-1857,0.4140625,0.0,peripheral,UFSC,Ronaldo dos Santos Mello
+1519,22,57,53,4,0.13357956294244389,0.0,peripheral,UFPB-JP,Ronei Marcos de Moraes
+1520,12,23,733,-710,0.6238185255198488,0.0,connector,UFPA,Ronnie Cley de Oliveira Alves
+1521,1,46,3828,-3782,0.04253308128544431,0.0,peripheral,UFRJ-INFO,Rosa Maria Meri Leão
+1522,11,13,3526,-3513,0.757396449704142,0.0,connector,UFRGS,Rosa Maria Vicari
+1523,6,26,3006,-2980,0.6420118343195266,0.0,connector,USP-SC,Rosana Teresinha Vaccare Braga
+1524,5,32,1985,-1953,0.4765625,0.0,peripheral,USP-SC,Rosane Minghim
+1525,1,14,3828,-3814,0.13265306122448983,0.0,peripheral,UNIOESTE,Rosangela Villwock
+1526,7,3,2362,-2359,0.0,0.0,peripheral,UFSM,Roseclea Duarte Medina
+1527,3,42,2603,-2561,0.5668934240362812,0.0,peripheral,USP-SC,Roseli Aparecida Francelin Romero
+1528,0,105,5167,-5062,0.5734240362811791,0.0,peripheral,UFAM,Rosiane de Freitas Rodrigues
+1529,9,279,1763,-1484,0.16682725042072932,0.0,peripheral,UFC,Rossana Maria de Castro Andrade
+1530,1,20,3828,-3808,0.09500000000000008,0.0,peripheral,UFPB-JP,Rostand Edson Oliveira Costa
+1531,2,12,4900,-4888,0.5972222222222221,0.0,peripheral,USP-COMP,Routo Terada
+1532,1,31,3828,-3797,0.06243496357960443,0.0,peripheral,UFCG,Ruan Delgado Gomes
+1534,9,13,1763,-1750,0.0,0.0,peripheral,UFC,Rubens Fernandes Nunes
+1535,14,132,946,-814,0.059113865932047704,0.0,peripheral,FUFSE,Rubens de Souza Matos Júnior
+1536,4,7,2197,-2190,0.0,0.0,peripheral,UFBA,Rubisley de Paula Lemes
+1537,15,51,447,-396,0.18146866589773158,0.0,peripheral,UNIVALI,Rudimar Luís Scaranto Dazzi
+1538,0,36,5167,-5131,0.6851851851851851,0.0,connector,USP-SC,Rudinei Goularte
+1539,1,52,3828,-3776,0.2100591715976332,0.0,peripheral,UFC,Rudini Menezes Sampaio
+1540,5,5,1985,-1980,0.31999999999999984,0.0,peripheral,UFPB-JP,Ruy Alberto Pisani Altafim
+1541,10,18,1873,-1855,0.2901234567901234,0.0,peripheral,UFPE,Ruy José Guerra Barretto de Queiroz
+1542,2,39,4900,-4861,0.09730440499671267,0.0,peripheral,UFV,Sabrina de Azevedo Silveira
+1543,0,16,5167,-5151,0.0,0.0,peripheral,UFCG,Sabrina de Figueiredo Souto
+1544,0,83,5167,-5084,0.35505878937436486,0.0,peripheral,PUC-RS,Sabrina dos Santos Marczak
+1546,4,6,2197,-2191,0.2777777777777777,0.0,peripheral,UFMS,Said Sadique Adi
+1547,2,7,4900,-4893,0.0,0.0,peripheral,UFV,Salles Viana Gomes de Magalhaes
+1548,3,10,2603,-2593,0.0,0.0,peripheral,UFSCAR,Samuel Lourenço Nogueira
+1549,0,15,5167,-5152,0.0,0.0,peripheral,UFMA,Samyr Beliche Vale
+1550,7,81,2362,-2281,0.13991769547325095,0.0,peripheral,UFG,Sand Luz Correa
+1551,1,40,3828,-3788,0.0,0.0,peripheral,UFLA,Sanderson Lincohn Gonzaga de Oliveira
+1552,4,52,2197,-2145,0.24334319526627213,0.0,peripheral,UNICAMP,Sandra Eliza Fontes de Avila
+1553,5,30,1985,-1955,0.5644444444444445,0.0,peripheral,USP-SC,Sandra Maria Aluísio
+1554,2,24,4900,-4876,0.07986111111111094,0.0,peripheral,UNIFEI,Sandro Carvalho Izidoro
+1555,16,122,1112,-990,0.07995162590701432,0.0,peripheral,UNISINOS,Sandro José Rigo
+1556,4,19,2197,-2178,0.6315789473684211,0.0,connector,UNICAMP,Sandro Rigo
+1557,6,48,3006,-2958,0.40104166666666663,0.0,peripheral,UFPA,Sandro Ronaldo Bezerra Oliveira
+1558,4,12,2197,-2185,0.29166666666666663,0.0,peripheral,UFRGS,Santiago Valdés Ravelo
+1559,12,118,733,-615,0.20568802068371173,0.0,peripheral,USP-COMP,Sarajane Marques Peres
+1560,0,56,5167,-5111,0.4610969387755103,0.0,peripheral,USP-SC,Sarita Mazzini Bruschi
+1561,4,65,2197,-2132,0.4246153846153845,0.0,peripheral,UFOP,Saul Emanuel Delabrida Silva
+1562,2,9,4900,-4891,0.0,0.0,peripheral,UFABC,Saul de Castro Leite
+1563,9,28,1763,-1735,0.0,0.0,peripheral,IFCE,Saulo Anderson Freitas de Oliveira
+1564,2,59,4900,-4841,0.403906923297903,0.0,peripheral,UFJF,Saulo Moraes Villela
+1565,10,129,1873,-1744,0.5017727300042065,0.0,peripheral,UNIRIO,Sean Wolfgand Matsui Siqueira
+1566,6,14,3006,-2992,0.24489795918367352,0.0,peripheral,UFERSA,Sebastiao Emidio Alves Filho
+1567,1,26,3828,-3802,0.20414201183431957,0.0,peripheral,UFMG,Sebastián Alberto Urrutia
+1568,6,445,3006,-2561,0.23111223330387565,0.0,peripheral,USP-SC,Seiji Isotani
+1569,11,145,3526,-3381,0.3013555291319857,0.0,peripheral,UFRGS,Sergio Bampi
+1570,0,59,5167,-5108,0.4050560183855214,0.0,peripheral,UFPE,Sergio Castelo Branco Soares
+1571,5,82,1985,-1903,0.520523497917906,0.0,peripheral,PUC-RIO,Sergio Lifschitz
+1572,8,45,1492,-1447,0.04345679012345682,0.0,peripheral,UTFPR,Sergio Luiz Stevan Junior
+1573,10,53,1873,-1820,0.10679957280170882,0.0,peripheral,UFRJ-INFO,Sergio Manuel Serra da Cruz
+1574,2,12,4900,-4888,0.48611111111111116,0.0,peripheral,UFMG,Sergio Vale Aguiar Campos
+1575,0,116,5167,-5051,0.034036860879904984,0.0,peripheral,PUC-PR,Sheila dos Santos Reinehr
+1576,3,1,2603,-2602,0.0,0.0,peripheral,UFU,Shigueo Nomura
+1577,7,26,2362,-2336,0.3284023668639052,0.0,peripheral,UNIRIO,Sidney Cunha de Lucena
+1578,8,42,1492,-1450,0.09070294784580502,0.0,peripheral,UPE,Sidney Marlon Lopes de Lima
+1579,6,18,3006,-2988,0.1049382716049383,0.0,peripheral,UFRPE,Sidney de Carvalho Nogueira
+1580,0,3,5167,-5164,0.0,0.0,peripheral,UFRPE,Silvana Bocanegra
+1581,0,15,5167,-5152,0.56,0.0,peripheral,UFRJ-INFO,Silvana Rossetto
+1582,10,13,1873,-1860,0.37869822485207094,0.0,peripheral,UFSC,Silvia Modesto Nassar
+1583,0,73,5167,-5094,0.027021955338712766,0.0,peripheral,UFPR,Silvia Regina Vergilio
+1584,11,221,3526,-3305,0.1130197989394156,0.0,peripheral,FURG,Silvia Silva da Costa Botelho
+1585,4,83,2197,-2114,0.04732181739004204,0.0,peripheral,PUC-MG,Silvio Jamil Ferzoli Guimarães
+1586,0,54,5167,-5113,0.5294924554183813,0.0,peripheral,UFPE,Silvio Romero de Lemos Meira
+1587,11,302,3526,-3224,0.006600587693522231,0.0,peripheral,UFPEL,Simone André da Costa Cavalheiro
+1588,1,4,3828,-3824,0.0,0.0,peripheral,UNIOESTE,Simone Aparecida Miloca
+1589,1,34,3828,-3794,0.6764705882352942,0.0,connector,UNIRIO,Simone Bacellar Leal Ferreira
+1590,6,11,3006,-2995,0.4297520661157025,0.0,peripheral,UFPE,Simone Cristiane dos Santos Lima
+1591,0,155,5167,-5012,0.49814776274713835,0.0,peripheral,PUC-RIO,Simone Diniz Junqueira Barbosa
+1592,8,61,1492,-1431,0.06342381080354742,0.0,peripheral,UTFPR,Simone Nasser Matos
+1593,1,35,3828,-3793,0.1093877551020408,0.0,peripheral,UFF,Simone de Lima Martins
+1594,0,121,5167,-5046,0.09616829451540188,0.0,peripheral,USP-SC,Simone do Rocio Senger de Souza
+1595,4,2,2197,-2195,0.0,0.0,peripheral,USP-COMP,Sinai Robins
+1596,4,4,2197,-2193,0.0,0.0,peripheral,UFSCAR,Siovani Cintra Felipussi
+1597,0,5,5167,-5162,0.31999999999999984,0.0,peripheral,USP-COMP,Solange Nice Alves de Souza
+1598,5,142,1985,-1843,0.1848839515969054,0.0,peripheral,USP-SC,Solange Oliveira Rezende
+1599,3,37,2603,-2566,0.4528853177501826,0.0,peripheral,PUC-RS,Soraia Raupp Musse
+1600,8,1,1492,-1491,0.0,0.0,peripheral,UFPE,Stefan Michael Blawid
+1602,3,5,2603,-2598,0.31999999999999984,0.0,peripheral,UFU,Stéphane Julia
+1603,1,34,3828,-3794,0.0,0.0,peripheral,UFRJ-INFO,Sulamita Klein
+1604,3,74,2603,-2529,0.26625273922571224,0.0,peripheral,UEL,Sylvio Barbon Júnior
+1605,0,25,5167,-5142,0.4895999999999999,0.0,peripheral,PUC-RIO,Sérgio Colcher
+1606,10,1,1873,-1872,0.0,0.0,peripheral,UFBA,Sérgio Gorender
+1607,10,10,1873,-1863,0.4600000000000001,0.0,peripheral,UNIFACS,Sérgio Martins Fernandes
+1608,8,28,1492,-1464,0.0,0.0,peripheral,UPE,Sérgio Murilo Maciel Fernandes
+1609,8,2,1492,-1490,0.5,0.0,peripheral,UFPE,Sérgio Ricardo de Melo Queiroz
+1610,7,24,2362,-2338,0.32986111111111116,0.0,peripheral,UNIFESP,Sérgio Ronaldo Barros dos Santos
+1611,3,29,2603,-2574,0.35909631391200947,0.0,peripheral,UFG,Sérgio Teixeira de Carvalho
+1612,7,20,2362,-2342,0.09500000000000008,0.0,peripheral,UFRN,Sílvia Maria Diniz Monteiro Maia
+1613,6,16,3006,-2990,0.4765625,0.0,peripheral,UFERSA,Sílvio Roberto Fernandes de Araújo
+1614,8,22,1492,-1470,0.23553719008264462,0.0,peripheral,UFPE,Sílvio de Barros Melo
+1615,14,3,946,-943,0.0,0.0,peripheral,UFPE,Sóstenes Luiz Soares Lins
+1616,6,87,3006,-2919,0.5821112432289602,0.0,peripheral,UFRPE,Taciana Pontual da Rocha Falcão
+1617,10,66,1873,-1807,0.1138659320477502,0.0,peripheral,UNIRIO,Tadeu Moreira de Classe
+1618,7,7,2362,-2355,0.24489795918367352,0.0,peripheral,UFLA,Tales Heimfarth
+1619,13,11,1397,-1386,0.0,0.0,peripheral,UNIFOR,Tarcisio Haroldo Cavalcante Pequeno
+1620,11,32,3526,-3494,0.48828125,0.0,peripheral,UFPEL,Tatiana Aires Tavares
+1621,5,39,1985,-1946,0.14464168310322145,0.0,peripheral,UFBA,Tatiane Nogueira Rios
+1622,0,340,5167,-4827,0.1489792387543254,0.0,peripheral,UFAM,Tayana Uchôa Conte
+1623,3,91,2603,-2512,0.04298997705591123,0.0,peripheral,UFG,Telma Woerle de Lima Soares
+1624,1,49,3828,-3779,0.0,0.0,peripheral,UFPB-JP,Teobaldo Leite Bulhões Júnior
+1625,8,105,1492,-1387,0.09233560090702952,0.0,peripheral,UFPE,Teresa Bernarda Ludermir
+1626,5,17,1985,-1968,0.11072664359861584,0.0,peripheral,UNB,Teófilo Emidio de Campos
+1627,0,47,5167,-5120,0.041647804436396596,0.0,peripheral,UFAM,Thais Helena Chaves de Castro
+1628,1,80,3828,-3748,0.31218750000000006,0.0,peripheral,UFRN,Thais Vasconcelos Batista
+1629,6,44,3006,-2962,0.3553719008264463,0.0,peripheral,UFAL,Thales Miranda de Almeida Vieira
+1630,3,95,2603,-2508,0.0,0.0,peripheral,UNIFESP,Thaína Aparecida Azevedo Tosta
+1631,1,13,3828,-3815,0.2603550295857988,0.0,peripheral,UFPB-JP,Thaís Gaudencio do Rêgo
+1632,0,134,5167,-5033,0.08654488750278466,0.0,peripheral,UEM,Thelma Elita Colanzi
+1633,2,18,4900,-4882,0.49382716049382713,0.0,peripheral,UECE,Thelmo Pontes de Araujo
+1634,5,55,1985,-1930,0.5190082644628099,0.0,peripheral,USP-SC,Thiago Alexandre Salgueiro Pardo
+1635,0,23,5167,-5144,0.4045368620037808,0.0,peripheral,IFCE,Thiago Alves Rocha
+1636,6,75,3006,-2931,0.12586666666666657,0.0,peripheral,UFAL,Thiago Damasceno Cordeiro
+1637,2,9,4900,-4891,0.5679012345679012,0.0,peripheral,UFCG,Thiago Emmanuel Pereira da Cunha Silva
+1638,5,1,1985,-1984,0.0,0.0,peripheral,UFABC,Thiago Ferreira Covões
+1639,1,36,3828,-3792,0.4398148148148149,0.0,peripheral,UFMG,Thiago Ferreira de Noronha
+1640,2,20,4900,-4880,0.09500000000000008,0.0,peripheral,UFV,Thiago Henrique Nogueira
+1641,3,35,2603,-2568,0.5061224489795918,0.0,peripheral,UFRGS,Thiago Lopes Trugillo da Silveira
+1642,17,87,152,-65,0.08904743030783469,0.0,peripheral,UFES,Thiago Oliveira dos Santos
+1643,5,29,1985,-1956,0.13079667063020217,0.0,peripheral,UNB,Thiago de Paulo Faleiros
+1644,1,35,3828,-3793,0.20244897959183672,0.0,peripheral,PUC-RIO,Thibaut Victor Gaston Vidal
+1645,2,49,4900,-4851,0.6372344856309871,0.0,connector,UFG,Thierson Couto Rosa
+1646,17,25,152,-127,0.0,0.0,peripheral,UFES,Thomas Walter Rauber
+1647,3,40,2603,-2563,0.41874999999999996,0.0,peripheral,UFSCAR,Tiago Agostinho de Almeida
+1648,8,32,1492,-1460,0.060546875,0.0,peripheral,UFRPE,Tiago Alessandro Espinola Ferreira
+1649,0,23,5167,-5144,0.6805293005671078,0.0,connector,UFMA,Tiago Bonini Borchartt
+1650,9,23,1763,-1740,0.0,0.0,peripheral,UFCG,Tiago Brasileiro Araújo
+1651,7,34,2362,-2328,0.698961937716263,0.0,connector,PUC-RS,Tiago Coelho Ferreto
+1652,6,20,3006,-2986,0.405,0.0,peripheral,UFAL,Tiago Figueiredo Vieira
+1653,9,20,1763,-1743,0.4650000000000001,0.0,peripheral,UFOP,Tiago Garcia de Senna Carneiro
+1654,8,34,1492,-1458,0.11072664359861584,0.0,peripheral,UFCG,Tiago Lima Massoni
+1655,1,30,3828,-3798,0.3488888888888888,0.0,peripheral,UFPB-JP,Tiago Maritan Ugulino de Araújo
+1656,5,8,1985,-1977,0.53125,0.0,peripheral,USP-SC,Tiago Pereira da Silva
+1657,1,35,3828,-3793,0.34612244897959177,0.0,peripheral,UFPB-JP,Tiago Pereira do Nascimento
+1658,0,48,5167,-5119,0.6449652777777777,0.0,connector,UNIFESP,Tiago Silva da Silva
+1659,11,69,3526,-3457,0.46502835538752363,0.0,peripheral,UFPEL,Tiago Thompsen Primo
+1660,1,10,3828,-3818,0.0,0.0,peripheral,UFBA,Tiago de Oliveira Januario
+1661,9,106,1763,-1657,0.3296546813812744,0.0,peripheral,UFC,Ticiana Linhares Coelho da Silva
+1662,16,31,1112,-1081,0.6056191467221643,0.0,peripheral,UFRJ-INFO,Toacy Cavalcante de Oliveira
+1663,1,39,3828,-3789,0.09730440499671267,0.0,peripheral,UFF,Troy Costa Kohwalter
+1664,8,60,1492,-1432,0.186111111111111,0.0,peripheral,UFPE,Tsang Ing Ren
+1665,1,23,3828,-3805,0.08317580340264641,0.0,peripheral,UFOP,Túlio Ângelo Machado Toffolo
+1666,0,61,5167,-5106,0.24025799516259072,0.0,peripheral,UFRN,Uira Kulesza
+1667,11,2,3526,-3524,0.0,0.0,peripheral,UFRN,Umberto Rivieccio
+1668,2,15,4900,-4885,0.0,0.0,peripheral,UFRN,Umberto Souza da Costa
+1669,1,164,3828,-3664,0.17125223081499097,0.0,peripheral,UFF,Uéverton dos Santos Souza
+1670,5,10,1985,-1975,0.72,0.0,connector,UFABC,Vagner Figueredo de Santana
+1671,0,135,5167,-5032,0.27906721536351164,0.0,peripheral,UFG,Valdemar Vicente Graciano Neto
+1672,12,53,733,-680,0.1416874332502669,0.0,peripheral,USP-COMP,Valdinei Freire da Silva
+1673,5,54,1985,-1931,0.377914951989026,0.0,peripheral,UFPE,Valeria Cesario Times
+1674,3,24,2603,-2579,0.2777777777777777,0.0,peripheral,UNIFESP,Valerio Rosset
+1675,1,23,3828,-3805,0.4158790170132326,0.0,peripheral,UFRJ-INFO,Valmir Carneiro Barbosa
+1676,6,55,3006,-2951,0.13487603305785134,0.0,peripheral,UFRPE,Valmir Macario Filho
+1677,0,38,5167,-5129,0.0,0.0,peripheral,UFSCAR,Valter Vieira de Camargo
+1678,8,21,1492,-1471,0.6893424036281179,0.0,connector,UEM,Valéria Delisandra Feltrim
+1679,9,39,1763,-1724,0.09861932938856022,0.0,peripheral,UFC,Valéria Lelli Leitão Dantas
+1680,4,48,2197,-2149,0.07986111111111094,0.0,peripheral,UFOP,Vander Luis de Souza Freitas
+1681,0,35,5167,-5132,0.25469387755102046,0.0,peripheral,UNB,Vander Ramos Alves
+1682,3,12,2603,-2591,0.0,0.0,peripheral,USP-SC,Vanderlei Bonato
+1683,1,49,3828,-3779,0.2257392753019576,0.0,peripheral,UFF,Vanessa Braganholo Murta
+1684,5,4,1985,-1981,0.0,0.0,peripheral,USP-RP,Vanessa Rolnik Artioli
+1685,3,16,2603,-2587,0.0,0.0,peripheral,UEL,Vanessa Tavares de Oliveira Barros
+1686,10,14,1873,-1859,0.5306122448979591,0.0,peripheral,UFSC,Vania Bogorny
+1687,9,23,1763,-1740,0.5217391304347826,0.0,peripheral,UFC,Vania Maria Ponte Vidal
+1688,5,66,1985,-1919,0.559228650137741,0.0,peripheral,UFSCAR,Vania Paula de Almeida Neris
+1689,0,35,5167,-5132,0.72,0.0,connector,UFBA,Vaninha Vieira dos Santos
+1690,5,28,1985,-1957,0.47448979591836726,0.0,peripheral,UNESP-SJRP,Veronica Oliveira de Carvalho
+1691,6,73,3006,-2933,0.07881403640457885,0.0,peripheral,UFPE,Veronica Teichrieb
+1692,0,8,5167,-5159,0.375,0.0,peripheral,UFAM,Vicente Ferreira de Lucena Junior
+1693,1,34,3828,-3794,0.11072664359861584,0.0,peripheral,UFC,Victor Almeida Campos
+1694,16,16,1112,-1096,0.1171875,0.0,peripheral,UNIOESTE,Victor Francisco Araya Santander
+1695,0,19,5167,-5148,0.2770083102493076,0.0,peripheral,UFPA,Victor Hugo Santiago Costa Pinto
+1696,10,278,1873,-1595,0.0768852543864188,0.0,peripheral,UFJF,Victor Ströele de Andrade Menezes
+1697,0,15,5167,-5152,0.5066666666666667,0.0,peripheral,UEFS,Victor Travassos Sarinho
+1698,14,36,946,-910,0.37962962962962965,0.0,peripheral,UFRPE,Victor Wanderley Costa de Medeiros
+1699,12,5,733,-728,0.31999999999999984,0.0,peripheral,UFPA,Vinicius Augusto Carvalho de Abreu
+1700,0,121,5167,-5046,0.5017416843111808,0.0,peripheral,UFPE,Vinicius Cardoso Garcia
+1701,1,83,3828,-3745,0.31876905211206275,0.0,peripheral,UFMG,Vinicius Fernandes dos Santos
+1702,13,66,1397,-1331,0.08769513314967847,0.0,peripheral,FUFPI,Vinicius Ponte Machado
+1703,5,18,1985,-1967,0.345679012345679,0.0,peripheral,UNB,Vinicius Ruela Pereira Borges
+1704,4,7,2197,-2190,0.6938775510204083,0.0,connector,UFBA,Vinicius Tavares Petrucci
+1705,7,42,2362,-2320,0.35941043083900226,0.0,peripheral,UFG,Vinicius da Cunha Martins Borges
+1706,2,52,4900,-4848,0.4075443786982248,0.0,peripheral,UFES,Vinícius Fernandes Soares Mota
+1707,1,34,3828,-3794,0.21280276816609,0.0,peripheral,UFRJ-INFO,Vinícius Gusmão Pereira de Sá
+1708,0,96,5167,-5071,0.39626736111111116,0.0,peripheral,UFSJ,Vinícius Humberto Serapilha Durelli
+1709,11,39,3526,-3487,0.04996712689020377,0.0,peripheral,FURG,Vinícius Menezes de Oliveira
+1710,5,32,1985,-1953,0.060546875,0.0,peripheral,PUC-PR,Vinícius Mourão Alves de Souza
+1711,2,52,4900,-4848,0.037721893491124314,0.0,peripheral,UFSJ,Vinícius da Fonseca Vieira
+1712,2,39,4900,-4861,0.4181459566074951,0.0,peripheral,UFMG,Virgilio Augusto Fernandes Almeida
+1713,1,1,3828,-3827,0.0,0.0,peripheral,UFV,Vitor Barbosa Carlos de Souza
+1714,3,3,2603,-2600,0.0,0.0,peripheral,UEL,Vitor Valério de Souza Campos
+1715,1,28,3828,-3800,0.13265306122448983,0.0,peripheral,UFPB-JP,Vivek Nigam
+1716,4,23,2197,-2174,0.775047258979206,0.0,connector,UFRGS,Viviane Pereira Moreira
+1717,12,9,733,-724,0.5925925925925926,0.0,peripheral,UFABC,Vladimir Emiliano Moreira Rocha
+1718,13,34,1397,-1363,0.3460207612456748,0.0,peripheral,UNIFOR,Vládia Célia Monteiro Pinheiro
+1719,0,24,5167,-5143,0.5520833333333333,0.0,peripheral,UFES,Vítor Estêvão Silva Souza
+1720,8,2,1492,-1490,0.5,0.0,peripheral,UFPR,Wagner Hugo Bonat
+1721,0,13,5167,-5154,0.544378698224852,0.0,peripheral,UFPR,Wagner Machado Nunan Zola
+1722,2,215,4900,-4685,0.0990373174689021,0.0,peripheral,UFMG,Wagner Meira Junior
+1723,6,18,3006,-2988,0.0,0.0,peripheral,UFABC,Wagner Tanaka Botelho
+1724,0,5,5167,-5162,0.48,0.0,peripheral,PUC-RIO,Waldemar Celes Filho
+1725,5,35,1985,-1950,0.1093877551020408,0.0,peripheral,UNESP-SJRP,Wallace Correa de Oliveira Casaca
+1727,5,1,1985,-1984,0.0,0.0,peripheral,UFSCAR,Wanderley Lopes de Souza
+1728,2,3,4900,-4897,0.0,0.0,peripheral,UNIFEI,Wandré Nunes de Pinho Veloso
+1729,8,116,1492,-1376,0.34319262782401894,0.0,peripheral,UPE,Wellington Pinheiro dos Santos
+1730,3,79,2603,-2524,0.562089408748598,0.0,peripheral,UFG,Wellington Santos Martins
+1731,15,35,447,-412,0.3297959183673468,0.0,peripheral,UNIVALI,Wemerson Delcio Parreira
+1733,0,95,5167,-5072,0.1586703601108035,0.0,peripheral,UNIOESTE,Wesley Klewerton Guêz Assunção
+1734,5,73,1985,-1912,0.20003753049352602,0.0,peripheral,UFMS,Wesley Nunes Gonçalves
+1735,7,67,2362,-2295,0.2205390955669415,0.0,peripheral,UFRGS,Weverton Luis da Costa Cordeiro
+1736,8,65,1492,-1427,0.08804733727810632,0.0,peripheral,UFCG,Wilkerson de Lucena Andrade
+1737,4,87,2197,-2110,0.3419209935262253,0.0,peripheral,UFMG,William Robson Schwartz
+1738,8,66,1492,-1426,0.0,0.0,peripheral,UFRPE,Wilson Rosa de Oliveira Junior
+1739,9,109,1763,-1654,0.3082232135342142,0.0,peripheral,UFC,Windson Viana de Carvalho
+1740,7,18,2362,-2344,0.4012345679012346,0.0,peripheral,PUC-MG,Wladmir Cardoso Brandão
+1741,6,86,3006,-2920,0.30584099513250407,0.0,peripheral,UPE,Wylliams Barbosa Santos
+1742,6,1,3006,-3005,0.0,0.0,peripheral,UFAL,Xu Yang
+1743,8,90,1492,-1402,0.26148148148148154,0.0,peripheral,UEM,Yandre Maldonado e Gomes da Costa
+1744,4,35,2197,-2162,0.05551020408163265,0.0,peripheral,USP-COMP,Yoshiharu Kohayakawa
+1745,4,52,2197,-2145,0.14201183431952646,0.0,peripheral,USP-COMP,Yoshiko Wakabayashi
+1746,1,73,3828,-3755,0.05329330080690564,0.0,peripheral,UFF,Yuri Abitbol de Menezes Frota
+1747,9,57,1763,-1706,0.0,0.0,peripheral,UFC,Yuri Lenon Barbosa Nogueira
+1748,4,69,2197,-2128,0.02856542743121193,0.0,peripheral,UNICAMP,Zanoni Dias
+1749,4,42,2197,-2155,0.09070294784580502,0.0,peripheral,PUC-MG,Zenilton Kleber Gonçalves do Patrocínio Júnior
+1750,5,66,1985,-1919,0.606060606060606,0.0,peripheral,USP-SC,Zhao Liang
+1751,6,106,3006,-2900,0.0731577073691706,0.0,peripheral,UFAL,Álvaro Alvares de Carvalho César Sobrinho
+1752,7,39,2362,-2323,0.6614069690992768,0.0,connector,UFRGS,Álvaro Freitas Moreira
+1753,4,16,2197,-2181,0.3984375,0.0,peripheral,UNIFESP,Álvaro Luiz Fazenda
+1754,11,15,3526,-3511,0.6577777777777778,0.0,connector,UFRGS,Érika Fernandes Cota
+1755,6,22,3006,-2984,0.45867768595041325,0.0,peripheral,UFAL,Ícaro Bezerra Queiroz de Araújo

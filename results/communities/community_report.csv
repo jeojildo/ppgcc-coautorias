@@ -1,0 +1,2 @@
+num_nodes,num_edges,num_communities,largest_community,smallest_community,mean_community_size,modularity,coverage,performance,intra_weight_ratio,inter_weight_ratio
+1725.0,9415.0,24.0,217.0,2.0,71.875,0.7739488206047548,0.6184811471056825,0.9260708161000706,0.8506485194982507,0.1493514805017493
