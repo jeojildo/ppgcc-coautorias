@@ -4,6 +4,18 @@ Análise de relações de coautoria nos programas de pós-graduação em Ciênci
 
 Pipeline baseado no processo Knowledge Discovery in Databases (KDD), cobrindo seleção, pré-processamento, transformação, visualização e detecção de comunidades em redes de coautoria ponderadas.
 
+## Artigo
+
+Este trabalho foi publicado no [SEMISH 2026](https://csbc.sbc.org.br/2026/semish/) (Seminário Integrado de Software e Hardware), evento do CSBC (Congresso da Sociedade Brasileira de Computação).
+
+> **Análise de Relações de Coautoria nos Programas de Pós-Graduação em Ciência da Computação no Brasil**
+>
+> Jeojildo Pereira, Helder Matos, Jean Carlos Costa, Reginaldo Santos
+>
+> *Laboratório de Inteligência de Dados (LID) — PPGCOMP/UFPA*
+
+O artigo completo está disponível em [`paper/ppgcc-coautorias.pdf`](paper/ppgcc-coautorias.pdf).
+
 ## Requisitos
 
 - Python 3.10+
